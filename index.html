@@ -13,53 +13,71 @@
 				#24003D (purple)
 				#010033 (blue)
 				#650048 (magenta)
+				#B1007F (lighter magenta)
 				#FFF787 (yellow)
 				#006963 (teal)
 			*/
+			@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans');
 			
-			body {background: linear-gradient(to bottom right, #24003D, #006963);
+			body {background-color: #006963;
+			      background: linear-gradient(to bottom right, #24003D, #006963);
 				  background-repeat: no-repeat;
 				  background-size: cover;}
 			      
 			#wrapper {width: 100%;
-					  height: 20em;
+					  height: 25em;
 					  background-color: #010033;
 					  margin-top: 200px;
 					  margin-bottom: 200px;
-					  
-					  opacity: .8;
+					  opacity: .7;
 					  text-align: center;}
 			
 			#wrapper h1 {padding-top: 40px;
 						 text-align: center;
-						 color: #FFF787;}
-			#wrapper h3 {color: #FFF787;}
+						 color: #FFF787;
+						 font-family: 'Alegreya', serif;
+						 font-size: 5em;
+						 font-style: italic;
+						 margin-bottom: 40px;}
 			
 			#wrapper p {color: #FFF787;
 						padding-left: 20px;
-						padding-right: 20px;}
+						padding-right: 20px;
+						font-family: 'Alegreya Sans', sans-serif;
+						font-size: 1.2em;
+						letter-spacing: 1px;}
 			
-			.buttons {margin-top: 50px;}
+			.buttons {margin-top: 40px;}
+			
+			.entry-menu {display: inline-block;}
+			.entry-menu a {font-size: 1.25em;
+					         font-family: 'Alegreya', serif;
+					         font-weight: bold;
+					         margin: 5px;
+					         color: #B1007F;
+					         text-decoration: none;}
+			.entry-menu a:hover {color: #FFF787;
+								 text-decoration: underline;}
+			
 		</style>
 	</head>
 <body>
 	<div id="wrapper">
-		<h1>A Portfolio</h1>
-		<h3>Jennifer Bailey</h3>
+		<h1>Jennifer Bailey</h1>
 		<p>Hello! You've either stumbled upon this page by accident or have been directed here 
 		by a job application I've submitted. Either way, welcome! <br>
 	
 		I've created this website to display a collection of my work from print design to web design to
-		to writing samples. I'll include descriptions of each piece along <br> with some analysis of it. There's 
-		no "right" place to start, so pick any page from the menu below</p>
+		to writing samples. I'll include descriptions of each <br>piece along with a brief analysis of it. There's 
+		no "right" place to start, so pick any page from the menu below to start your review.</p>
 	
 		<div class="buttons">
-			<button href="" >Resume</button>
-			<button href="" >Web Design</button>
-			<button href="" >Print Design</button>
-			<button href="">Graphics Design</button>
-			<button href="" >Writings</button>
-			<button href="" >Blog</button>
+			<p class="entry-menu"><a href="resume.html" >Resume</a></p>
+			<p class="entry-menu"><a href="web.html">Web Design</a></p>
+			<p class="entry-menu"><a href="print.html">Print Design</a></p>
+			<p class="entry-menu"><a href="graphics.html">Graphics Design</a></p>
+			<p class="entry-menu"><a href="writings.html">Writings</a></p>
+			<p class="entry-menu"><a href="about.html" >About</a></p>
 		</div>
 	</div>
 </body>
