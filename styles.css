@@ -52,14 +52,15 @@ body {background-color: #FFFFED;
 	  background-repeat: no-repeat;
 	  background-size: cover;}
 
-nav {background-color: #010033;}
+nav {background-color: #010033;
+	 text-align: center;}
 nav p {display:inline-block;
        margin-top: 15px;
        margin-bottom: 10px;}
 
 nav a {font-family: 'Alegreya', serif;
 	   font-weight: bold;
-	   margin-left: 70px;
+	   margin-left: 50px;
 	   text-decoration: none;
 	   color: #B1007F;
 	   font-size: 1.25em;}
