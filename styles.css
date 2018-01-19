@@ -45,3 +45,24 @@
 			   text-decoration: none;}
 .entry-menu a:hover {color: #FFF787;
                      text-decoration: underline;}
+
+/***REMAINING PAGES***/
+body {background-color: #FFFFED;
+	  background: linear-gradient(to bottom, #FFFFED, #FFF787);
+	  background-repeat: no-repeat;
+	  background-size: cover;}
+
+nav {background-color: #010033;}
+nav p {display:inline-block;
+       margin-top: 15px;
+       margin-bottom: 10px;}
+
+nav a {font-family: 'Alegreya', serif;
+	   font-weight: bold;
+	   margin-left: 70px;
+	   text-decoration: none;
+	   color: #B1007F;
+	   font-size: 1.25em;}
+nav a:hover {text-decoration: underline;
+             color: #FFF787;}
+	   
