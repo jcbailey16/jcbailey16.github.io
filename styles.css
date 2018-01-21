@@ -132,7 +132,10 @@ hr {border: 5px solid #006963;
 			  font-size: 1.15em;
 			  margin-top: 25px;}
 
-.print-img {margin-left: 90px;}
+.print-img {margin-left: 90px;
+			width: 350px;
+			box-shadow: 3px 3px 8px #888888;
+			}
 	 
 /**Footer**/
 	footer {background-color: #010033;
