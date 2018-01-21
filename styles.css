@@ -115,6 +115,10 @@ p a:hover {text-decoration: underline;}
 hr {border: 5px solid #006963;
     margin-top: 35px;
     margin-bottom: 50px;}
+    
+.section-border {margin-top: 30px;
+				 padding-right: 20px;
+				 }
 /**Footer**/
 	footer {background-color: #010033;
 			height: 80px;
