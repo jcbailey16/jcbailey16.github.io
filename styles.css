@@ -73,6 +73,10 @@ nav a {font-family: 'Alegreya', serif;
 nav a:hover {text-decoration: underline;
              color: #FFF787;}
 
+#active {background-color: #B1007F;
+		 color: #24003D;
+		 padding: 5px;
+		 border-radius: 10px 50px 10px 10px;}
 /**Body**/
 
 h1 {font-family: 'Alegreya', serif;
@@ -117,8 +121,19 @@ hr {border: 5px solid #006963;
     margin-bottom: 50px;}
     
 .section-border {margin-top: 30px;
-				 padding-right: 20px;
-				 }
+				 padding-right: 20px;}
+				 
+#intro-graph {max-width: 900px;
+			  margin-bottom: 60px;}	
+			  
+.image-title {font-family: 'Alegreya Sans', sans-serif;
+			  font-weight: bold;
+			  text-align: center;
+			  font-size: 1.15em;
+			  margin-top: 25px;}
+
+.print-img {margin-left: 90px;}
+	 
 /**Footer**/
 	footer {background-color: #010033;
 			height: 80px;
