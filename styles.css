@@ -133,9 +133,13 @@ hr {border: 5px solid #006963;
 			  margin-top: 25px;}
 
 .print-img {margin-left: 90px;
+            margin-top: 40px;
 			width: 350px;
-			box-shadow: 3px 3px 8px #888888;
-			}
+			box-shadow: 3px 3px 8px #010033;}
+.print-img2 {
+			 margin-top: 40px;
+			 width: 500px;
+			 box-shadow: 3px 3px 8px #010033;}
 	 
 /**Footer**/
 	footer {background-color: #010033;
