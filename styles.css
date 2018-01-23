@@ -136,10 +136,19 @@ hr {border: 5px solid #006963;
             margin-top: 40px;
 			width: 350px;
 			box-shadow: 3px 3px 8px #010033;}
-.print-img2 {
-			 margin-top: 40px;
+
+.print-img2 {margin-top: 40px;
 			 width: 500px;
 			 box-shadow: 3px 3px 8px #010033;}
+			 
+.web-img {margin-top: 40px;
+		  margin-left: 20px;
+		  padding: 10px;
+		  width: 525px;
+		  box-shadow: 3px 3px 8px #010033;
+		  border-radius: 10px;}
+
+.web-descript {margin-left: 20px;}
 	 
 /**Footer**/
 	footer {background-color: #010033;
