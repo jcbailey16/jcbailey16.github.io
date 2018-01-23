@@ -149,7 +149,11 @@ hr {border: 5px solid #006963;
 		  border-radius: 10px;}
 
 .web-descript {margin-left: 20px;}
-	 
+
+.explanation {margin-top: 40px;
+			  font-size: 1.35em;
+			  max-width: 900px;
+			  letter-spacing: 1px;}	 
 /**Footer**/
 	footer {background-color: #010033;
 			height: 80px;

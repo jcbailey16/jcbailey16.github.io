@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Explore: Get Out &amp; Go</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="explore.css">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div id="wrapper">
+<header>
+	<h1>Explore: Get Out &amp; Go</h1>
+</header>
+
+<nav>
+	<ul>
+		<li><a id="active" href="index.html">Home</a></li>
+		<li><a href="outdoors.html">Outdoors</a></li>
+		<li><a href="music.html">Music &amp; Art</a></li>
+		<li><a href="volunteer.html">Volunteer</a></li>
+		<li><a href="about.html">About Us</a></li>
+	</ul>
+	
+	<div id="form">
+	<h4>Contact Us</h4>
+		<p>Send us your thoughts!<br>
+		Required information is marked with an asterisk(*).</p>
+		<form method="post" action="http://webdevbasics.net/scripts/pacific.php">
+			<label for="myName">*Name:</label><br>
+				<input type="text" name="myName" id="myName" required="required">
+			<label for="myEmail">*E-mail:</label><br>
+				<input type="email" name="myEmail" id="myEmail" required="required">
+			<label for="subscribe">*Subscribe:</label>
+				<select size="1" name="subscribe" id="subscribe" required="required">
+					<option value="">Choose</option>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select>
+			<label for="myComments">*Comments:</label><br>
+				<textarea name="myComments" id="myComments" rows="2" cols="17" 
+				required="required"></textarea><br>
+			<input id="mySubmit" type="submit" value="Submit">
+		</form>
+</div><!--End of form div-->
+</nav>
+
+<main>
+<h2>Upcoming Events</h2>
+
+<img src="assets/blossoms1.jpg" alt="Pink cherry blossoms bloom just in time for the festival!" class="floatleft">
+<h3>Time for the Cherry Blossom Festival!</h3>
+<p>Spring has arrived, and so have the Cherry Blossoms! Head into to the nation's capital 
+to see this amazing sight in person.</p>
+<p>The 2017 National Cherry Blossom Festival will last from March 17 to April 15. The best 
+time to see the blooms is expected to be between March 20 and March 24. </p>
+<p>Downtown D.C., will host a variety of activities from fundraiser marathons, parades, and 
+concerts during the festival month. There will be a high-volume of visitors, as people come 
+from around the world to the see the cherry blossoms. Consider taking the D.C. metro.</p>
+
+<div id="event2">
+	<img src="assets/vegetables.jpg" alt="Pink cherry blossoms bloom just in time for the festival!" class="floatright">
+	<h3>Saturday farmers market returns</h3>
+	<p>Starting in April, the <a href="http://www.aacofarmersmarket.com">
+	Anne Arundel County Farmers Market</a> will be around for the 
+	whole weekend.</p>
+	<ul>
+		<li><span class="label">Saturdays:</span>7am to Noon</li>
+		<li><span class="label">Sundays:</span>10am to 1pm</li>
+	</ul>
+	<p>The farmers market is located at 275 Harry S. Truman Parkway, Annapolis, MD 21401.</p>
+</div><!--end of event2 div-->
+
+<img class="iconsmall" src="assets/compass.gif" alt="compass logo">
+<h3>Baltimore Scavenger Hunt</h3>
+<p>Join us June 24 to June 30 for a city-wide scavenger hunt!</p>
+
+<div class="breakout">
+	<h6>How to participate:</h6>
+	<ol>
+		<li><a href=signup.html>Sign up</a></li>
+		<li>Download the Urban Quest Adventure app to your phone</li>
+		<li>Finish challenges and earn points</li>
+		<li>Have fun!</li>
+	</ol>
+</div><!--end of breakout div-->
+
+<p>We are putting together a team to participate in <a href="http://www.urbanadventurequest.com">
+Urban Adventure Quest</a>'s annual scavenger hunt. We can have between 20 and 30 people on 
+our team. Spots go quickly for this free event, so <a href=signup.html>sign up</a> soon!</p>
+
+<p>This event is free and will continue rain or shine. More information will be sent via 
+email once you sign up for the team.</p> 
+
+<p>Last year we came the closest yet to completing the scavenger hunt, finishing with only 
+five items left unfound. Our goal for this year is to find all the items by the end of the 
+final day. We can't wait to beat our record and make more fun memories!</p>
+
+<p><span class="label">For the sign-up form:</span> this activity is the 
+"Baltimore Scavenger Hunt 2017."</p>
+
+
+</main>
+
+<footer>
+	<ul>
+		<li>101 College Parkway, Arnold MD 21012</li>
+		<li><a href="http://www.aacc.edu">AACC</a></li>
+		<li><a href="https://www.facebook.com">Facebook</a></li>
+		<li><a href="https://twitter.com">Twitter</a></li>
+		<li><a href="https://www.instagram.com">Instagram</a></li>
+		<li><a href="mailto:contactus@explore.com">contactus@explore.com</a></li>
+		<li><a id="mobile" href="tel:401-123-4567">401–123-4567</a>
+			<span id="desktop">401-123-4567</span></li>
+	</ul>
+</footer>
+</div>
+</body>
+
+</html>
