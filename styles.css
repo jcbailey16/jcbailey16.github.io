@@ -61,8 +61,7 @@ nav {background-color: #010033;
 	 z-index: 9999;
 	 width: 100%;}
 nav a {display:inline-block;
-       margin-top: 15px;
-       margin-bottom: 10px;}
+       margin-top: 10px;}
 
 nav a {font-family: 'Alegreya', serif;
 	   font-weight: bold;
@@ -76,13 +75,13 @@ nav a:hover {text-decoration: underline;
 #active {background-color: #B1007F;
 		 color: #24003D;
 		 padding: 5px;
-		 border-radius: 10px 50px 10px 10px;}
+		 border-radius: 10px 10px 0px 0px;}
 /**Body**/
 
 h1 {font-family: 'Alegreya', serif;
 	font-size: 5em;
 	color: #010033;
-	margin-top: 80px;
+	margin-top: 120px;
 	margin-bottom: 40px;}
 
 h2 {font-family: 'Alegreya', serif;
