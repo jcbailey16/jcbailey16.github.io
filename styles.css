@@ -134,11 +134,20 @@ hr {border: 5px solid #006963;
 .print-img {margin-left: 90px;
             margin-top: 40px;
 			width: 350px;
-			box-shadow: 3px 3px 8px #010033;}
+			box-shadow: 3px 3px 8px #010033;
+			padding: 10px;
+			border-radius: 10px;}
+			
+.img-border {box-shadow: 3px 3px 8px #010033;
+			 margin-left: 60px;
+			 padding: 10px;
+			 border-radius: 10px;}
 
 .print-img2 {margin-top: 40px;
 			 width: 500px;
-			 box-shadow: 3px 3px 8px #010033;}
+			 box-shadow: 3px 3px 8px #010033;
+			 padding: 10px;
+			 border-radius: 10px;}
 			 
 .web-img {margin-top: 40px;
 		  margin-left: 20px;
