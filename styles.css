@@ -153,6 +153,9 @@ hr {border: 5px solid #006963;
 			  font-size: 1.35em;
 			  max-width: 900px;
 			  letter-spacing: 1px;}	 
+
+.row-space {margin-top: 60px;}
+
 /**Footer**/
 	footer {background-color: #010033;
 			height: 80px;
