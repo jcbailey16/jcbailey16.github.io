@@ -29,12 +29,12 @@
 			 margin-bottom: 40px;}
 			
 #wrapper p {color: #FFF787;
-			padding-left: 20px;
-			padding-right: 20px;
+			max-width: 980px;
 			font-family: 'Alegreya Sans', sans-serif;
-			font-size: 1.2em;
-			max-width: 980px;}
-			
+			font-size: 1.2em;}
+
+#welcome {margin: 0 auto;}
+		
 .buttons {margin-top: 40px;}
 			
 .entry-menu {display: inline-block;}
@@ -203,6 +203,13 @@ hr {border: 5px solid #006963;
 	          font-size: 1.25em;}
 	footer a:hover {text-decoration: underline;
                     color: #FFF787;}
+                    
+
+/**Tablet styles**/
+@media only screen and (max-width: 480px){
+	#wrapper {height: 50em;
+			  padding-bottom: 400px;}
+}
 /*
 	Color Palette
 	#24003D (purple)
