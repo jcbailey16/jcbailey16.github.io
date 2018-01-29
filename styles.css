@@ -209,7 +209,7 @@ hr {border: 5px solid #006963;
 @media only screen and (min-width: 480px){
 	
 	/**index page**/
-	#wrapper {height: 32em;}
+	#wrapper {height: 40em;}
 	#wrapper h1 {font-size: 3.5em;}
 	#wrapper p {max-width: 415px;}
 	#welcome {margin-left: 80px;}
