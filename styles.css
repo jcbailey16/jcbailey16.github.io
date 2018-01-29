@@ -120,8 +120,19 @@ hr {border: 5px solid #006963;
     margin-bottom: 50px;}
     
 .section-border {margin-top: 30px;
-				 padding-right: 20px;}
-				 
+				 padding-right: 15px;}
+
+.no-border {padding-left: 30px;
+            margin-top: 40px;}
+
+.border-right {border-right: 1em solid #650048;
+			   border-radius: 20%;
+			   margin-top: 40px;}
+.border-left {border-left: 1em solid #650048;
+			  border-radius: 20%;
+			  padding-left: 45px;
+			  margin-top: 40px;}
+	 
 #intro-graph {max-width: 900px;
 			  margin-bottom: 60px;}	
 			  
@@ -164,6 +175,11 @@ hr {border: 5px solid #006963;
 			  letter-spacing: 1px;}	 
 
 .row-space {margin-top: 60px;}
+
+.bio {margin-top: 30px;}
+.bio p {font-size: 1.25em;
+		width: 980px;}
+
 
 /**Footer**/
 	footer {background-color: #010033;
