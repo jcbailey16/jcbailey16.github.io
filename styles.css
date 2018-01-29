@@ -231,7 +231,7 @@ hr {border: 5px solid #006963;
 			  width: 20em;
 			  padding-left: .5em;
 			  margin-left: 0;}
-	nav li:hover ul {display: block;}
+	nav li:active ul {display: block;}
 	
 	#mobile-nav {height: 3.5em;
 				 padding-top: 10px;
