@@ -206,9 +206,17 @@ hr {border: 5px solid #006963;
                     
 
 /**Tablet styles**/
-@media only screen and (max-width: 480px){
-	#wrapper {height: 50em;
-			  padding-bottom: 400px;}
+@media only screen and (min-width: 480px){
+	
+	/**index page**/
+	#wrapper {height: 32em;}
+	#wrapper h1 {font-size: 3.5em;}
+	#wrapper p {max-width: 415px;}
+	#welcome {margin-left: 80px;}
+	.entry-menu a {line-height: 1em;}
+			       margin: 30px;
+			       color: #B1007F;}
+
 }
 /*
 	Color Palette
