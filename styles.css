@@ -95,6 +95,12 @@ h3 {font-family: 'Alegreya', serif;
 	letter-spacing: 1px;
 	 color: #010033;}
 
+h4 {font-family: 'Alegreya', serif;
+	font-size: 1.75em;
+	letter-spacing: 1px;
+	color: #010033;
+	margin-top: 40px;}
+	
 #sub-nav {margin-left: -40px;}
 #sub-nav li {display: inline;
 			 text-decoration: underline;
