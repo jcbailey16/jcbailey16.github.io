@@ -148,34 +148,16 @@ hr {border: 5px solid #006963;
 			  
 .image-title {font-family: 'Alegreya Sans', sans-serif;
 			  font-weight: bold;
-			  text-align: center;
 			  font-size: 1.15em;
-			  margin-top: 25px;}
+			  margin-top: 25px;
+			  text-align: center;}
 
-.print-img {margin-left: 90px;
-            margin-top: 40px;
-			width: 350px;
-			box-shadow: 3px 3px 8px #010033;
-			padding: 10px;
-			border-radius: 10px;}
+img {width: 80%;}
 			
 .img-border {box-shadow: 3px 3px 8px #010033;
-			 margin-left: 60px;
 			 padding: 10px;
-			 border-radius: 10px;}
-
-.print-img2 {margin-top: 40px;
-			 width: 500px;
-			 box-shadow: 3px 3px 8px #010033;
-			 padding: 10px;
-			 border-radius: 10px;}
-			 
-.web-img {margin-top: 40px;
-		  margin-left: 20px;
-		  padding: 10px;
-		  width: 525px;
-		  box-shadow: 3px 3px 8px #010033;
-		  border-radius: 10px;}
+			 border-radius: 10px;
+			 margin-top: 30px;}
 
 .web-descript {margin-left: 20px;}
 
@@ -231,21 +213,18 @@ hr {border: 5px solid #006963;
 	h2 {margin-top: 30px;
 		font-size: 2.5em;}
 	h3 {font-size: 2em;}
+	
+	p {font-size: 1em;}
 	/**resume and articles**/
 	.border-right, .border-left {border: none;}
 	.border-left {padding-left: 15px;
                 
 	/**print and web**/
-	.explanation {font-size: 1.1em;}
+	.explanation {font-size: 1em;}
 	#sub-nav li {margin-right: 15px;
 				 font-size: .95em;}
 	#sub-nav {margin-bottom: 30px;}
-	.print-img {margin-left: 0;
-                margin-top: 30px;
-                width: 60%;}
-	.print-img2, .web-img {margin-top: 20px;
-				           margin-left: 25px;}
-	
+	.img-border {padding: 5px;}
 	
 	/**infographics**/
 	.row-space {margin-top: 30px;}
@@ -258,7 +237,6 @@ hr {border: 5px solid #006963;
 			  padding-right: 10px;}	
 
 }
-
 
 /*
 	Color Palette
