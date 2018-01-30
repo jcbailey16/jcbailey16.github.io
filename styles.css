@@ -200,7 +200,7 @@ hr {border: 5px solid #006963;
 			padding-bottom: 10px;}
 	footer a {font-family: 'Alegreya', serif;
 	          font-weight: bold;
-	          margin-left: 25px;
+	          margin-right: 25px;
 	          text-decoration: none;
 	          color: #B1007F;
 	          font-size: 1.25em;}
@@ -208,7 +208,7 @@ hr {border: 5px solid #006963;
                     color: #FFF787;}
                     
 
-/**Tablet styles**/
+/**Phone styles**/
 @media (max-width: 480px) {
 	#desktop-nav {display: none;}
 	#mobile-nav {display: block;}
@@ -225,11 +225,38 @@ hr {border: 5px solid #006963;
 				   padding-right: 5px;}
 				 
 	h1 {margin-top: 80px;
-		margin-bottom: 0;
+		margin-bottom: 20px;
 		font-size: 4em;}
 	
 	h2 {margin-top: 30px;
 		font-size: 2.5em;}
+	h3 {font-size: 2em;}
+	/**resume and articles**/
+	.border-right, .border-left {border: none;}
+	.border-left {padding-left: 15px;
+                
+	/**print and web**/
+	.explanation {font-size: 1.1em;}
+	#sub-nav li {margin-right: 15px;
+				 font-size: .95em;}
+	#sub-nav {margin-bottom: 30px;}
+	.print-img {margin-left: 20px;
+                margin-top: 30px;
+			    width: 250px;}
+	.print-img2, .web-img {margin-top: 20px;
+				           margin-left: 25px;
+			               width: 250px;}
+	
+	
+	/**infographics**/
+	.row-space {margin-top: 30px;}
+	.img-border {margin-left: 30px;
+				 margin-top: 20px;}	
+	.mobile-graphic {width: 250px}
+	
+	footer a {font-size: 1.15em;
+			  margin-right: 0;
+			  padding-right: 10px;}	
 
 }
 
