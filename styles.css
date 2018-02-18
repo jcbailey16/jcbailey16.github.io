@@ -11,43 +11,57 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans');
 
 /***LANDING PAGE***/
+
+#block1, #block2, #block3, #block4, #block5, #block6 {display: inline-block;
+													  width: 25%;
+													  text-align: center;
+													  border: 1px solid #333333;
+													  border-radius: 40px;
+													  box-shadow: 2px 1px 2px #8C8C8C;
+													  margin-right: 5%;
+													  height: 10em;}
+													  
+#block1, #block3, #block5 {background: linear-gradient(#006963, #010033);}
+
+#block2, #block4, #block6 {background: linear-gradient(#650048, #24003D);}	
+											  
+#wrapper .row {margin-left: 8em;
+			   margin-bottom: 0;}
 			      
-#wrapper {width: 100%;
-		  background-color: #FFF787;
-		  margin-top: 200px;
-		  margin-bottom: 200px;
-		  opacity: .8;}
-		  
-#wrapper h1 {text-align: center;
-			 color: #24003D;
-			 font-family: 'Alegreya', serif;
-			 font-size: 5em;
-			 font-style: italic;
-			 margin-bottom: 40px;
-			 padding-top: 20px;}
-			 
-#wrapper p {color: #24003D;
-			padding-left: 20px;
-			padding-right: 20px;
-			font-family: 'Alegreya Sans', sans-serif;
-			font-size: 1.2em;
-			text-align: center;}
+#wrapper {margin-top: 100px;
+		  margin-bottom: 50px;}
 
-#wrapper ul {list-style: none;
-			 text-align: center;
-			 font-size: 1.15em;
-			 font-family: 'Alegreya', serif;
-			 font-weight: bold;
-			 margin-top: 30px;
-			 margin-bottom: 20px;}
-#wrapper li {padding-bottom: 15px;}
 
-#wrapper a {color: #B1007F;
-			text-decoration: none;}
+#center-block {margin-top: -50px;
+			   margin-left: 30px;
+			   margin-bottom: 80px;}
 
-#wrapper a:hover {color: #006963;
-                  text-decoration: underline;}
-                  
+#center-block h1 {padding-left: 250px;
+				  color: #FFFFED;
+				  font-family: 'Alegreya', serif;
+			      font-size: 5em;
+			      font-style: italic;}
+
+#center-block p {color: #FFFFED;
+			     font-family: 'Alegreya Sans', sans-serif;
+			     font-size: 1.2em;
+			     width: 90%;}
+
+#block1 p, #block2 p, #block3 p, 
+#block4 p, #block5 p, #block6 p {padding-top: 40px;}
+
+#block1 a, #block2 a, #block3 a, 
+#block4 a, #block5 a, #block6 a {color: #FFF787;
+			                     text-decoration: none;	
+			                     font-size: 2em;}
+			                     
+#block1:hover, #block2:hover, #block3:hover, 
+#block4:hover, #block5:hover, #block6:hover {opacity: .8;}
+
+#block1 a:hover, #block2 a:hover, #block3 a:hover, 
+#block4 a:hover, #block5 a:hover, #block6 a:hover {color: #FFFFED;
+											       text-decoration: underline;}   	 
+											                        
 /***REMAINING PAGES***/
 body {background-color: #FFFFED;
 	  background: linear-gradient(to bottom, #FFFFED, #FFF787);
@@ -195,7 +209,26 @@ img {width: 80%;}
                     
 
 /**Phone styles**/
-@media (max-width: 480px) {
+@media (max-width: 320px) {
+	#wrapper {margin-top: 0;}
+	#wrapper .row {margin-left: 1em;}
+	
+	#block1, #block2, #block3, #block4, #block5, #block6 {display: inline-block;
+													  width: 100%;
+													  height: 3em;
+													  border-radius: 20px;
+													  margin-bottom: 5%;}
+	#block1 p, #block2 p, #block3 p, 
+    #block4 p, #block5 p, #block6 p {padding-top: 1px;
+    								 line-height: 1em;}
+    
+	#block1 a, #block2 a, #block3 a, 
+	#block4 a, #block5 a, #block6 a {font-size: 1em;}
+	
+	#center-block {margin-top: -100px;}
+	#center-block h1 {font-size: 4em;
+					  padding-left: 0;}
+	
 	#desktop-nav {display: none;}
 	#mobile-nav {display: block;}
 	
@@ -212,13 +245,15 @@ img {width: 80%;}
 				   padding-top: 0;
 				   margin-left: 0;
 				   line-height: 1em;}
+	
+	#on-page {color: #FFF787;}
 				 
 	h1 {margin-top: 150px;
 		margin-bottom: 20px;
 		font-size: 4em;}
 	
 	h2 {margin-top: 30px;
-		font-size: 2.5em;}
+		font-size: 2.25em;}
 	h3 {font-size: 2em;}
 	
 	p {font-size: 1.05em;}
@@ -243,7 +278,7 @@ img {width: 80%;}
 	.img-border {margin-left: 30px;
 				 margin-top: 20px;}	
 	
-	footer a {font-size: 1.05em;
+	footer a {font-size: 1em;
 			  margin-right: 0;
 			  padding-right: 10px;
 			  margin-left: 15px;}	
