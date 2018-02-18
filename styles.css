@@ -210,7 +210,7 @@ img {width: 80%;}
                     
 
 /**Phone styles**/
-@media (max-width: 320px) and (min-width: 480px) {
+@media (max-width: 480px) {
 	#wrapper {margin-top: 0;}
 	#wrapper .row {margin-left: 1em;}
 	
