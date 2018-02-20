@@ -178,9 +178,8 @@ img {width: 80%;}
 .web-descript {margin-left: 20px;}
 
 .explanation {margin-top: 40px;
-			  font-size: 1.35em;
-			  max-width: 900px;
-			  letter-spacing: 1px;}	 
+			  font-size: 1.3em;
+			  max-width: 900px;}	 
 
 .row-space {margin-top: 60px;}
 
@@ -207,12 +206,81 @@ img {width: 80%;}
 	          font-size: 1.25em;}
 	footer a:hover {text-decoration: underline;
                     color: #FFF787;}
-                    
+ 
+/**Tablet breakpoint(1)**/
+@media (min-width: 482px) and (max-width: 916px) {
+	/*index page*/
+	#wrapper .row {margin-left: .5em;
+				   margin-right: .5em;}
+				   
+	#block1, #block2, #block3, #block4, #block5, #block6 {width: 30%;
+														  margin-left: 0;
+														  margin-right: 10px;}
+	
+	#block1 a, #block2 a, #block3 a, 
+	#block4 a, #block5 a, #block6 a {font-size: 1.25em;}
+	
+	#center-block h1 {font-size: 4em;
+					  margin-left: -30px;}
+					  
+	#center-block p {width: 95%;}
+	
+	/*nav*/
+	#desktop-nav {display: none;}
+	#mobile-nav {display: block;}
+	
+	#mobile-nav {text-align: center;
+				 padding-top: 10px;
+				 padding-bottom: 10px;
+				 padding-right: 20px;}
+	
+	#mobile-nav a {font-size: 1.10em;
+				   line-height: 1.25em;}
+	
+	#on-page {color: #FFF787;}
+	
+	/*shared structures*/
+	main {padding-left: 15px;
+		  padding-right: 15px;}
+			  
+	#sub-nav {margin-bottom: 50px;}
+	
+	h1 {font-size: 4em;}
+	
+	h2 {margin-top: 0;
+		font-size: 2.9em;}
+		
+	h3 {font-size: 2.25em;
+		margin-top: -10px;}
+	
+	p {font-size: 1.3em;
+	   width: 90%;}
+	
+	/*resume page*/
+	.border-right, .border-left {border: none;}
+	.border-left, .no-border {padding-left: 15px;}
+	
+	/*web design*/
+	#intro-graph, .explanation {font-size: 1.3em;}
+	.web-descript {width: 90%;}
+	
+	/*print design*/
+	.img-border {margin-top: 60px;
+				 margin-bottom: 20px;}
+				 
+	/*infographics*/
+	.row-space {margin-top: 30px;}
+
+    .row-space img {margin-right: 30px;
+				    margin-left: 30px;}
+	
+}                   
 
 /**Phone styles**/
 @media (max-width: 480px) {
 	#wrapper {margin-top: 0;}
-	#wrapper .row {margin-left: 1em;}
+	#wrapper .row {margin-left: .9em;
+				   margin-right: .9em;}
 	
 	#block1, #block2, #block3, #block4, #block5, #block6 {display: inline-block;
 													  width: 100%;
@@ -229,6 +297,8 @@ img {width: 80%;}
 	#center-block {margin-top: -100px;}
 	#center-block h1 {font-size: 4em;
 					  margin-left: -40px;}
+	
+	#center-block p {width: 95%;}
 	
 	#desktop-nav {display: none;}
 	#mobile-nav {display: block;}
@@ -260,16 +330,16 @@ img {width: 80%;}
 	p {font-size: 1.05em;}
 	/**resume and articles**/
 	.border-right, .border-left {border: none;}
-	.border-left {padding-left: 15px;
+	.border-left {padding-left: 15px;}
                 
 	/**print and web**/
 	.explanation {font-size: 1em;}
 	
 	#sub-nav li {margin-right: 15px;
-				 font-size: .85em;
-				 display: block;}
+				 font-size: 1em;
+				 display: block;
+				 margin-bottom: 10px;}
 				 
-	#sub-nav li a {padding-right: 100px;}
 	#sub-nav {margin-bottom: 30px;}
 	
 	.img-border {padding: 5px;}
