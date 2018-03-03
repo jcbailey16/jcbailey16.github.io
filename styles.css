@@ -10,8 +10,19 @@
 */
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans');
 
-/***LANDING PAGE***/
+body {background-color: #000000;}
 
+#content {background-color: #FAFAFA;
+		  width: 80%;
+		  margin: 0 auto;
+		  border: 10px solid #650048;
+		  border-radius: 20px;
+		  margin-top: 4em;
+		  margin-bottom: 2em;
+		  padding-bottom: 20px;
+		  padding-left: 20px;
+		  padding-right: 20px;}
+/***LANDING PAGE***/
 #block1, #block2, #block3, #block4, #block5, #block6 {display: inline-block;
 													  width: 25%;
 													  text-align: center;
@@ -24,7 +35,9 @@
 #block1, #block3, #block5 {background: linear-gradient(#006963, #010033);}
 
 #block2, #block4, #block6 {background: linear-gradient(#650048, #24003D);}	
-											  
+
+#wrapper {margin: 30px auto;}
+										  
 #wrapper .row {margin-left: 8em;
 			   margin-bottom: 0;}
 			      
@@ -62,12 +75,6 @@
 #block1 a:hover, #block2 a:hover, #block3 a:hover, 
 #block4 a:hover, #block5 a:hover, #block6 a:hover {color: #FFFFED;
 											       text-decoration: underline;}   	 
-											                        
-/***REMAINING PAGES***/
-body {background-color: #FFFFED;
-	  background: linear-gradient(to bottom, #FFFFED, #FFF787);
-	  background-repeat: no-repeat;
-	  background-size: cover;}
 
 /**Navigation**/
 nav {background-color: #010033;
@@ -101,14 +108,16 @@ nav a:hover {text-decoration: underline;
 h1 {font-family: 'Alegreya', serif;
 	font-size: 5em;
 	color: #010033;
-	margin-top: 120px;
-	margin-bottom: 40px;}
+	margin-top: 1em;
+	margin-bottom: 40px;
+	text-align: center;}
 
 h2 {font-family: 'Alegreya', serif;
 	font-size: 3em;
 	font-weight: bold;
 	color: #650048;
-	margin-top: 70px;}
+	margin-top: 70px;
+	margin-bottom:40px;}
 
 h3 {font-family: 'Alegreya', serif;
 	font-size: 2.5em;
@@ -132,8 +141,10 @@ h4 {font-family: 'Alegreya', serif;
 
 #sub-nav li a {color: #006963;}
 
+#sub-nav {font-size: 1.2em;}
+
 p {font-family: 'Alegreya Sans', sans-serif;
-   font-size: 1.2em;}
+   font-size: 1.3em;}
 .emphasis {font-weight: bold;}
 
 p a {color: #006963;
@@ -141,41 +152,47 @@ p a {color: #006963;
      font-style: italic;}
 p a:hover {text-decoration: underline;}
 
+button {background-color: #B1007F;
+		border-radius: 10px;
+		border 1px solid #FAFAFA;
+		padding: 5px;
+		color: #FFFFED;
+		font-style: normal;
+		box-shadow: inset 1px 6px 12px #B1007F, inset -1px -10px 5px #650048, 1px 2px 1px black;
+		font-size: 1em;}
+
+button:hover {background-color: #FFFFED;
+			  color: #B1007F;
+			  box-shadow: inset 1px 6px 12px #FFFFED, inset -1px -10px 5px #FFF787, 1px 2px 1px black;}
+			  
 hr {border: 5px solid #006963;
     margin-top: 35px;
-    margin-bottom: 50px;}
-    
-.section-border {margin-top: 30px;
-				 padding-right: 15px;}
+    margin-bottom: 50px;
+    width: 98%;}
 
-.no-border {padding-left: 30px;
-            margin-top: 40px;}
+.txt-sq {padding-right: 20px;
+		 padding-bottom: 45px;}
+.txt-sq p {font-size: 1.3em;}
 
-.border-right {border-right: 1em solid #650048;
-			   border-radius: 20%;
-			   margin-top: 40px;}
-.border-left {border-left: 1em solid #650048;
-			  border-radius: 20%;
-			  padding-left: 45px;
-			  margin-top: 40px;}
-	 
 #intro-graph {max-width: 900px;
-			  margin-bottom: 60px;}	
+			  margin-bottom: 60px;
+			  font-size: 21px;}	
 			  
 .image-title {font-family: 'Alegreya Sans', sans-serif;
 			  font-weight: bold;
-			  font-size: 1.15em;
 			  margin-top: 25px;
-			  text-align: center;}
+			  text-align: center;}	  
 
 img {width: 80%;}
 			
-.img-border {box-shadow: 3px 3px 8px #010033;
-			 padding: 10px;
-			 border-radius: 10px;
+.img-border {border: 3px solid #010033;
+			 padding: 3px;
+			 border-radius: 5px;
 			 margin-top: 30px;}
 
-.web-descript {margin-left: 20px;}
+.web-descript {margin-left: 20px;
+			   font-size: 1.5em;
+			   width: 90%;}
 
 .explanation {margin-top: 40px;
 			  font-size: 1.3em;
@@ -194,7 +211,6 @@ img {width: 80%;}
 /**Footer**/
 	footer {background-color: #010033;
 			height: 80px;
-			margin-top: 30px;
 			text-align: center;
 			padding-top: 30px;
 			padding-bottom: 10px;}
@@ -255,10 +271,6 @@ img {width: 80%;}
 	
 	p {font-size: 1.3em;
 	   width: 90%;}
-	
-	/*resume page*/
-	.border-right, .border-left {border: none;}
-	.border-left, .no-border {padding-left: 15px;}
 	
 	/*web design*/
 	#intro-graph, .explanation {font-size: 1.3em;}
@@ -328,9 +340,7 @@ img {width: 80%;}
 	h3 {font-size: 2em;}
 	
 	p {font-size: 1.05em;}
-	/**resume and articles**/
-	.border-right, .border-left {border: none;}
-	.border-left {padding-left: 15px;}
+	
                 
 	/**print and web**/
 	.explanation {font-size: 1em;}
