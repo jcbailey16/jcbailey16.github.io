@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Novel! Publishing | Checkout - Shipping Info</title>
+	<meta name="description" content="Welcome to Novel! Publishing. Don't miss these up and coming YA authors.">
+	<meta name="author" content="Jennifer Bailey">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="effects.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	<!--<header>
+		<a href="about.html"><img src="assets/logo2.png" alt="Novel! Publishing logo. Click here to return to home page."/></a>
+		<i class="fas fa-search" id="search-icon" style="font-size: 20px;"></i>
+	</header>-->
+	
+	<!--serach-->
+	<div id="search">
+		<input type="text" class="searchTerm" placeholder="What are you looking for?"/>
+		<button type="submit" id="searchButton" onclick="window.location.href='search.html'">Search</button><br>
+		<button id="close">Close</button>
+	</div>
+	
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="cart.html">My Cart(1)</a></li>
+			<li><a id="active" href="checkout.html">Checkout</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="checkout">
+			<div id="progress">
+				<div class="step" id="current">
+					<div class="circle"></div>
+					<p>One</p>
+				</div>
+				
+				<div class="line">
+					<div class="rectangle"></div>
+				</div>
+				
+				<div class="step">
+					<div class="circle"></div>
+					<p>Two</p>
+				</div>
+				
+				<div class="line">
+					<div class="rectangle"></div>
+				</div>
+				
+				<div class="step">
+					<div class="circle"></div>
+					<p>Three</p>
+				</div>
+			</div>
+			
+			<h1>Shipping</h1>
+
+			<div id="products">
+				<div class="product-info">
+					<p class="item-info">Item</p>
+					<p>Fate of the Invaders by Melissa James</p>
+				</div>
+			
+				<div class="product-info">
+					<p class="item-info">Price</p>
+					<p>$15.00</p>
+				</div>
+				
+				<div class="product-info">
+					<p class="item-info">Quantity</p>
+					<p>1</p>
+				</div>
+			</div>
+			
+			<div id="remove">
+				<a href="empty.html">Remove Item</a>
+			</div>
+			
+			<hr>
+			<h2>Shipping Address</h2>
+			<p id="required">All fields are <span>required</span> unless marked otherwise.</p>
+			<form action="billing.html">
+				<label for="fname">First Name</label>
+					<input id="fname" type="text" name="fname">
+				
+				<label for="lname">Last Name</label>
+					<input id="lname" type="text" name="lname">
+				
+				<label for="phone">Phone Number</label>
+					<input id="phone" type="tel" name="phone">
+				
+				<label for="email">Email</label>
+					<input id="email" type="email" name="email">
+				
+				<label for="address1">Street Address</label>
+					<input id="address1" type="text" name="address1">
+					
+				<label for="address2">Apartment/Suite (optional)</label>
+					<input id="address2" type="text" name="address2">
+					
+				<label for="city">City</label>
+					<input id="city" type="text" name="city">
+				
+				<label for="state">State</label>
+					<select name="state" id="state">
+					<option>Alabama</option>
+					<option>Alaska</option>
+					<option>Arizona</option>
+                    <option>Arkansas</option>
+					<option>California</option>
+					<option>Colorado</option>
+					<option>Connecticut</option>
+					<option>Delaware</option>
+					<option>District of Columbia</option>
+					<option>Florida</option>
+					<option>Georgia</option>
+					<option>Hawaii</option>
+					<option>Idaho</option>
+					<option>Illinois</option>
+					<option>Indiana</option>
+					<option>Iowa</option>
+                    <option>Kansa</option>
+					<option>Kentucky</option>
+					<option>Louisiana</option>
+					<option>Maine</option>
+					<option>Maryland</option>
+					<option>Massachusetts</option>
+					<option>Michigan</option>
+					<option>Minnesota</option>
+					<option>Mississippi</option>
+					<option>Missouri</option>
+					<option>Montana</option>
+					<option>Nebraska</option>
+                    <option>Nevada</option>
+					<option>New Hampshire</option>
+					<option>New Jersey</option>
+					<option>New Mexico</option>
+					<option>New York</option>
+					<option>North Carolina</option>
+					<option>North Dakota</option>
+					<option>Ohio</option>
+					<option>Oklahoma</option>
+					<option>Oregon</option>
+					<option>Pennsylvania</option>
+					<option>Rhode Island</option>
+                    <option>South Carolina</option>
+					<option>South Dakota</option>
+					<option>Tennessee</option>
+					<option>Texas</option>
+					<option>Utah</option>
+					<option>Vermont</option>
+					<option>Virginia</option>
+					<option>Washington</option>
+					<option>West Virginia</option>
+					<option>Wisconsin</option>
+					<option>Wyoming</option>
+				</select>
+				
+				<label for="zipcode">ZIP Code</label>
+					<input id="zipcode" type="text" name="zipcode">
+				
+				<button>Continue</button>
+								
+			</form>
+			
+			<div id="return-link">
+				<a href="cart.html"> &#9668; Back to Shopping Cart</a>
+			</div>
+		</div>			
+	</main>
+	
+	<footer>
+
+		<a href="mailto:contact@novelpublishing.com" >
+			<i class="fas fa-envelope-square"></i>
+		</a>
+		
+		<a href="https://www.facebook.com/" target="_blank">
+			<i class="fab fa-facebook-square"></i>
+		</a>
+		
+		<a href="https://twitter.com/" target="_blank">
+			<i class="fab fa-twitter-square"></i>
+		</a>
+	</footer>
+</body>
+</html>

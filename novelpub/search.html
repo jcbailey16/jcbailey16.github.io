@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Novel! Publishing | Search Result</title>
+	<meta name="description" content="Welcome to Novel! Publishing. Don't miss these up and coming YA authors.">
+	<meta name="author" content="Jennifer Bailey">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="effects.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="assets/logo2.png" alt="Novel! Publishing logo. Click here to return to home page."/></a>
+		<i class="fas fa-search" id="search-icon" style="font-size: 20px;"></i>
+	</header>
+	
+	<!--serach-->
+	<div id="search">
+		<input type="text" class="searchTerm" placeholder="What are you looking for?"/>
+		<button type="submit" id="searchButton" onclick="window.location.href='search.html'">Search</button><br>
+		<button id="close">Close</button>
+	</div>
+	
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="cart.html">My Cart()</a></li>
+			<li><a href="checkout.html">Checkout</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="results">
+			<h2>Search Results</h2>
+			
+			<div id="books">
+				<div class="book">
+					<a href="book-single.html"><img src="assets/invaders.png" alt="New book 'Fate of the Invaders' from Melissa James."/></a>
+					<div class="description">
+						<h3><a href="book-single.html">Fate of the Invaders</a></h3>
+						<p class="author">Melissa James</p>
+						<p class="price">$15.00</p>
+						<a href="book-single.html" class="button">Details</a>
+					</div>
+				</div>
+				
+				<div class="book">
+					<a href="book-single.html"><img src="assets/nightmares.png" alt="Darren Jackson's Don't Go in My Nightmares."/></a>
+					<div class="description">
+						<h3><a href="book-single.html">Don't Go in My Nightmares</a></h3>
+						<p class="author">Darren Jackson</p>
+						<p class="price">$19.99</p>
+						<a href="book-single.html" class="button" style="margin-top:-10px;">Details</a>
+					</div>
+				</div>
+				
+				<div class="book">
+					<a href="book-single.html"><img src="assets/catacombs.png" alt="Darren Jackson's Surving the Catacombs."/></a>
+					<div class="description">
+						<h3><a href="book-single.html">Surviving the Catacombs</a></h3>
+						<p class="author">Darren Jackson</p>
+						<p class="price">$24.99</p>
+						<a href="book-single.html" class="button" style="margin-top:-10px;">Details</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="failed-search">
+			<p>Don't see what you're look for? Try searching again.</p>
+			<input type="text" class="searchTerm" placeholder="What are you looking for?"/>
+			<button type="submit" id="searchBtn" onclick="window.location.href='search.html'">Search</button>
+		</div>
+		
+		
+	</main>
+	
+	<footer>
+
+		<a href="mailto:contact@novelpublishing.com" >
+			<i class="fas fa-envelope-square"></i>
+		</a>
+		
+		<a href="https://www.facebook.com/" target="_blank">
+			<i class="fab fa-facebook-square"></i>
+		</a>
+		
+		<a href="https://twitter.com/" target="_blank">
+			<i class="fab fa-twitter-square"></i>
+		</a>
+	</footer>
+</body>
+</html>

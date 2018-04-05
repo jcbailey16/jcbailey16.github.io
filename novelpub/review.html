@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Novel! Publishing | Checkout - Billing Info</title>
+	<meta name="description" content="Welcome to Novel! Publishing. Don't miss these up and coming YA authors.">
+	<meta name="author" content="Jennifer Bailey">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="effects.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	<!--<header>
+		<a href="about.html"><img src="assets/logo2.png" alt="Novel! Publishing logo. Click here to return to home page."/></a>
+		<i class="fas fa-search" id="search-icon" style="font-size: 20px;"></i>
+	</header>-->
+	
+	<!--serach-->
+	<div id="search">
+		<input type="text" class="searchTerm" placeholder="What are you looking for?"/>
+		<button type="submit" id="searchButton" onclick="window.location.href='search.html'">Search</button><br>
+		<button id="close">Close</button>
+	</div>
+	
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="cart.html">My Cart(1)</a></li>
+			<li><a id="active" href="checkout.html">Checkout</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="review">
+				<div id="progress" style="margin-left: 35px;">
+				<div class="step complete" >
+					<div class="circle"></div>
+					<p>One</p>
+				</div>
+				
+				<div class="line complete">
+					<div class="rectangle"></div>
+				</div>
+				
+				<div class="step complete">
+					<div class="circle"></div>
+					<p>Two</p>
+				</div>
+				
+				<div class="line complete">
+					<div class="rectangle"></div>
+				</div>
+				
+				<div class="step" id="current">
+					<div class="circle"></div>
+					<p>Three</p>
+				</div>
+			</div>
+			<h1>Review Order</h1>
+			
+			
+			<h2>Order Number 4B56HXT</h2>
+			
+			<div id="review-content">
+				<div class="review-info">
+					<img src="assets/invaders.png" alt="New book 'Fate of the Invaders' from Melissa James." class="rv-img"/>
+				</div><!--end review-info-->
+				
+				<div class="review-info">
+					<h3>Item Information <span class="edit"><a href="checkout.html">(Edit)</a></span> </h3>
+						<p><span class="item-info">Item:</span> Fate of the Invaders by Melissa James</p>
+						<p><span class="item-info">Quantity:</span> One (1)</p>
+						<p><span class="item-info">Price:</span> $15.00</p>
+						<p><span class="item-info">Shipping:</span> $3.99</p>
+						<p><span class="item-info">Taxes:</span> $1.01</p>
+						<p><span class="item-info">TOTAL: $20.00</span></p>
+				</div><!--end review-info-->
+				
+				
+				<div class="review-info">
+					<h3>Shipping Information <span class="edit"><a href="checkout.html">(Edit)</a></span></h3>
+					<p>Jane Casey<br>
+					123 Main Street<br>
+					Arnold, MD 21012<br>
+					301-234-9876<br>
+					jcasey@gmail.com</p>
+				</div><!--end review-info-->
+				
+				<div class="review-info">
+					<h3>Billing Information <span class="edit"><a href="billing.html">(Edit)</a></span></h3>
+					<p>Address is the same as Shipping</p>
+					<p><span class="item-info">Card Number:</span> 2468 1357 9876 2345</p>
+					<p><span class="item-info">Expiration Date:</span> 12/2020</p>
+					<p><span class="item-info">CCV:</span> ***</p>
+				</div>
+			</div><!--end review-content-->
+		</div>		
+		
+		<div id="submit-order">
+			<a href="confirmation.html" class="button">Submit Your Order</a>
+		</div>	
+	</main>
+	
+	<footer>
+
+		<a href="mailto:contact@novelpublishing.com" >
+			<i class="fas fa-envelope-square"></i>
+		</a>
+		
+		<a href="https://www.facebook.com/" target="_blank">
+			<i class="fab fa-facebook-square"></i>
+		</a>
+		
+		<a href="https://twitter.com/" target="_blank">
+			<i class="fab fa-twitter-square"></i>
+		</a>
+	</footer>
+</body>
+</html>

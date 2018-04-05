@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Novel! Publishing | Home</title>
+	<meta name="description" content="Welcome to Novel! Publishing. Don't miss these up and coming YA authors.">
+	<meta name="author" content="Jennifer Bailey">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="effects.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="assets/logo2.png" alt="Novel! Publishing logo. Click here to return to home page."/></a>
+		<i class="fas fa-search" id="search-icon" style="font-size: 20px;"></i>
+	</header>
+	
+	<!--serach-->
+	<div id="search">
+		<input type="text" class="searchTerm" placeholder="What are you looking for?"/>
+		<button type="submit" id="searchButton" onclick="window.location.href='search.html'">Search</button><br>
+		<button id="close">Close</button>
+	</div>
+	
+	
+	<nav>
+		<ul>
+			<li><a id="active" href="index.html">Home</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="cart.html">My Cart</a></li>
+			<li><a href="checkout.html">Checkout</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="new-book">
+			<h2>New from Melissa James</h2>
+			<a href="book-single.html"><img src="assets/invaders.png" alt="New book 'Fate of the Invaders' from Melissa James."/></a>
+			<p>Fate of the Invaders</p>
+			<a href="book-single.html" class="button">Buy it</a>
+		</div>
+		
+		<div id="feat-author">
+			<h2>Featured Author</h2>
+			<img src="assets/darrenjacksonSM.jpg" alt="Darren Jackson is our featured author for the month of April." />
+			<div class="content-float-right">
+				<h6>Darren Jackson</h6>
+				<p>Author of <span class="book-title">Don't Go In My Nightmares</span> and <span class="book-title">Surviving The Catacombs</span>.</p>
+				<a href="author-single.html" class="button">Learn More</a>
+			</div>
+		</div>
+		
+		<div id="sale">
+			<h2>On Sale</h2>
+			<div id="item1">
+				<a href="book-single.html"><img src="assets/nightmares.png" alt="Darren Jackson's Don't Go in My Nightmares is on sale for $9.99."/></a>
+				<p class="strikethru">Reg. $19.99</p>
+				<p class="saleprice">Now $9.99</p>
+			</div>
+			<div id="item2">
+				<a href="book-single.html"><img src="assets/catacombs.png" alt="Darren Jackson's Surving the Catacombs is on sale for $16.99."/></a>
+				<p class="strikethru">Reg. $24.99</p>
+				<p class="saleprice">Now $16.99</p>
+			</div>
+			<a href="books.html" class="button">See More</a>
+		</div>
+	</main>
+	
+	<footer>
+
+		<a href="mailto:contact@novelpublishing.com" >
+			<i class="fas fa-envelope-square"></i>
+		</a>
+		
+		<a href="https://www.facebook.com/" target="_blank">
+			<i class="fab fa-facebook-square"></i>
+		</a>
+		
+		<a href="https://twitter.com/" target="_blank">
+			<i class="fab fa-twitter-square"></i>
+		</a>
+	</footer>
+</body>
+</html>

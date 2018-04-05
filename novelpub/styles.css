@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+/*font-family: 'Josefin Slab', serif;*/
+
+
+/*Styles for screens starting at 320*/
+
+/*Universal styles*/
+body {background-color: #1E1D26;
+	  margin: 0;}
+	  
+header {background-color: #F7F8F3;
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 0;}
+
+header img {margin: 10px 0 5px 35%;
+			width: 100px;}
+			
+header i {margin-left: 10%;
+		  float: right;
+		  margin-top: 25px;
+		  font-size: 20px;}
+	
+nav {background-color: #F7F8F3;
+	 width: 100%;
+	 padding-top: 10px;
+	 padding-bottom: 10px;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 z-index: 9999;}
+	 
+nav ul {list-style: none;
+		font-family: 'Josefin Slab', serif;
+		font-weight: 700;
+		font-size: 1em;
+		width: 98%;
+		text-transform: lowercase;
+		padding: 0;
+		margin: 0 auto;
+		text-align: center;} 
+
+nav ul li {display: inline;}		
+nav ul li a {color: #5C13A5;
+			 text-decoration: none;
+			 display: inline-block;
+			 padding: 7px 3% 2% 3%;}
+
+nav ul li a:hover, nav ul li a:active {background-color: none;
+		                               color: #7F1AE5;
+		                               border-radius: 4px;
+		                               border: 3px solid #7F1AE5;}
+		                               
+#active {background-color: none;
+		 color: #7F1AE5;
+		 border-radius: 4px;
+		 border: 3px solid #7F1AE5;}
+
+
+main {margin-right: 0;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Josefin Slab', serif;}
+p {font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";}		 
+
+button, .button {background-color: #C86521;
+		         border: 1px solid #C86521;
+		         border-radius: 4px;
+		         color: #F7F8F3;
+		         font-size: 1.25em;
+	             font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
+		         padding: 10px;
+		         text-transform: uppercase;
+		         text-align: center;}
+
+.button a {color: #F7F8F3;
+		  text-decoration: none;}
+
+button:hover, button:active, 
+.button:hover, .button:active {background-color: transparent;
+							   border: 3px solid #C86521;
+							   color: #C86521;
+							   font-weight: bold;
+							   text-decoration: underline;
+							   cursor: pointer;}
+
+.button a:hover, .button a:active {color: #C86521;}
+
+#search {background-color: #F7F8F3;
+		 padding: 1em;}
+
+input {width: 65%;
+	   height: 2em;
+	   padding: 5px;
+	   font-size: 1.25;
+	   border: 1px solid #C86521;}
+
+input:focus {border-color: #7F1AE5;
+			 box-shadow: 0 0 6px #7F1AE5;}
+
+			 
+#searchButton, #searchBtn, #close {background-color: #C86521;
+				                   border: 1px solid #C86521;
+				                   border-radius: 4px;
+				       			   color: #F7F8F3;
+				       			   font-size: 1em;
+				       			   font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
+				       			   padding: 6px;}
+
+#searchButton:hover, #close:hover,
+#searchButton:active, #close:active {background-color: transparent;
+									 border: 3px solid #C86521;
+									 color: #C86521;
+									 font-weight: bold;
+									 cursor: pointer;}
+
+#close {margin-top: 10px;
+		margin-left: 35%;}
+
+
+/*New book section on home page*/
+#new-book {background-color: #380c65;
+           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%235c13a5' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%237f1ae5'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+           /* background by SVGBackgrounds.com */
+           padding: 10px;
+           padding-bottom: 30px;}
+
+#new-book h2 {color: #F7F8F3;
+			  text-align: center;
+			  font-weight: 700;
+			  font-size: 2.5em;}
+
+#new-book img {transform: rotate(-10deg);
+			   margin-left: 25%;
+			   width: 150px;}
+			   
+#new-book img:hover, #new-book img:active {box-shadow: 0px 0px 8px #F7F8F3;}
+
+#new-book p {color: #F7F8F3;
+			 font-style: italic;
+			 font-size: 1.65em;
+			 margin: 10% 0 10% 15%;}
+			 
+#new-book .button {margin-left: 35%;
+				   margin-bottom: 15px;}
+
+												 
+/*Featured author on home page*/
+#feat-author {background-color: #F7F8F3;
+			  padding: 20px 10px 30px 15px;}
+
+#feat-author h2 {text-align: center;
+				 font-weight: 700;
+				 color: #363544;
+				 font-size: 2.5em;
+				 margin-bottom: 20px;
+				 margin-top: 10px;}
+
+#feat-author img {margin-left: 15%;
+				  width: 200px;
+				  margin-top: 0;}
+
+.content-float-right {margin-top: 0;
+					  padding-top: 0;}
+#feat-author h6 {text-align: center;
+				 font-size: 1.95em;
+				 margin-top: 20px;
+				 padding-top: 0;
+				 margin-bottom: 10px;
+				 padding-bottom: 0;
+				 color: #363544;}
+#feat-author p {color: #363544;
+				font-size: .9em;
+				margin: 0 auto;
+				margin-bottom: 30px;
+				text-align: center;
+				width: 80%;}
+				
+.book-title {font-style: italic;}
+
+#feat-author .button {margin-left: 25%;
+				     margin-bottom: 15px;
+				     text-align: center;}
+
+/**On sale section on home page**/												       
+#sale {background-color: #1e1d26;
+       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Crect x='0' y='0' width='46' height='46' fill-opacity='0.6' fill='%23363544'/%3E%3C/svg%3E");
+       /* background by SVGBackgrounds.com */
+       padding-left: 20px;
+       padding-right: 20px;
+       padding-bottom: 40px;}
+
+#sale h2 {text-align: center;
+		  font-weight: 700;
+		  color: #861BF2;
+		  font-size: 2.5em;}
+
+#item1 {float: left;
+		margin-bottom: 30px;}
+#item2 {float: right;
+		margin-bottom: 30px;}
+
+#item1 img, #item2 img {width: 120px;}
+
+#item1 img:hover, #item1 img:active, 
+#item2 img:hover, #item2 img:active {box-shadow: 0px 0px 8px #F7F8F3;}
+
+.strikethru {text-align: center;
+			 color: #F7F8F3;
+			 text-decoration: line-through;
+			 line-height: 1em;}
+
+.saleprice {text-align: center;
+			color: #C86521;
+			font-weight: 700;
+			line-height: 1em;}
+		   
+#sale .button {margin-left: 30%;}
+
+/**search results styles**/
+#failed-search {background-color: #F7F8F3;
+				padding: 20px;
+				border-bottom: 2px solid #363544;
+				margin-bottom: 0;
+				margin-top: -30px;}
+
+#results {background-color: #F7F8F3;
+		  padding: 20px;
+		  border-top: 2px solid #363544;}
+
+#results h2 {margin-bottom: 40px;}
+
+.book {margin-bottom: 50px;}
+
+.book img {width: 100px;
+		   margin-right: 0;
+		   padding-right: 0;}
+
+.book img:hover, .book img:active {box-shadow: 0px 0px 8px #5C13A5;}
+
+.description {float: right;
+			  width: 60%;
+			  margin-top: -15px;
+			  padding-top: 0;}
+
+.description h3 {font-size: 1.2em;
+				 color: #363544;
+				 margin-bottom: -10px;
+				 line-height: 1.3em;}	
+
+.description h3 a {color: #363544;}
+
+.description h3 a:hover, .description h3 a:focus {color: #7117CB;}
+.author, .price {color: #363544;
+				 font-size: .95em;}	
+				 
+.author {margin-bottom: -10px;}	
+
+
+.description .button {font-size: 1em;
+			         padding: 5px;}
+
+/**filter styles**/
+form {margin-bottom: 80px;
+	  margin-top: 20px;}
+
+label {font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
+	   color: #363544;
+	   font-size: 1em;
+	   margin-bottom: 20px;}
+	   
+select {color: #363544;
+		font-size: .8em;
+		font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
+		padding: 5px;}   
+			   
+#books {padding-top: 20px;}
+
+/**Single Product page styles**/
+#product {color: #F7F8F3;
+		  padding: 20px;
+		  padding-bottom: 30px;}
+
+#product h2 {text-align: center;
+		     font-weight: 700;
+		     color: #F7F8F3;
+		     font-size: 2em;}
+		  		  
+#product img {width: 70%;
+			  margin-left: 15%;
+			  margin-bottom: 5%;}
+
+#book-author {padding-right: 10px;
+			  font-size: 1.1em;
+			  margin-top: 0px;
+			  text-align: center;}	
+			  
+#purchasebtns button {margin-top: 25px;
+					  width: 100%;}		  
+					  
+/**cart styles*/
+#cart {padding: 20px;
+       color: #F7F8F3;
+       width: 90%;}		
+
+#products {display: flex;
+		   width: 100%;
+		   /*outline: 1px solid #F7F8F3;*/
+		   box-sizing: border-box;
+		   margin: 0;}
+		   
+.product-info {width: 100%;
+			   margin-right: 15px;
+			   /*outline: 1px solid #F7F8F3;*/}
+.product-info img {width: 90%;
+				   padding-top: 10px;}	   			  
+
+.product-info:nth-child(1) {margin: 0;}
+
+.item-info {font-weight: bold;
+			text-align: center;}
+
+.product-info p {text-align: center;}
+
+
+#cartbtns {margin-top: 30px;
+		   margin-bottom: 20px;
+		   display: flex;
+		   width: 100%;
+		   box-sizing: border-box;}
+
+#cartbtns .button {text-transform: capitalize;
+				  font-size: 1em;
+				  padding: 5px;
+				  width: 80%;
+				  margin-right: 10px;
+				  text-decoration:none;}
+
+#cartbtns .button:hover, #cartbtns .button:active {font-weight: normal;}	
+
+/**checkout styles**/
+#checkout {padding: 20px;
+		   padding-top: 4em;
+		   color: #F7F8F3;
+		   width: 95%;}
+#checkout h1 {font-size: 3em;}
+
+hr {width:90%;
+    color: #7F1AE5;
+    margin-right: 20px;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;}
+
+#required {padding-bottom: 1.2em;}
+#required span {color: #C86521;
+			    font-weight: bold;}
+
+#return-link a {color: #C86521;
+				text-decoration: none;}
+				
+#return-link a:hover, #return-link a:active {color: #F7F8F3;}
+/**form styles**/
+
+label {color: #F7F8F3;
+	   display: block;
+	   margin-bottom:0;
+	   padding-bottom: 5px;}
+
+#checkout input, #checkout select {width: 90%;
+	                               margin-bottom: 2.75em;}		
+	                               
+#checkout #cartbtns {margin-top: -40px;}  
+
+#addresses {width: 90%;
+            margin-bottom: 3em;}
+#addresses input {width: 10%;
+				  margin-bottom: 0;}
+				  
+#shippingOptions {margin-bottom: 4em;}				  
+
+#shippingOptions input {width: 5%;}
+
+#shippingOptions .full-width input {width: 90%;}
+
+/**progress bar**/
+#progress {margin-top: 1.5em;
+		   display: flex;
+		   width: 80%;
+		   margin-left: 10px;
+		   margin-right: 0;}
+.step {width: 20%;
+	   margin-left: 0;
+	   margin-right: 0;}
+.step p {font-size: 1em;}
+.circle {border-radius: 100%;
+		 height: 30px;
+		 width: 30px;
+		 background-color: #F7F8F3;}
+.line {margin-left: 0;
+	   margin-right: 0;}
+.rectangle {height: 5px;
+			width: 80px;
+			background-color: #F7F8F3;
+			margin-top: 10px;
+			margin-left: 0;
+		    margin-right: 0;}
+#current, .complete {color: #C86521;}
+#current .circle, .complete .circle, .complete .rectangle {background-color: #C86521;}
+
+	 
+/**review styles**/
+#review {margin-top: 5em;}
+#review h1 {color: #F7F8F3;
+			margin-left: .5em;}
+#review h2 {color: #F7F8F3;
+			text-align: center;
+			margin-top: 2em;}
+.edit a {color: #C86521;
+	     font-size: .65em;}
+
+#review-content {background-color: #F7F8F3;
+				 color: #363544;
+				 width: 100%;}
+				 
+#review h3 {text-align: center;
+			font-size: 1.5em;}
+
+.review-info {padding: 15px;
+			  margin-bottom: 0;}
+.rv-img {width: 60%;
+		 margin-top: 10%;
+		 margin-left: 20%;}	
+		 
+#submit-order {background-color: #1E1D26;
+			   padding-top: 40px;
+			   padding-left: 15%;
+			   padding-bottom: 40px;}	
+
+#confirmation {color: #F7F8F3;
+			   padding: 20px;}
+
+#confirmation span {font-weight: bold;
+					color: #C86521;} 	
+
+#remove {padding-left: 60%;
+		 margin-top: 20px;
+		 margin-bottom: 25px;}					
+#remove a {color: #C86521;
+		   font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";}   
+
+#remove a:hover {color: #F7F8F3;}
+
+		     
+/**footer styles--universal**/	 		
+footer {background-color: #F7F8F3;
+		margin-bottom: 0;
+		padding: 20px 5px 0 20px;}
+
+footer a {text-decoration: none;
+		  display: inline;
+		  margin-right: 12%;
+		  margin-left: 7%;}	
+		  	
+.fab, .fas {width: 50px;
+			height: 50px;
+			font-size: 30px;
+			color: #7F1AE5;}
+
+.fab:hover, .fas:hover,
+.fab:active, .fas:active {color: #380C65;
+						  cursor: pointer;}
+						  
+
+/******FIRST BREAK POINT******/
+@media (min-width: 426px) {
+
+	/**home page adjustments**/
+	#new-book img {width: 250px;
+				   margin-left: 75px;}
+	#new-book p {margin-left: 75px;
+			     font-size: 2em;}
+	#new-book h2 {font-size: 3.5em;}
+	
+	#feat-author img {margin-left: 100px;}
+	#feat-author .button {margin-left: 130px;}
+	
+	#item1 {margin-bottom: 40px;}
+	#item2 {margin-bottom: 40px;}
+	#item1 img, #item2 img {width: 180px;}
+	.strikethru, .saleprice {font-size: 1.25em;}
+
+	/**books and search results**/
+	#search input {width: 75%;}
+	.book img {width: 160px;}
+	.description {width: 50%;}
+	#results h2 {font-size: 2.5em;}
+	
+	/**progress bar**/
+	.rectangle {width: 140px;}
+	hr {margin-left: 15px;}
+	#checkout h2 {font-size: 2.2em;}
+	
+	/**Review page**/
+	#review h3 {font-size: 1.75em;}
+	.review-info p {margin-left: 40px;}
+	#submit-order .button {margin-left: 35px;}
+	
+	/**confirmation**/
+	#confirmation h1 {font-size: 2.5em;}
+	#confirmation h2 {font-weight: bold;
+					  text-align: center;}
+}
+
+/***SECOND BREAK POINT***/
+@media (min-width: 620px;){
+
+
+}

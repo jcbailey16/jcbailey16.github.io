@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Novel! Publishing | Don't Go in My Nightmares</title>
+	<meta name="description" content="Welcome to Novel! Publishing. Don't miss these up and coming YA authors.">
+	<meta name="author" content="Jennifer Bailey">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="effects.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="assets/logo2.png" alt="Novel! Publishing logo. Click here to return to home page."/></a>
+		<i class="fas fa-search" id="search-icon" style="font-size: 20px;"></i>
+	</header>
+	
+	<!--serach-->
+	<div id="search">
+		<input type="text" class="searchTerm" placeholder="What are you looking for?"/>
+		<button type="submit" id="searchButton" onclick="window.location.href='search.html'">Search</button><br>
+		<button id="close">Close</button>
+	</div>
+	
+	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="cart.html">My Cart()</a></li>
+			<li><a href="checkout.html">Checkout</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="product">
+			<h2>Fate of the Invaders</h2>
+			<img src="assets/invaders.png" alt="New book 'Fate of the Invaders' from Melissa James."/>
+			<div id="details">
+				<p id="book-author">Melissa James</p>
+				<p id="summary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac tristique lectus. 
+				Nullam egestas hendrerit convallis. Donec magna neque, gravida sit amet pharetra vitae, efficitur vitae 
+				turpis. Nulla et nulla malesuada ante tincidunt euismod. In viverra elit sit amet sollicitudin commodo. 
+				Nunc vulputate lacinia nulla ac volutpat. Fusce quis justo gravida, vulputate augue eget, ullamcorper eros. 
+				Nullam id libero ut ex tincidunt commodo et eu ligula. Nunc sit amet maximus ipsum.</p>
+			</div>
+			
+			<div id="purchasebtns">
+				<button>Add Hardback $25.00</button>
+				<button>Add Paperback $15.00</button>
+				<button>Add EBook $10.00</button>
+			</div>
+		</div>			
+	</main>
+	
+	<footer>
+
+		<a href="mailto:contact@novelpublishing.com" >
+			<i class="fas fa-envelope-square"></i>
+		</a>
+		
+		<a href="https://www.facebook.com/" target="_blank">
+			<i class="fab fa-facebook-square"></i>
+		</a>
+		
+		<a href="https://twitter.com/" target="_blank">
+			<i class="fab fa-twitter-square"></i>
+		</a>
+	</footer>
+</body>
+</html>
