@@ -152,18 +152,21 @@ p a {color: #006963;
      font-style: italic;}
 p a:hover {text-decoration: underline;}
 
-button {background-color: #B1007F;
-		border-radius: 10px;
-		border 1px solid #FAFAFA;
-		padding: 5px;
-		color: #FFFFED;
-		font-style: normal;
-		box-shadow: inset 1px 6px 12px #B1007F, inset -1px -10px 5px #650048, 1px 2px 1px black;
-		font-size: 1em;}
+ul {font-family: 'Alegreya Sans', sans-serif;
+   font-size: 1.3em;}
 
-button:hover {background-color: #FFFFED;
-			  color: #B1007F;
-			  box-shadow: inset 1px 6px 12px #FFFFED, inset -1px -10px 5px #FFF787, 1px 2px 1px black;}
+button {background-color: #FAFAFA;
+		border-radius: 10px;
+		border: 2px solid  #B1007F;
+		padding: 5px;
+		color: #B1007F;
+		font-style: normal;
+		font-size: 1em;}
+		/**button effect: box-shadow: inset 1px 6px 12px #B1007F, inset -1px -10px 5px #650048, 1px 2px 1px black;**/
+		
+button:hover {background-color: #B1007F;
+			  color: #FAFAFA;
+			  /*box-shadow: inset 1px 6px 12px #B1007F, inset -1px -10px 5px #650048, 1px 2px 1px black;*/}
 			  
 hr {border: 5px solid #006963;
     margin-top: 35px;
@@ -272,6 +275,7 @@ img {width: 80%;}
 	p {font-size: 1.3em;
 	   width: 90%;}
 	
+	.extra-space {margin-top: 1em;}
 	/*web design*/
 	#intro-graph, .explanation {font-size: 1.3em;}
 	.web-descript {width: 90%;}
