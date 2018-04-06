@@ -69,17 +69,16 @@ button, .button {background-color: #C86521;
 	             font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
 		         padding: 10px;
 		         text-transform: uppercase;
-		         text-align: center;}
+		         text-align: center;
+		         text-decoration: none;}
 
-.button a {color: #F7F8F3;
-		  text-decoration: none;}
+.button a {color: #F7F8F3;}
 
 button:hover, button:active, 
 .button:hover, .button:active {background-color: transparent;
 							   border: 3px solid #C86521;
 							   color: #C86521;
 							   font-weight: bold;
-							   text-decoration: underline;
 							   cursor: pointer;}
 
 .button a:hover, .button a:active {color: #C86521;}
@@ -123,24 +122,25 @@ input:focus {border-color: #7F1AE5;
            padding: 10px;
            padding-bottom: 30px;}
 
-#new-book h2 {color: #F7F8F3;
+#new-book h1 {color: #F7F8F3;
 			  text-align: center;
 			  font-weight: 700;
-			  font-size: 2.5em;}
+			  font-size: 3em;}
 
 #new-book img {transform: rotate(-10deg);
-			   margin-left: 25%;
-			   width: 150px;}
+			   margin: 0 auto;
+			   display: block;}
 			   
 #new-book img:hover, #new-book img:active {box-shadow: 0px 0px 8px #F7F8F3;}
 
 #new-book p {color: #F7F8F3;
 			 font-style: italic;
-			 font-size: 1.65em;
-			 margin: 10% 0 10% 15%;}
+			 font-size: 1.75em;
+			 text-align: center;}
 			 
-#new-book .button {margin-left: 35%;
-				   margin-bottom: 15px;}
+#new-book .button {margin: 0 auto;
+				   display: block;
+				   width: 40%;}
 
 												 
 /*Featured author on home page*/
@@ -154,12 +154,9 @@ input:focus {border-color: #7F1AE5;
 				 margin-bottom: 20px;
 				 margin-top: 10px;}
 
-#feat-author img {margin-left: 15%;
-				  width: 200px;
-				  margin-top: 0;}
-
-.content-float-right {margin-top: 0;
-					  padding-top: 0;}
+#feat-author img {margin: 0 auto;
+				  display: block;}
+					  
 #feat-author h6 {text-align: center;
 				 font-size: 1.95em;
 				 margin-top: 20px;
@@ -176,9 +173,9 @@ input:focus {border-color: #7F1AE5;
 				
 .book-title {font-style: italic;}
 
-#feat-author .button {margin-left: 25%;
-				     margin-bottom: 15px;
-				     text-align: center;}
+#feat-author .button {margin: 0 auto;
+				      display: block;
+				      width: 50%;}
 
 /**On sale section on home page**/												       
 #sale {background-color: #1e1d26;
@@ -190,15 +187,16 @@ input:focus {border-color: #7F1AE5;
 
 #sale h2 {text-align: center;
 		  font-weight: 700;
-		  color: #861BF2;
+		  color: #F7F8F3;
 		  font-size: 2.5em;}
 
 #item1 {float: left;
-		margin-bottom: 30px;}
+		margin-bottom: 30px;
+		width: 45%;}
 #item2 {float: right;
-		margin-bottom: 30px;}
+		margin-bottom: 30px;
+		width: 45%;}
 
-#item1 img, #item2 img {width: 120px;}
 
 #item1 img:hover, #item1 img:active, 
 #item2 img:hover, #item2 img:active {box-shadow: 0px 0px 8px #F7F8F3;}
@@ -213,7 +211,10 @@ input:focus {border-color: #7F1AE5;
 			font-weight: 700;
 			line-height: 1em;}
 		   
-#sale .button {margin-left: 30%;}
+#sale .button {clear: both;
+			   display: block;
+			   margin: 0 auto;
+			   width: 40%;}
 
 /**search results styles**/
 #failed-search {background-color: #F7F8F3;
@@ -257,20 +258,6 @@ input:focus {border-color: #7F1AE5;
 
 .description .button {font-size: 1em;
 			         padding: 5px;}
-
-/**filter styles**/
-form {margin-bottom: 80px;
-	  margin-top: 20px;}
-
-label {font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
-	   color: #363544;
-	   font-size: 1em;
-	   margin-bottom: 20px;}
-	   
-select {color: #363544;
-		font-size: .8em;
-		font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
-		padding: 5px;}   
 			   
 #books {padding-top: 20px;}
 
@@ -279,20 +266,22 @@ select {color: #363544;
 		  padding: 20px;
 		  padding-bottom: 30px;}
 
-#product h2 {text-align: center;
+#product h1 {text-align: center;
 		     font-weight: 700;
 		     color: #F7F8F3;
-		     font-size: 2em;}
+		     font-size: 3em;
+		     margin-bottom: 0;}
 		  		  
-#product img {width: 70%;
-			  margin-left: 15%;
-			  margin-bottom: 5%;}
+#product img {margin: 30px auto;
+			  display: block;}
 
 #book-author {padding-right: 10px;
-			  font-size: 1.1em;
+			  font-size: 1.25em;
 			  margin-top: 0px;
-			  text-align: center;}	
-			  
+			  text-align: center;
+			  font-weight: bold;}
+			  	
+#summary {width:100%;}		  
 #purchasebtns button {margin-top: 25px;
 					  width: 100%;}		  
 					  
@@ -300,16 +289,17 @@ select {color: #363544;
 #cart {padding: 20px;
        color: #F7F8F3;
        width: 90%;}		
+       
+#cart h1 {font-size: 3em;}
 
 #products {display: flex;
 		   width: 100%;
-		   /*outline: 1px solid #F7F8F3;*/
 		   box-sizing: border-box;
 		   margin: 0;}
 		   
 .product-info {width: 100%;
-			   margin-right: 15px;
-			   /*outline: 1px solid #F7F8F3;*/}
+			   margin-right: 15px;}
+
 .product-info img {width: 90%;
 				   padding-top: 10px;}	   			  
 
@@ -343,11 +333,13 @@ select {color: #363544;
 		   width: 95%;}
 #checkout h1 {font-size: 3em;}
 
-hr {width:90%;
+hr {width:95%;
     color: #7F1AE5;
+    border-color: #7F1AE5;
     margin-right: 20px;
     margin-top: 1.5em;
-    margin-bottom: 2.5em;}
+    margin-bottom: 2.5em;
+    margin-left:0;}
 
 #required {padding-bottom: 1.2em;}
 #required span {color: #C86521;
@@ -357,16 +349,27 @@ hr {width:90%;
 				text-decoration: none;}
 				
 #return-link a:hover, #return-link a:active {color: #F7F8F3;}
+
 /**form styles**/
+form {margin-bottom: 80px;
+	  margin-top: 20px;}
 
 label {color: #F7F8F3;
 	   display: block;
 	   margin-bottom:0;
-	   padding-bottom: 5px;}
+	   padding-bottom: 5px;
+	   font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
+	   font-size: 1.1em;}
+
+select {color: #363544;
+	    font-size: 1.1em;
+	    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";
+		padding: 5px;}
+
 
 #checkout input, #checkout select {width: 90%;
 	                               margin-bottom: 2.75em;}		
-	                               
+		                                        
 #checkout #cartbtns {margin-top: -40px;}  
 
 #addresses {width: 90%;
@@ -380,39 +383,25 @@ label {color: #F7F8F3;
 
 #shippingOptions .full-width input {width: 90%;}
 
+#shippingOptions h2 {font-size: 2em;}
+
 /**progress bar**/
 #progress {margin-top: 1.5em;
-		   display: flex;
-		   width: 80%;
-		   margin-left: 10px;
-		   margin-right: 0;}
-.step {width: 20%;
-	   margin-left: 0;
-	   margin-right: 0;}
-.step p {font-size: 1em;}
-.circle {border-radius: 100%;
-		 height: 30px;
-		 width: 30px;
-		 background-color: #F7F8F3;}
-.line {margin-left: 0;
-	   margin-right: 0;}
-.rectangle {height: 5px;
-			width: 80px;
-			background-color: #F7F8F3;
-			margin-top: 10px;
-			margin-left: 0;
-		    margin-right: 0;}
-#current, .complete {color: #C86521;}
-#current .circle, .complete .circle, .complete .rectangle {background-color: #C86521;}
+		   margin-left: 1em;
+		   margin-right: 0;
+		   margin-bottom: 1em;
+		   padding: 0;}
 
-	 
+#progress img {margin: 0 auto;
+			   padding: 0;
+			   width: 90%;}
+
 /**review styles**/
 #review {margin-top: 5em;}
 #review h1 {color: #F7F8F3;
-			margin-left: .5em;}
-#review h2 {color: #F7F8F3;
-			text-align: center;
-			margin-top: 2em;}
+			margin-left: .4em;
+			font-size: 3em;}
+
 .edit a {color: #C86521;
 	     font-size: .65em;}
 
@@ -421,24 +410,26 @@ label {color: #F7F8F3;
 				 width: 100%;}
 				 
 #review h3 {text-align: center;
-			font-size: 1.5em;}
+			font-size: 1.75em;}
 
-.review-info {padding: 15px;
+#review p {font-size: 1.15em;}
+.review-info {padding: 20px;
 			  margin-bottom: 0;}
-.rv-img {width: 60%;
-		 margin-top: 10%;
+.rv-img {margin-top: 10%;
 		 margin-left: 20%;}	
-		 
-#submit-order {background-color: #1E1D26;
-			   padding-top: 40px;
-			   padding-left: 15%;
-			   padding-bottom: 40px;}	
+		 	
+.review-info .button {margin: 40px auto;
+					  display: block;
+					  width: 90%;}
 
 #confirmation {color: #F7F8F3;
-			   padding: 20px;}
+			   padding: 20px;
+			   margin-bottom: 12em;}
 
-#confirmation span {font-weight: bold;
+#confirmation span {font-weight: 700;
 					color: #C86521;} 	
+
+#confirmation a {color: #C86521;}
 
 #remove {padding-left: 60%;
 		 margin-top: 20px;
@@ -448,7 +439,7 @@ label {color: #F7F8F3;
 
 #remove a:hover {color: #F7F8F3;}
 
-		     
+	     
 /**footer styles--universal**/	 		
 footer {background-color: #F7F8F3;
 		margin-bottom: 0;
@@ -469,48 +460,3 @@ footer a {text-decoration: none;
 						  cursor: pointer;}
 						  
 
-/******FIRST BREAK POINT******/
-@media (min-width: 426px) {
-
-	/**home page adjustments**/
-	#new-book img {width: 250px;
-				   margin-left: 75px;}
-	#new-book p {margin-left: 75px;
-			     font-size: 2em;}
-	#new-book h2 {font-size: 3.5em;}
-	
-	#feat-author img {margin-left: 100px;}
-	#feat-author .button {margin-left: 130px;}
-	
-	#item1 {margin-bottom: 40px;}
-	#item2 {margin-bottom: 40px;}
-	#item1 img, #item2 img {width: 180px;}
-	.strikethru, .saleprice {font-size: 1.25em;}
-
-	/**books and search results**/
-	#search input {width: 75%;}
-	.book img {width: 160px;}
-	.description {width: 50%;}
-	#results h2 {font-size: 2.5em;}
-	
-	/**progress bar**/
-	.rectangle {width: 140px;}
-	hr {margin-left: 15px;}
-	#checkout h2 {font-size: 2.2em;}
-	
-	/**Review page**/
-	#review h3 {font-size: 1.75em;}
-	.review-info p {margin-left: 40px;}
-	#submit-order .button {margin-left: 35px;}
-	
-	/**confirmation**/
-	#confirmation h1 {font-size: 2.5em;}
-	#confirmation h2 {font-weight: bold;
-					  text-align: center;}
-}
-
-/***SECOND BREAK POINT***/
-@media (min-width: 620px;){
-
-
-}

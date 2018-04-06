@@ -17,7 +17,9 @@
 </head>
 <body>
 	<header>
-		<a href="index.html"><img src="assets/logo2.png" alt="Novel! Publishing logo. Click here to return to home page."/></a>
+		<a href="index.html">
+			<img src="assets/np_logo.png" alt="Novel! Publishing logo. Click here to return to home page."/>
+		</a>
 		<i class="fas fa-search" id="search-icon" style="font-size: 20px;"></i>
 	</header>
 	
@@ -40,16 +42,30 @@
 	
 	<main>
 		<div id="new-book">
-			<h2>New from Melissa James</h2>
-			<a href="book-single.html"><img src="assets/invaders.png" alt="New book 'Fate of the Invaders' from Melissa James."/></a>
+			<h1>New from Melissa James</h1>
+			<a href="book-single.html">
+				<img src="assets/invaders_sm.png" alt="New book 'Fate of the Invaders' from Melissa James." class="rv-img"
+					  srcset="assets/invaders_sm.png 200w,
+					  assets/invaders_md.png 400w,
+					  assets/invaders_lg.png 600w"
+					  size="100vw"
+					  width="65%"
+				/>
+			</a>
 			<p>Fate of the Invaders</p>
 			<a href="book-single.html" class="button">Buy it</a>
 		</div>
 		
 		<div id="feat-author">
 			<h2>Featured Author</h2>
-			<img src="assets/darrenjacksonSM.jpg" alt="Darren Jackson is our featured author for the month of April." />
-			<div class="content-float-right">
+			<img src="assets/darrenjackson_sm.jpg" alt="Darren Jackson is our featured author for the month of April." 
+				  srcset="assets/darrenjackson_sm.png 200w,
+				  assets/darrenjackson_md.jpg 400w,
+				  assets/darrenjackson_lg.jpg 600w"
+				  size="100vw"
+				  width="65%"
+			/>
+			<div>
 				<h6>Darren Jackson</h6>
 				<p>Author of <span class="book-title">Don't Go In My Nightmares</span> and <span class="book-title">Surviving The Catacombs</span>.</p>
 				<a href="author-single.html" class="button">Learn More</a>
@@ -59,12 +75,28 @@
 		<div id="sale">
 			<h2>On Sale</h2>
 			<div id="item1">
-				<a href="book-single.html"><img src="assets/nightmares.png" alt="Darren Jackson's Don't Go in My Nightmares is on sale for $9.99."/></a>
+				<a href="book-single.html">
+					<img src="assets/nightmares.png" alt="Darren Jackson's Don't Go in My Nightmares is on sale for $9.99."
+						 srcset="assets/nightmares_sm.png 120w,
+				  		 assets/nightmares_md.png 240w,
+				  		 assets/nightmares_lg.png 360w"
+				  		 size="100vw"
+				  		 width="100%"
+					/>
+				</a>
 				<p class="strikethru">Reg. $19.99</p>
 				<p class="saleprice">Now $9.99</p>
 			</div>
 			<div id="item2">
-				<a href="book-single.html"><img src="assets/catacombs.png" alt="Darren Jackson's Surving the Catacombs is on sale for $16.99."/></a>
+				<a href="book-single.html">
+					<img src="assets/catacombs.png" alt="Darren Jackson's Surving the Catacombs is on sale for $16.99."
+						 srcset="assets/catacombs_sm.png 120w,
+				  		 assets/catacombs_md.png 240w,
+				  		 assets/catacombs_lg.png 360w"
+				  		 size="100vw"
+				  		 width="100%"
+					/>
+				</a>
 				<p class="strikethru">Reg. $24.99</p>
 				<p class="saleprice">Now $16.99</p>
 			</div>
