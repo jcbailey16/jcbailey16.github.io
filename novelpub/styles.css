@@ -111,8 +111,8 @@ input:focus {border-color: #7F1AE5;
 									 font-weight: bold;
 									 cursor: pointer;}
 
-#close {margin-top: 10px;
-		margin-left: 35%;}
+#close {margin: 10px auto;
+		display: block;}
 
 
 /*New book section on home page*/
@@ -227,7 +227,8 @@ input:focus {border-color: #7F1AE5;
 		  padding: 20px;
 		  border-top: 2px solid #363544;}
 
-#results h2 {margin-bottom: 40px;}
+#results h1 {margin-bottom: 40px;
+			 font-size: 3em;}
 
 .book {margin-bottom: 50px;}
 
@@ -334,8 +335,8 @@ input:focus {border-color: #7F1AE5;
 #checkout h1 {font-size: 3em;}
 
 hr {width:95%;
-    color: #7F1AE5;
-    border-color: #7F1AE5;
+    background-color: #7F1AE5;
+    border: 1px solid #7F1AE5;
     margin-right: 20px;
     margin-top: 1.5em;
     margin-bottom: 2.5em;
@@ -459,4 +460,108 @@ footer a {text-decoration: none;
 .fab:active, .fas:active {color: #380C65;
 						  cursor: pointer;}
 						  
+.bold {font-weight: bold;}
 
+/***FIRST BREAK POINT***/
+@media (min-width: 540px) {
+	/**header**/
+	header img {margin: 30px 0 5px 35%;
+			    width: 150px;}
+			
+	header i {padding-top: 30px;}
+	
+	/**navigation**/
+	nav ul {font-size: 1.2em;}
+	nav ul li a {padding-right: 5%;
+				 padding-left: 5%;
+				 padding-bottom: 5px;}
+				 
+   /**search**/
+   #search input {width: 75%;}	
+   #searchButton {padding-left: 20px;
+   				  padding-right: 20px;}
+   	
+   	/**button styles**/
+   	button, .button {font-size: 1.5em;}
+   	
+   	/**headline sizes**/
+   	#new-book h1, #results h1, #product h1, #cart h1, 
+   	#checkout h1, #review h1, #confirmation h1 {font-size: 5em;}
+   	#feat-author h2, #sale h2, #checkout h2 {font-size: 3.5em;}
+   	.description h3 {font-size: 1.5em;}
+    #feat-author h6 {font-size: 2.2em;}
+   		  
+   /**new book section on home page**/
+   #new-book img {width: 55%;}
+   #new-book p {font-size: 2.5em;}
+   
+   /**featured author section on home page**/
+   #feat-author p {font-size: 1.2em;
+   				   width: 65%;}
+   				   
+   /**sale section on home page**/
+   #sale img {width: 80%;
+   			  margin-left: 30px;}
+   .strikethru, .saleprice {font-size: 1.3em;}	
+   
+   /**search result and books page styles**/
+   #books {padding: 40px;}
+   .book img {width: 40%;}		
+   
+   .description {width: 55%;
+			     margin-top: 0; }
+	.author, .price {font-size: 1.15em;}
+	.description .button {font-size: 1.3em;
+			              padding: 8px;}
+	#failed-search {width: 100%;
+					margin-top: -60px;}
+	#failed-search p {font-size: 1.15em;}
+	#failed-search input {width: 70%;}
+	#failed-search #searchBtn {padding-left: 15px;
+							   padding-right: 15px;}
+							   
+	/**single book product page**/
+	#product {padding: 40px;}
+	#book-author {font-size: 1.75em;}
+	#summary {font-size: 1.05em;}
+	
+	
+	/**cart page***/
+	#cart {padding: 40px;}
+	.item-info {font-size: 1.5em;}
+	#cart .product-info {font-size: 1.15em;}
+	#remove {font-size: 1.15em;
+			 padding-left: 70%;}
+	#cartbtns {font-size: 1.35em;}
+	#cartbtns .button {padding: 10px;}
+	
+	/**checkout page--shipping**/
+	#checkout {padding: 40px;}
+	#progress {width: 70%;
+			   margin: 3em auto;}
+	hr {height: 1px;
+		border: 1px solid #7F1AE5;}
+	#required, label {font-size: 1.25em;}
+	#return-link {font-size: 1.25em;}
+	
+	/**billing section styles**/
+	#shippingOptions p {font-size: 1.25em;}
+	
+	/**review page**/
+	#review #progress {margin-left: 100px;}
+	#review h3 {font-size: 3em;}
+	.edit {font-size: .75em;}
+	#review p {font-size: 1.2em;}
+	.review-info {padding: 40px;}
+	
+	/*confirmation page*/
+	#confirmation {padding: 40px;}
+	#confirmation p {font-size: 1.15em;}
+	#confirmation h2 {font-size: 2em;}
+	
+	/**footer**/
+    footer a {padding-left: 4%;}
+    .fab, .fas {width: 70px;
+   			   height: 70px;}
+     
+}
