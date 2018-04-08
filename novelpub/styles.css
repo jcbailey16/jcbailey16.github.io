@@ -563,5 +563,109 @@ footer a {text-decoration: none;
     footer a {padding-left: 4%;}
     .fab, .fas {width: 70px;
    			   height: 70px;}
-     
+}
+
+/***SECOND BREAK POINT***/
+@media (min-width: 880px) {
+	
+	/**header**/
+	header img {margin: 30px 0 5px 40%;
+			    width: 200px;}
+	
+	/**navigation**/
+	nav ul {font-size: 1.3em;}
+	nav ul li a {margin-left: 20px;
+				 margin-right: 20px;}
+				 
+	/**search**/
+   #search input {width: 80%;}	
+   #searchButton {padding-left: 30px;
+   				  padding-right: 30px;}
+   #close {padding-left: 30px;
+   		   padding-right: 30px;}
+   
+   
+   /**new book section on home page**/
+   #new-book img {float: left;
+   				  width: 30%;
+   				  margin-left: 125px;
+   				  margin-top: -300px;}
+   #new-book h1 {width: 50%;
+   				 position: relative;
+   				 left: 425px;
+   				 font-size: 4.5em;}
+   				  
+   	/**secondary content**/
+   	#secondary-content {clear: both;
+   				        display: flex;
+   				        width: 100%;}
+   				
+   	#feat-author, #sale {width: 50%;
+   						 border-bottom: 10px solid #380C65;}
+   				         
+   	/**search result and books page styles**/
+   	.book img {width: 30%;}
+   	.description {width: 65%;}
+   	.description h3 {font-size: 2.5em;}
+   	.author, .price {font-size: 1.5em;}
+   	.price {margin-bottom: 55px;}
+   	.description .button {padding: 15px;}
+   	#results h1 {margin-left: .55em;}
+   	#failed-search {padding-left: 55px;
+   					padding-bottom: 40px;
+   					padding-right: -40px;
+   					width: 92%;}
+   	#failed-search p {font-size: 1.3em;}
+   	
+   	/**single product page**/
+   	#product h1 {margin-bottom: .5em;}
+   	#product img {width: 40%;
+   				  float: left;
+   				  margin-right: 30px;}
+   	#details {margin-top: 100px;
+   			  padding: 30px;}
+   	#purchasebtns {clear: both;
+   				   padding-top: 20px;}
+   	#purchasebtns button {width: 60%;
+   						  margin: 25px auto;
+   						  display: block;}
+   	
+   	/**shopping cart and empty cart**/
+   	#cart p {font-size: 1.3em;}
+   	.product-info p {font-size: 1.3em;}
+   	#remove a {font-size: 1.3em;
+   			   margin-left: 40px;}
+   	#cartbtns .button {font-size: 1.6em;}
+   	
+   	/**checkout -- shipping**/
+    #checkout form {width: 70%;}
+   	hr {margin-top: 60px;
+   	    margin-bottom: 60px;}
+   	
+   	/**review page**/
+   	#review #progress img {width: 80%;
+   						   margin-left: 5em;}
+   	#review h1 {margin-left: 1em;}
+   	
+   	#review-content {display:flex;
+   					 width: 100%;
+   					 flex-wrap: wrap;
+   					 padding-left: 3em;}
+   	.review-info {width: 35%;}
+   	.review-info img {width: 80%;
+   					  padding-top: 5em;}
+   					  
+   	/**confirmation**/
+   	#confirmation p {font-size: 1.3em;}				  
+   	
+   	/**footer**/
+   	footer {clear: both;
+   			padding-top: 25px;
+   			padding-bottom: 15px;}
+   	.fab, .fas {width: 50px;
+   			   height: 50px;
+   			   font-size: 3em;
+   			   margin-left: 25px;}
+   	
+   	
 }
