@@ -670,17 +670,20 @@ footer a {text-decoration: none;
 /***THIRD BREAK POINT***/
 @media (min-width: 1000px) {
 	/**new book section on home page**/
-	#new-book {height: 500px;}	
+	#new-book {height: 550px;}	
     #new-book img {float: left;
-   				   width: 21%;
+   				   width: 20%;
    				   margin-left: 200px;
-   				   margin-top: -30px;}
+   				   margin-top: 0;}
     #new-book h1 {width: 100%;
     			  position: relative;
-    			  left: 0;}
+    			  left: 0;
+    			  top: 25px;}
    	 #new-book p {text-align: left;
    	 			  position: relative;
-   	 			  left: 80px;}
+   	 			  left: 80px;
+   	 			  top: 40px;
+   	 			  margin-bottom: 60px;}
    	 #new-book .button {width: 10%;
    	 					margin-left: 600px;}
    	 					
