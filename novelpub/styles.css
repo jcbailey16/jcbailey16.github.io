@@ -701,8 +701,16 @@ footer a {text-decoration: none;
    	 #cartbtns .button {font-size: 1.2em;
    	 					width: 30%;}
    	 
-   	    /**checkout**/
-   		#progress img {width: 65%;}
-   		#review #progress img {width: 65%;}
-   		.review-info img {width: 60%;}
+   	 /**checkout**/
+   	#progress img {width: 65%;}
+   	#review #progress img {width: 65%;}
+   	.review-info img {width: 60%;}
+    
+    /**review page**/
+    #review-content {padding-left: 100px;}
+    
+    /**confirmation**/
+    #confirmation {padding-left: 100px;
+    			   padding-right: 180px;}
+   		
 }
