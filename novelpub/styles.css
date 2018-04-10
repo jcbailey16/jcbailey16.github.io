@@ -388,14 +388,15 @@ select {color: #363544;
 
 /**progress bar**/
 #progress {margin-top: 1.5em;
-		   margin-left: 1em;
+		   margin-left: 0;
 		   margin-right: 0;
 		   margin-bottom: 1em;
 		   padding: 0;}
 
 #progress img {margin: 0 auto;
 			   padding: 0;
-			   width: 90%;}
+			   width: 90%;
+			   display: block;}
 
 /**review styles**/
 #review {margin-top: 5em;}
@@ -548,7 +549,6 @@ footer a {text-decoration: none;
 	#shippingOptions p {font-size: 1.25em;}
 	
 	/**review page**/
-	#review #progress {margin-left: 100px;}
 	#review h3 {font-size: 3em;}
 	.edit {font-size: .75em;}
 	#review p {font-size: 1.2em;}
@@ -643,8 +643,7 @@ footer a {text-decoration: none;
    	    margin-bottom: 60px;}
    	
    	/**review page**/
-   	#review #progress img {width: 80%;
-   						   margin-left: 5em;}
+   	#review #progress img {width: 80%;}
    	#review h1 {margin-left: 1em;}
    	
    	#review-content {display:flex;
@@ -700,9 +699,7 @@ footer a {text-decoration: none;
    	 					width: 30%;}
    	 
    	    /**checkout**/
-   		#progress img {width: 65%;
-   				       margin-left: 15%;}
-   		#review #progress img {width: 65%;
-   				               margin-left: 25%;}
+   		#progress img {width: 65%;}
+   		#review #progress img {width: 65%;}
    		.review-info img {width: 60%;}
 }
