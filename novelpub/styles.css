@@ -665,7 +665,44 @@ footer a {text-decoration: none;
    	.fab, .fas {width: 50px;
    			   height: 50px;
    			   font-size: 3em;
-   			   margin-left: 25px;}
-   	
-   	
+   			   margin-left: 25px;}   	
+}
+
+/***THIRD BREAK POINT***/
+@media (min-width: 1000px) {
+	/**new book section on home page**/
+	#new-book {height: 500px;}	
+    #new-book img {float: left;
+   				   width: 21%;
+   				   margin-left: 200px;
+   				   margin-top: -30px;}
+    #new-book h1 {width: 100%;
+    			  position: relative;
+    			  left: 0;}
+   	 #new-book p {text-align: left;
+   	 			  position: relative;
+   	 			  left: 80px;}
+   	 #new-book .button {width: 10%;
+   	 					margin-left: 600px;}
+   	 					
+   	 /**single book page**/
+   	 #product img {width: 25%;
+   	 			   margin-right: 50px;}
+   	 #details {padding-left: 80px;
+   	 		   padding-right: 80px;}
+   	 		   
+   	 /**cart**/
+   	 .product-info img {width: 60%;
+   	 				    margin-left: 50px;}
+   	 #cartbtns {margin-left: 40%;
+   	 		    margin-top: 60px;}
+   	 #cartbtns .button {font-size: 1.2em;
+   	 					width: 30%;}
+   	 
+   	    /**checkout**/
+   		#progress img {width: 65%;
+   				       margin-left: 15%;}
+   		#review #progress img {width: 65%;
+   				               margin-left: 25%;}
+   		.review-info img {width: 60%;}
 }
