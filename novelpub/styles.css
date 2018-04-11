@@ -6,7 +6,10 @@
 
 /*Universal styles*/
 body {background-color: #1E1D26;
-	  margin: 0;}
+	  margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  overflow-x: hidden;}
 	  
 header {background-color: #F7F8F3;
 		width: 100%;
@@ -57,7 +60,7 @@ nav ul li a:hover, nav ul li a:active {background-color: none;
 		 border: 3px solid #7F1AE5;}
 
 
-main {margin-right: 0;}
+main {margin: 0;}
 h1, h2, h3, h4, h5, h6 {font-family: 'Josefin Slab', serif;}
 p {font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, "sans-serif";}		 
 
@@ -445,7 +448,8 @@ select {color: #363544;
 /**footer styles--universal**/	 		
 footer {background-color: #F7F8F3;
 		margin-bottom: 0;
-		padding: 20px 5px 0 20px;}
+		padding: 20px 5px 0 20px;
+		border-top: 5px solid #9E9EB2;}
 
 footer a {text-decoration: none;
 		  display: inline;
@@ -488,10 +492,11 @@ footer a {text-decoration: none;
    	/**headline sizes**/
    	#new-book h1, #results h1, #product h1, #cart h1, 
    	#checkout h1, #review h1, #confirmation h1 {font-size: 5em;}
-   	#feat-author h2, #sale h2, #checkout h2 {font-size: 3.5em;}
+   	#feat-author h2, #sale h2 {font-size: 3.5em;}
+   	#checkout h2 {font-size: 3em;}
    	.description h3 {font-size: 1.5em;}
     #feat-author h6 {font-size: 2.2em;}
-   		  
+   	
    /**new book section on home page**/
    #new-book img {width: 55%;}
    #new-book p {font-size: 2.5em;}
@@ -587,21 +592,22 @@ footer a {text-decoration: none;
    
    /**new book section on home page**/
    #new-book img {float: left;
-   				  width: 30%;
+   				  width: 25%;
    				  margin-left: 125px;
-   				  margin-top: -300px;}
+   				  margin-top: -200px;}
    #new-book h1 {width: 50%;
    				 position: relative;
-   				 left: 425px;
+   				 left: 375px;
    				 font-size: 4.5em;}
+   #new-book .button {width: 20%;
+   	 					margin-left: 500px;}
    				  
    	/**secondary content**/
    	#secondary-content {clear: both;
    				        display: flex;
    				        width: 100%;}
    				
-   	#feat-author, #sale {width: 50%;
-   						 border-bottom: 10px solid #380C65;}
+   	#feat-author, #sale {width: 50%;}
    				         
    	/**search result and books page styles**/
    	.book img {width: 30%;}
