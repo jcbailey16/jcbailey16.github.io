@@ -132,7 +132,8 @@ input:focus {border-color: #7F1AE5;
 
 #new-book img {transform: rotate(-10deg);
 			   margin: 0 auto;
-			   display: block;}
+			   display: block;
+			   width: 65%;}
 			   
 #new-book img:hover, #new-book img:active {box-shadow: 0px 0px 8px #F7F8F3;}
 
@@ -158,7 +159,8 @@ input:focus {border-color: #7F1AE5;
 				 margin-top: 10px;}
 
 #feat-author img {margin: 0 auto;
-				  display: block;}
+				  display: block;
+				  width: 65%;}
 					  
 #feat-author h6 {text-align: center;
 				 font-size: 1.95em;
@@ -200,6 +202,7 @@ input:focus {border-color: #7F1AE5;
 		margin-bottom: 30px;
 		width: 45%;}
 
+#item1 img, #item2 img {width: 100%;}
 
 #item1 img:hover, #item1 img:active, 
 #item2 img:hover, #item2 img:active {box-shadow: 0px 0px 8px #F7F8F3;}
@@ -277,7 +280,8 @@ input:focus {border-color: #7F1AE5;
 		     margin-bottom: 0;}
 		  		  
 #product img {margin: 30px auto;
-			  display: block;}
+			  display: block;
+			   width: 70%;}
 
 #book-author {padding-right: 10px;
 			  font-size: 1.25em;
@@ -421,7 +425,8 @@ select {color: #363544;
 .review-info {padding: 20px;
 			  margin-bottom: 0;}
 .rv-img {margin-top: 10%;
-		 margin-left: 20%;}	
+		 margin-left: 20%;
+		 width: 60%;}	
 		 	
 .review-info .button {margin: 40px auto;
 					  display: block;
@@ -592,9 +597,9 @@ footer a {text-decoration: none;
    
    /**new book section on home page**/
    #new-book img {float: left;
-   				  width: 25%;
+   				  width: 28%;
    				  margin-left: 125px;
-   				  margin-top: -200px;}
+   				  margin-top: -250px;}
    #new-book h1 {width: 50%;
    				 position: relative;
    				 left: 375px;
@@ -695,9 +700,11 @@ footer a {text-decoration: none;
    	 					
    	 /**single book page**/
    	 #product img {width: 25%;
-   	 			   margin-right: 50px;}
+   	 			   margin-right: 50px;
+   	 			   margin-left: 100px;}
    	 #details {padding-left: 80px;
-   	 		   padding-right: 80px;}
+   	 		   padding-right: 80px;
+   	 		   max-width: 900px;}
    	 		   
    	 /**cart**/
    	 .product-info img {width: 60%;
