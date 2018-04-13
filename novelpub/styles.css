@@ -683,7 +683,7 @@ footer a {text-decoration: none;
 	/**new book section on home page**/
 	#new-book {max-height: 550px;}	
     #new-book img {float: left;
-   				   max-widthwidth: 20%;
+   				   max-width: 20%;
    				   margin-left: 200px;
    				   margin-top: 0;}
     #new-book h1 {width: 100%;
