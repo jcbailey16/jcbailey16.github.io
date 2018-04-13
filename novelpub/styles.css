@@ -596,8 +596,7 @@ footer a {text-decoration: none;
    
    
    /**new book section on home page**/
-   #center {width: 95%;
-   			margin: 0 auto;}
+   
    #new-book img {float: left;
    				  width: 28%;
    				  margin-left: 125px;
@@ -683,6 +682,9 @@ footer a {text-decoration: none;
 /***THIRD BREAK POINT***/
 @media (min-width: 1000px) {
 	/**new book section on home page**/
+	#center {width: 95%;
+   			margin: 0 auto;}
+   			
 	#new-book {height: 570px;}	
     #new-book img {float: left;
    				   max-width: 250px;
@@ -714,7 +716,7 @@ footer a {text-decoration: none;
    	 #details {padding-left: 80px;
    	 		   padding-right: 80px;
    	 		   max-width: 75%;}
-   	 #summary {max-width: 900px;}
+   	 #summary {max-width: 1700px;}
    	 		   
    	 /**cart**/
    	 .product-info img {max-width: 180px;
