@@ -681,7 +681,7 @@ footer a {text-decoration: none;
 /***THIRD BREAK POINT***/
 @media (min-width: 1000px) {
 	/**new book section on home page**/
-	#new-book {max-height: 550px;}	
+	#new-book {height: 610px;}	
     #new-book img {float: left;
    				   max-width: 20%;
    				   margin-left: 200px;
@@ -697,7 +697,10 @@ footer a {text-decoration: none;
    	 			  margin-bottom: 60px;}
    	 #new-book .button {width: 10%;
    	 					margin-left: 600px;}
-   	 					
+   	 
+   	 /**books and search**/
+   	 .book img {max-width: 20%;}				
+   	 	
    	 /**single book page**/
    	 #product img {max-width: 25%;
    	 			   margin-right: 50px;
