@@ -596,6 +596,8 @@ footer a {text-decoration: none;
    
    
    /**new book section on home page**/
+   #center {width: 95%;
+   			margin: 0 auto;}
    #new-book img {float: left;
    				  width: 28%;
    				  margin-left: 125px;
