@@ -4,7 +4,8 @@
     	<meta charset="UTF-8">
 		<title>Mobile Friendly Drop-Down Menu</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="menu.js"></script>
 		<style>
 			nav {margin: 0;
 				 padding: 0;
@@ -12,14 +13,18 @@
 				 top: 0;
 				 left: 0;
 				 background-color: lightgray;
-				 padding: 20px;
 				 width: 100%;
-				 font-size: 1.3em;}
+				 font-size: .9em;
+				 z-index: 9999;}
 			
-			nav ul {list-style: none;}
+			nav ul {list-style: none;
+					margin: 0;
+					padding: 12px 0 12px 12px;
+					}
 			
 			nav ul li {display: inline-block;
-					   width: 30%;}
+					   width: 30%;
+					   text-align: left;}
 			
 			nav ul li a {text-decoration: none;
 						 font-weight: bold;
@@ -32,19 +37,12 @@
 		   			   background-color: lightgray;
 		               padding: 0;
 		               text-align: center;
-		               display: none;}
+		               display: none;
+		               padding-left: 10px;}
 		    nav ul ul li {display: block;
 			              width: 10em;
 			              line-height: 2em;}
 			nav li:hover ul {display: block;}
-			
-			/**make nav work on mobile**/
-			@media (min-width: 800px) {
-			
-			
-			}
-			
-			
 			
 		</style>
 	</head>
@@ -53,28 +51,31 @@
 	<main>
 		<nav>
 			<ul>
-				<li><a href="about.html">The Event &or;</a>
-					<ul>
+				<li><a href="about.html" id="the-event">The Event &#9662;</a>
+					<ul id="event-pages">
 						<li><a href="schedule.html">Schedule</a></li>
 						<li><a href="sponsors.html">Sponsors</a></li>
 						<li><a href="contact.html">Contact</a></li>
+						<li><a href="#" class="close">Close Menu</a></li>
 					</ul>
 				</li>
 				
-				<li><a href="activities.html">Activities &or;</a>
-					<ul>
+				<li><a href="activities.html" id="activities">Activities &#9662;</a>
+					<ul id="activities-pages">
 						<li><a href="workshops.html">Workshops</a></li>
 						<li><a href="bookfair.html">Book Fair</a></li>
 						<li><a href="tours.html">Tours</a></li>
 						<li><a href="speakers.html">Speakers</a></li>
+						<li><a href="#" class="close">Close Menu</a></li>
 					</ul>
 				</li>
 				
-				<li><a href="tickets.html">Tickets &or;</a>
-					<ul>
+				<li><a href="tickets.html" id="tickets">Tickets &#9662;</a>
+					<ul id="tickets-pages">
 						<li><a href="register.html">Register</a></li>
 						<li><a href="policies.html">Policies</a></li>
 						<li><a href="conduct.html">Code of Conduct</a></li>
+						<li><a href="#" class="close">Close Menu</a></li>
 					</ul>
 				</li>
 			</ul>
