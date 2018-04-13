@@ -711,11 +711,13 @@ footer a {text-decoration: none;
    	 			   margin-left: 100px;}
    	 #details {padding-left: 80px;
    	 		   padding-right: 80px;
-   	 		   max-width: 900px;}
+   	 		   max-width: 75%;}
+   	 #summary {max-width: 900px;}
    	 		   
    	 /**cart**/
-   	 .product-info img {max-width: 60%;
-   	 				    margin-left: 50px;}
+   	 .product-info img {max-width: 180px;
+   	 					display: block;
+   	 				    margin: 10px auto;}
    	 #cartbtns {margin-left: 40%;
    	 		    margin-top: 60px;}
    	 #cartbtns .button {font-size: 1.2em;
