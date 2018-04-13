@@ -681,9 +681,9 @@ footer a {text-decoration: none;
 /***THIRD BREAK POINT***/
 @media (min-width: 1000px) {
 	/**new book section on home page**/
-	#new-book {height: 700px;}	
+	#new-book {height: 570px;}	
     #new-book img {float: left;
-   				   max-width: 20%;
+   				   max-width: 250px;
    				   margin-left: 200px;
    				   margin-top: 50px;}
     #new-book h1 {width: 100%;
@@ -699,9 +699,12 @@ footer a {text-decoration: none;
    	 #new-book .button {width: 10%;
    	 					margin-left: 600px;}
    	 
+   	 #feat-author img {max-width: 400px;}
+   	 #sale img {max-width: 250px;}
+   	 
    	 /**books and search**/
    	 .book img {max-width: 300px;}				
-   	 	
+   	 
    	 /**single book page**/
    	 #product img {max-width: 25%;
    	 			   margin-right: 50px;
@@ -719,9 +722,9 @@ footer a {text-decoration: none;
    	 					width: 30%;}
    	 
    	 /**checkout**/
-   	#progress img {max-width: 65%;}
-   	#review #progress img {max-width: 65%;}
-   	.review-info img {max-width: 60%;}
+   	#progress img {max-width: 500px;}
+   	#review #progress img {max-width: 500px;}
+   	.review-info img {max-width: 300px;}
     
     /**review page**/
     #review-content {padding-left: 100px;}
