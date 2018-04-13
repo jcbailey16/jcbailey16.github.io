@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+		<title>Mobile Friendly Drop-Down Menu</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<style>
+			nav {margin: 0;
+				 padding: 0;
+				 position: fixed;
+				 top: 0;
+				 left: 0;
+				 background-color: lightgray;
+				 padding: 20px;
+				 width: 100%;
+				 font-size: 1.3em;}
+			
+			nav ul {list-style: none;}
+			
+			nav ul li {display: inline-block;
+					   width: 30%;}
+			
+			nav ul li a {text-decoration: none;
+						 font-weight: bold;
+						 color: purple;}
+			
+			nav ul li a:hover {color: navy;
+							  text-decoration: underline;}
+			
+			nav ul ul {position: absolute;
+		   			   background-color: lightgray;
+		               padding: 0;
+		               text-align: center;
+		               display: none;}
+		    nav ul ul li {display: block;
+			              width: 10em;
+			              line-height: 2em;}
+			nav li:hover ul {display: block;}
+			
+			/**make nav work on mobile**/
+			@media (min-width: 800px) {
+			
+			
+			}
+			
+			
+			
+		</style>
+	</head>
+<body>
+
+	<main>
+		<nav>
+			<ul>
+				<li><a href="about.html">The Event &or;</a>
+					<ul>
+						<li><a href="schedule.html">Schedule</a></li>
+						<li><a href="sponsors.html">Sponsors</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="activities.html">Activities &or;</a>
+					<ul>
+						<li><a href="workshops.html">Workshops</a></li>
+						<li><a href="bookfair.html">Book Fair</a></li>
+						<li><a href="tours.html">Tours</a></li>
+						<li><a href="speakers.html">Speakers</a></li>
+					</ul>
+				</li>
+				
+				<li><a href="tickets.html">Tickets &or;</a>
+					<ul>
+						<li><a href="register.html">Register</a></li>
+						<li><a href="policies.html">Policies</a></li>
+						<li><a href="conduct.html">Code of Conduct</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+			
+	</main>
+</body>
+</html>
