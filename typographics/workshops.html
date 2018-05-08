@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Workshops | Typographics Conference 2018</title>
+	<meta name="description" content="Join us for our awesome conference about typography.">
+	<meta name="author" content="Jennifer Bailey">
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="menu.js"></script>
+	<!--<script src="modal.js"></script>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+	
+	<nav>
+		<a href="index.html"><img src="assets/logo-reg.svg" alt="Click Typographics logo to return to home page"/></a>
+		<ul>
+			<li><a href="about.html" id="the-event">The Event &#9662;</a>
+				<ul id="about-pages">
+					<li><a href="about.html">About</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="sponsors.html">Sponsors</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#" id="close-about"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+				
+			<li><a href="activities.html" id="activities" class="active">Activities &#9662;</a>
+				<ul id="act-pages">
+					<li><a href="activities.html">Overview</a></li>
+					<li><a href="workshops.html" class="active">Workshops</a></li>
+					<li><a href="bookfair.html">Book Fair</a></li>
+					<li><a href="tours.html">Tours</a></li>
+					<li><a href="speakers.html">Speakers</a></li>
+					<li><a href="#" id="close-act"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+				
+			<li><a href="tickets.html" id="tickets">Tickets &#9662;</a>
+				<ul id="ticket-pages">
+					<li><a href="tickets.html">Ticket Packages</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="policies.html">Policies</a></li>
+					<li><a href="conduct.html">Code of Conduct</a></li>
+					<li><a href="#" id="close-ticket"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<main>
+		<h1 class="small">Workshops</h1>
+		<p>Attendees of the Typographics conference get a 10% discount on Type@Cooper’s workshops from June 12–22.</p>
+		<p>A promotional discount code will be found on the PDF of your conference ticket. Apply the code during workshop 
+		registration to receive your discount.</p>
+		
+		<div id="popups">
+			<div class="popups-content">
+				<img src="assets/workshops/sign-paintingSM.jpg" alt="Take the Sign Painting Workshop with John Downer"/>
+				<button id="open1">Sign Painting &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item1" class="modal">
+				<h2>Sign Painting with John Downer</h2>
+				<p>This class will focus on rendering a few particular styles of capital letters that were 
+				commonly used in American sign painting during the 20th century. Script lettering will be 
+				addressed in the final day and a half.</p>
+				
+				<p><span class="bold">When:</span> Monday–Thursday, June 12–15, 9:00am–4:00pm  </p>
+				<p><span class="bold">Cost:</span> $880 per person</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item1-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/grids-grits.gif" alt="Take the Grids & Grits with Tânia Raposo"/>
+				<button id="open2">Grids & Grits &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item2" class="modal">
+				<h2>Grids & Grits with Tânia Raposo</h2>
+				<p>In this workshop we will go through the history of the different grid methods, we will be using pencil and 
+				tracing paper to analyse in-use grids from magazines and books, and you will learn how to create grids and how 
+				to keep your text aligned to it in Adobe InDesign.</p>
+				
+				<p><span class="bold">When:</span> Monday, June 12, 9:00am–4:00pm </p>
+				<p><span class="bold">Cost:</span> $220 per person</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item2-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/intro-handlettering.gif" alt="Take Introduction to Hand Lettering with James Edmondson"/>
+				<button id="open3">Intro to Hand Lettering &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item3" class="modal">
+				<h2>Introduction to Hand Lettering with James Edmondson</h2>
+				<p>In this 4 day workshop, students will learn from the ground up how to sketch letters, make 
+				refinements, and produce a finished analog or digital piece. Standard drawing tools will be used 
+				to test ideas and push various parameters, though no art or design background is required. This 
+				course covers the fundamentals for whichever styles students care to pursue, as well as techniques 
+				for harmonious compositions, and eye-catching effects.</p>
+				
+				<p><span class="bold">When:</span> Monday–Thursday, June 12–15, 10:00am–5:00pm  </p>
+				<p><span class="bold">Cost:</span> $880 per person</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item3-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/letter-image.gif" alt="Take Integrating Letter and Image with Michael Doret"/>
+				<button id="open4">Integrating Letter &amp; Image &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item4" class="modal">
+				<h2>Integrating Letter and Image with Michael Doret</h2>
+				<p>Have you ever designed a headline that needed an image, or worked on an illustration that needed a 
+				headline—but thought creating and putting the two together could be problematic? It can be pretty 
+				disappointing when letter and image come from two different sources—and are just slapped one over the 
+				other! This workshop will help you uncover ways that your work can actually be stronger when you discover 
+				how to successfully integrate these forms with each other—as they are two sides of the same coin. The 
+				purpose of this four-day workshop is to demonstrate how the rules governing letter and image can be bent 
+				and how the two can be fused to create new hybrid forms.</p>
+				
+				<p>Participants will select and work on at least two of several assignment options, and receive constructive 
+				feedback at various stages during the workshop. These stages can include research, rough pencil thumbnails, 
+				development sketches, and refinement and execution of final artwork. This work may take the form of finished 
+				drawings, be brought into the digital realm, or completed using traditional media. By the end of the class 
+				students should have a better understanding of—and the ability to take advantage of—the complex relationship 
+				between letterforms and imagery.</p>
+				<p><span class="bold">When:</span> Monday–Thursday, June 12–15, 10:00am–5:00pm </p>
+				<p><span class="bold">Cost:</span> $880 per person</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item4-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/micro-typography.png" alt="Take Micro Typography with Tânia Raposo"/>
+				<button id="open5">Micro Typography &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item5" class="modal">
+				<h2>Micro Typography with Tânia Raposo</h2>
+				<p>In this 1 day workshop you will acquire typographic skills on the micro level — how to solve intricate 
+				typographic hierarchies, and how to fine-tune long passages of text. You will learn how and when to use various 
+				kinds of dashes, get acquainted with OpenType features and get to know all the strange characters in your glyph 
+				palette.</p>
+				
+				<p><span class="bold">When:</span> Wednesday, June 14, 9:00am–4:00pm </p>
+				<p><span class="bold">Cost:</span> $220 per person</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item5-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/type-selector.gif" alt="Take Type Selector with Tânia Raposo"/>
+				<button id="open6">Type Selector &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item6" class="modal">
+				<h2>Type Selector with Tânia Raposo</h2>
+				<p>In this 1-day workshop you will learn how to look at typefaces up close to analyse their details and why they 
+				matter, how to pick the best typeface for your project and how pair it with others. You will have a better insight 
+				about language support, legibility studies, different kinds of typeface financing and logistics.</p>
+				
+				<p><span class="bold">When:</span> Tuesday, June 13, 9:00am–4:00pm </p>
+				<p><span class="bold">Cost:</span> $220 per person</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item6-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/non-designersSM.png" alt="Take Type Design for Non-Type Designers with Matteo Bologna"/>
+				<button id="open7">Type Design for Non-Type Designers &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item7" class="modal">
+				<h2>Type Design for Non-Type Designers with Matteo Bologna</h2>
+				<p>Get a crash course in designing type from Matteo Bologna, Creative Director of award-winning studio Mucca Design. 
+				The workshop will introduce you to the basic skills necessary for the wild journey into the super fun world of type 
+				design and you will learn the basics of designing and generating a typeface.</p>
+			
+				<p><span class="bold">When:</span> Wednesday, June 14, 9:00am–6:00pm </p>
+				<p><span class="bold">Cost:</span> $280 per person</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item7-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/byop.gif" alt="Do the Bring Your Own Problem: A Scripting Workshop for Pros with Frederik Berlaen, Andy Clymer"/>
+				<button id="open8">Bring Your Own Problem &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item8" class="modal">
+				<h2>Bring Your Own Problem:</h2>
+				<h4 class="subhead">A Scripting Workshop for Pros with Frederik Berlaen, Andy Clymer</h4>
+				<p>In this one day workshop, participants have a unique opportunity to have their own RoboFont production 
+				and workflow problems solved by way of a live coding demonstration by Frederik Berlaen, with assistance by 
+				Andy Clymer. While Python programming knowledge is helpful for the workshop, it isn’t required of the 
+				participants. But, abstract thinking is a must. Wondering how to make variable fonts? Problems with 
+				getting started with a project? Workflow feels like it needs optimizing? Wonder what you could really 
+				be doing with Python? Bring a problem!</p>
+				
+				<p><span class="bold">When:</span> Sunday, June 18, 10:00am–5:00pm </p>
+				<p><span class="bold">Cost:</span> $220</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item8-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/design-game.jpg" alt="Do The Design Game with Petr van Blokland"/>
+				<button id="open9">The Design Game &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item9" class="modal">
+				<h2>The Design Game with Petr van Blokland</h2>
+				<p>52 designers, 12 studios, 4 customers, 17 tables, 60 chairs, 48 designs, 4 rounds and your drawing tools </p>
+				<p>Did you ever wonder what clients were trying to say to you? Or why designers never have enough time? Why 
+				are design processes so non-linear even when design thinking is? How can designers work better as teams? Can 
+				you balance on the wrong foot? Why should you never participate in pitches? You will get amazing insight 
+				these matters. Never to forget.</p>
+				
+				<p><span class="bold">When:</span> Sunday, June 18, 10:00am–3:00pm </p>
+				<p><span class="bold">Cost:</span> Free</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item9-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/typecooker.gif" alt="Take TypeCooker with Erik van Blokland"/>
+				<button id="open10">TypeCooker &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item10" class="modal">
+				<h2>TypeCooker with Erik van Blokland</h2>
+				<p>TypeCooker takes sketching to the next level. Using randomly generated recipes you’ll discover new techniques 
+				and become a typographic troubleshooter. The one-day workshop includes several rounds of drawing with a critique at 
+				the end of each. Suitable for all.</p>
+			
+				<p><span class="bold">When:</span> Thursday, June 15, 10:00am–5:00pm </p>
+				<p><span class="bold">Cost:</span> $220 per person</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item8-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/drawing-interpolation.gif" alt="Take Drawing for Interpolation with Erik van Blokland"/>
+				<button id="open11">Drawing for Interpolation &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item11" class="modal">
+				<h2>Drawing for Interpolation with Erik van Blokland</h2>
+				<p>If you’re thinking of building a variable font or have plans to make a large family, you’ll need to draw for 
+				interpolation. And glyph outlines aren’t what they used to be. In this one-day workshop we’ll look at different 
+				outline constructions, extrapolation and designspace planning. We’ll use Superpolator and RoboFont, and maybe 
+				also a bit of python. Basic digital drawing skills required.</p>
+				
+				<p><span class="bold">When:</span> Sunday, June 18, 10:00am–5:00pm</p>
+				<p><span class="bold">Cost:</span> $220</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item11-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/spencerian-lettering.png" alt="Take Spencerian Lettering with Ken Barber"/>
+				<button id="open12">Spencerian Lettering &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item12" class="modal">
+				<h2>Spencerian Lettering with Ken Barber</h2>
+				<p>Not to be confused with the handwriting of the 1800s, Spencerian Lettering is a unique style of hand-drawn script 
+				innovated during the latter half of the 20th century. Its lively forms, embellished strokes and distinctive styling 
+				make Spencerian Lettering especially well-suited for posters, labels, book jackets, editorial work and advertisements. 
+				In this workshop students will learn how to create and implement Spencerian Lettering for various design applications.</p>
+				
+				<p><span class="bold">When:</span> Monday–Tuesday, June 19–20, 9:00am–4:00pm </p>
+				<p><span class="bold">Cost:</span> $440</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item12-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/python-drawbot.gif" alt="Take Beginner Python Programming with DrawBot with Just van Rossum"/>
+				<button id="open13">Beginner Python Programming with DrawBot &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item13" class="modal">
+				<h2>Beginner Python Programming with DrawBot with Just van Rossum</h2>
+				<p>This two day workshop is for everyone who wants to get a taste of creating designs programmatically with the Python 
+				programming language. You’ll work with DrawBot, a free and friendly environment that will give you instant visual 
+				feedback. The basics of Python will be covered, and you will learn how to use Python to create high quality 
+				vector-based output. No previous Python experience is necessary.</p>
+				
+				<p><span class="bold">When:</span> Monday–Tuesday, June 19–20, 10:00am–5:00pm</p>
+				<p><span class="bold">Cost:</span> $440</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item13-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/programming-animations.gif" alt="Take Programming Animations with DrawBot with Just van Rossum<"/>
+				<button id="open14">Programming Animations with DrawBot &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item14" class="modal">
+				<h2>Programming Animations with DrawBot with Just van Rossum</h2>
+				<p>Learn to program generative animations with Python in DrawBot in this two day workshop. We will dive into programming 
+				time based behavior and motion, creating perfect loops. Abstract patterns, letters, geometric shapes, icons: you name it 
+				and we will make it move. The results will be short animated loops in the form of animated gifs ready for the web, or 
+				video output suitable for post-production.</p>
+				
+				<p><span class="bold">When:</span> Wednesday–Thursday, June 21–22, 10:00am–5:00pm </p>
+				<p><span class="bold">Cost:</span> $440</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item14-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/whispering-type.gif" alt="Take Whispering Type with Frederik Berlaen"/>
+				<button id="open15">Whispering Type &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item15" class="modal">
+				<h2>Whispering Type with Frederik Berlaen</h2>
+				<p>In this 3 day workshop, students approach the practice of typeface design by looking at type and the 
+				shapes within. Through research and analysis of shapes you will learn the language of letter forms both 
+				on a visual and on a narrative level. By sketching and drawing digitally an alphabet will be completed. 
+				At the end participants will have an ‘unfinished’ typeface with lowercase or uppercase letters. But each 
+				one will be forced to draw something different than they are used to.</p>
+				
+				<p><span class="bold">When:</span> Monday–Wednesday, June 19–21, 10:00am–5:00pm</p>
+				<p><span class="bold">Cost:</span> $660</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item15-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/brush-letteringSM.png" alt="Take Brush Lettering with Ken Barber"/>
+				<button id="open16">Brush Lettering &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item16" class="modal">
+				<h2>Brush Lettering with Ken Barber</h2>
+				<p>This two-day workshop will provide a basic overview of freehand brush lettering. Referencing various tools, 
+				techniques and models, participants will hone their drawing skills as they take a wordmark from concept to completion. 
+				Comprehensive slide presentations, demonstrations, skill-building exercises and personal critiques will provide further 
+				guidance as students acquire a practical foundation for drawing and implementing brush lettering in various design 
+				contexts.</p>
+				
+				<p><span class="bold">When:</span> Wednesday–Thursday, June 21–22, 9:00am–4:00pm</p>
+				<p><span class="bold">Cost:</span> $440</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item16-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/workshops/pagebotSM.png" alt="Take How to Code All Your Graphic Design"/>
+				<button id="open17">How to Code All Your Graphic Design &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item17" class="modal">
+				<h2>How to Code All Your Graphic Design:</h2>
+				<h4 class="subhead">PageBot with Petr van Blokland</h4>
+				<p>Did you ever wonder why existing design tools make you do so much repetitive work? Why is it difficult 
+				to get back to sketching once your design tools take over? This workshop is intended for designers who want 
+				to code and for developers who want to design. Even if you decide that coding your designs isn’t what you 
+				want to do yourself, you will learn how to talk to developers.</p>
+				
+				<p><span class="bold">When:</span> Monday–Thursday, June 19–22, 10:00am–5:00pm </p>
+				<p><span class="bold">Cost:</span> $880</p>
+				<button class="modal-close">Close</button>
+			</div><!--end of item17-->
+			
+		</div><!--end of popups-->
+	</main>
+	
+	<footer>
+		<ul>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="policies.html">Registration Policies</a></li>
+			<li><a href="conduct.html">Code of Conduct</a></li>
+			<li>&copy; 2018 Typographics Conference</li>
+		</ul>
+	</footer>
+	
+	<script>
+		//FIRST ITEM
+		// Get the modal
+		var itemInfo1 = document.getElementById('item1');
+		
+		// Get the button that opens the modal
+		var openButton1 = document.getElementById("open1");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[0];
+		
+		// When the user clicks on the button, open the modal
+		openButton1.onclick = function() {
+    		itemInfo1.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo1.style.display = "none";
+		};
+		
+		
+		//SECOND ITEM
+		// Get the modal
+		var itemInfo2 = document.getElementById('item2');
+		
+		// Get the button that opens the modal
+		var openButton2 = document.getElementById("open2");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[1];
+		
+		// When the user clicks on the button, open the modal
+		openButton2.onclick = function() {
+    		itemInfo2.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo2.style.display = "none";
+		};
+		
+		
+		//THIRD ITEM
+		// Get the modal
+		var itemInfo3 = document.getElementById('item3');
+		
+		// Get the button that opens the modal
+		var openButton3 = document.getElementById("open3");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[2];
+		
+		// When the user clicks on the button, open the modal
+		openButton3.onclick = function() {
+    		itemInfo3.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo3.style.display = "none";
+		};
+		
+		
+		//FOURTH ITEM
+		// Get the modal
+		var itemInfo4 = document.getElementById('item4');
+		
+		// Get the button that opens the modal
+		var openButton4 = document.getElementById("open4");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[3];
+		
+		// When the user clicks on the button, open the modal
+		openButton4.onclick = function() {
+    		itemInfo4.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo4.style.display = "none";
+		};
+		
+		
+		//FIFTH ITEM
+		// Get the modal
+		var itemInfo5 = document.getElementById('item5');
+		
+		// Get the button that opens the modal
+		var openButton5 = document.getElementById("open5");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[4];
+		
+		// When the user clicks on the button, open the modal
+		openButton5.onclick = function() {
+    		itemInfo5.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo5.style.display = "none";
+		};
+		
+		
+		//SIXTH ITEM
+		// Get the modal
+		var itemInfo6 = document.getElementById('item6');
+		
+		// Get the button that opens the modal
+		var openButton6 = document.getElementById("open6");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[5];
+		
+		// When the user clicks on the button, open the modal
+		openButton6.onclick = function() {
+    		itemInfo6.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo6.style.display = "none";
+		};
+		
+		
+		//SEVENTH ITEM
+		// Get the modal
+		var itemInfo7 = document.getElementById('item7');
+		
+		// Get the button that opens the modal
+		var openButton7 = document.getElementById("open7");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[6];
+		
+		// When the user clicks on the button, open the modal
+		openButton7.onclick = function() {
+    		itemInfo7.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo7.style.display = "none";
+		};
+		
+		
+		//EIGHTH ITEM
+		// Get the modal
+		var itemInfo8 = document.getElementById('item8');
+		
+		// Get the button that opens the modal
+		var openButton8 = document.getElementById("open8");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[7];
+		
+		// When the user clicks on the button, open the modal
+		openButton8.onclick = function() {
+    		itemInfo8.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo8.style.display = "none";
+		};
+		
+		
+		//NINTH ITEM
+		// Get the modal
+		var itemInfo9 = document.getElementById('item9');
+		
+		// Get the button that opens the modal
+		var openButton9 = document.getElementById("open9");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[8];
+		
+		// When the user clicks on the button, open the modal
+		openButton9.onclick = function() {
+    		itemInfo9.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo9.style.display = "none";
+		};
+		
+		
+		//TENTH ITEM
+		// Get the modal
+		var itemInfo10 = document.getElementById('item10');
+		
+		// Get the button that opens the modal
+		var openButton10 = document.getElementById("open10");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[9];
+		
+		// When the user clicks on the button, open the modal
+		openButton10.onclick = function() {
+    		itemInfo10.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo10.style.display = "none";
+		};
+		
+		
+		//ELEVENTH ITEM
+		// Get the modal
+		var itemInfo11 = document.getElementById('item11');
+		
+		// Get the button that opens the modal
+		var openButton11 = document.getElementById("open11");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[10];
+		
+		// When the user clicks on the button, open the modal
+		openButton11.onclick = function() {
+    		itemInfo11.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo11.style.display = "none";
+		};
+		
+		
+		//TWELFTH ITEM
+		// Get the modal
+		var itemInfo12 = document.getElementById('item12');
+		
+		// Get the button that opens the modal
+		var openButton12 = document.getElementById("open12");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[11];
+		
+		// When the user clicks on the button, open the modal
+		openButton12.onclick = function() {
+    		itemInfo12.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo12.style.display = "none";
+		};
+		
+		
+		//THIRTEENTH ITEM
+		// Get the modal
+		var itemInfo13 = document.getElementById('item13');
+		
+		// Get the button that opens the modal
+		var openButton13 = document.getElementById("open13");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[12];
+		
+		// When the user clicks on the button, open the modal
+		openButton13.onclick = function() {
+    		itemInfo13.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo13.style.display = "none";
+		};
+		
+		
+		//FOURTEENTH ITEM
+		// Get the modal
+		var itemInfo14 = document.getElementById('item14');
+		
+		// Get the button that opens the modal
+		var openButton14 = document.getElementById("open14");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[13];
+		
+		// When the user clicks on the button, open the modal
+		openButton14.onclick = function() {
+    		itemInfo14.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo14.style.display = "none";
+		};
+		
+		
+		//FIFTEENTH ITEM
+		// Get the modal
+		var itemInfo15 = document.getElementById('item15');
+		
+		// Get the button that opens the modal
+		var openButton15 = document.getElementById("open15");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[14];
+		
+		// When the user clicks on the button, open the modal
+		openButton15.onclick = function() {
+    		itemInfo15.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo15.style.display = "none";
+		};
+		
+		
+		//SIXTEENTH ITEM
+		// Get the modal
+		var itemInfo16 = document.getElementById('item16');
+		
+		// Get the button that opens the modal
+		var openButton16 = document.getElementById("open16");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[15];
+		
+		// When the user clicks on the button, open the modal
+		openButton16.onclick = function() {
+    		itemInfo16.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo16.style.display = "none";
+		};
+		
+		
+		//SEVENTEENTH ITEM
+		// Get the modal
+		var itemInfo17 = document.getElementById('item17');
+		
+		// Get the button that opens the modal
+		var openButton17 = document.getElementById("open17");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[16];
+		
+		// When the user clicks on the button, open the modal
+		openButton17.onclick = function() {
+    		itemInfo17.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo17.style.display = "none";
+		};
+		
+	</script>
+</body>
+
+</html>

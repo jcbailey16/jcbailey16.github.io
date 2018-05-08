@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Book Fair | Typographics Conference 2018</title>
+	<meta name="description" content="Join us for our awesome conference about typography.">
+	<meta name="author" content="Jennifer Bailey">
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="menu.js"></script>
+	<!--<script src="modal.js"></script>-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+	
+	<nav>
+		<a href="index.html"><img src="assets/logo-reg.svg" alt="Click Typographics logo to return to home page"/></a>
+		<ul>
+			<li><a href="about.html" id="the-event">The Event &#9662;</a>
+				<ul id="about-pages">
+					<li><a href="about.html">About</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="sponsors.html">Sponsors</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="#" id="close-about"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+				
+			<li><a href="activities.html" id="activities" class="active">Activities &#9662;</a>
+				<ul id="act-pages">
+					<li><a href="activities.html">Overview</a></li>
+					<li><a href="workshops.html">Workshops</a></li>
+					<li><a href="bookfair.html" class="active">Book Fair</a></li>
+					<li><a href="tours.html">Tours</a></li>
+					<li><a href="speakers.html">Speakers</a></li>
+					<li><a href="#" id="close-act"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+				
+			<li><a href="tickets.html" id="tickets">Tickets &#9662;</a>
+				<ul id="ticket-pages">
+					<li><a href="tickets.html">Ticket Packages</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="policies.html">Policies</a></li>
+					<li><a href="conduct.html">Code of Conduct</a></li>
+					<li><a href="#" id="close-ticket"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<main>
+		<h1>Book Fair</h1>
+		<p>This year’s Typographics will feature the second Typographics Book Fair, June 17–18, 
+		with items for sale from some of our favorite booksellers.</p>
+		
+		<p>There will be a wide diversity of material available relating to typography, lettering, 
+		design, etc, with everything from rare antiquarian type specimens to contemporary titles on 
+		modern graphic design.</p>
+		
+		<p>Be sure to check out the preview of items that will be for sale at the book fair.</p>
+		
+		<br>
+		<h2>Hours and Access</h2>
+		<p><span class="bold">Saturday, June 17, 10am to 6pm:</span> Open to attendees of the Typographics 
+		conference (registration required)</p>
+		
+		<p><span class="bold">Sunday, June 18, 10am to 6pm:</span> Free and open to the public</p>
+		
+		<br>
+		<h2>Location</h2>
+		<p>The fair will be held in the gallery space at 41 Cooper Square, just across the street from 
+		where the main Typographics conference is held.</p>
+		
+		<br>
+		<h2>Booksellers</h2>
+		<br>
+		
+		<div id="popups">
+			<div class="popups-content">
+				<img src="assets/books/okb-logo.svg" alt="Oak Knoll Books will be a book fair vendor."/>
+				<button id="open1">Oak Knoll Books &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item1" class="modal">
+				<h2>Oak Knoll Books</h2>
+				<p>Oak Knoll Books is one of the most prominent sellers of “books about books” in the world. 
+				Founded in 1976, they carry about 27,000 titles on typography, lettering, graphic design, type 
+				specimens, and much more. They’ll be making the trek up to Typographics from their home in New 
+				Castle, Delaware.</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item1-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/books/LfA-logo.svg" alt="Letterform Archive will be a book fair vendor."/>
+				<button id="open2">Letterform Archive &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item2" class="modal">
+				<h2>Letterform Archive</h2>
+				<p>Letterform Archive, based in San Francisco, is a nonprofit library and museum dedicated to 
+				the letter arts. They hold a collection of 40,000 items related to lettering, typography, 
+				calligraphy, and graphic design, spanning 2,000 years of history. They are also home to 
+				Type@Cooper West, an educational collaboration with The Cooper Union. They’ll be selling 
+				duplicate pieces of type foundry ephemera from their collection at the Book Fair.</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item2-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/books/lubalinLogo.svg" alt="The Lubalin Center will be a book fair vendor." id="lablinloto"/>
+				<button id="open3">Lubalin Center &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item3" class="modal">
+				<h2>Lubalin Center</h2>
+				<p>The Herb Lubalin Study Center of Design & Typography, one of the co-organizers of the Typographics 
+				festival, is a study archive but also has been publishing various things since it opened in 1985. They 
+				will be selling some of these items as well as some duplicates of type specimens and other books from 
+				their collection of 20th-century graphic design.</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item3-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/books/house-logo.svg" alt="House Industries will be a book fair vendor."/>
+				<button id="open4">House Industries &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item4" class="modal">
+				<h2>House Industries</h2>
+				<p>House Industriesis a design studio known for its expressive type and lettering as well as a wide range 
+				of typographically-inspired merch and other collaborations with the Charles & Ray Eames Estate, Heath 
+				Ceramics, Muji, and more. They’ll be selling their new book, The Process is the Inspiration. 
+				(Also, please join us for House’s free book launch party and lecture, with live on-site screen printing.)</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item4-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/books/displaybk-logo.svg" alt="Display Books will be a book fair vendor."/>
+				<button id="open5">Display Books &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item5" class="modal">
+				<h2>Display Books</h2>
+				<p>Display is an occasional bookstore offering carefully selected and hard-to-find graphic design books, 
+				periodicals and ephemera. From the rational to the experimental to the playful, their inventory represents a 
+				distinct point of view about modern (c. 1940–1970) graphic design and typography from the United States and beyond.</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item5-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/books/standards-logo.svg" alt="Standard Manual will be a book fair vendor."/>
+				<button id="open6">Standards Manual &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item6" class="modal">
+				<h2>Standards Manual</h2>
+				<p>Standards Manual started as an independent publishing imprint by designers Jesse Reed and Hamish Smyth of Order. 
+				After publishing several reprints of classic design manuals – with a new one in the works – they’re now opeing a 
+				brick-and-mortar storefront in Greenpoint, Brooklyn. The new store, which opens opens May 15 at 212 Franklin St, 
+				will focus solely on graphic design titles. At the Typographics Book Fair they’ll be selling their reprint titles as 
+				well as related material from their growing inventory.</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item6-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/books/wms-logo.svg" alt="Wms & Co. will be a book fair vendor."/>
+				<button id="open7">Wms &amp; Co. &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item7" class="modal">
+				<h2>Wms &amp; Co.</h2>
+				<p>Wms & Co. is a passion project by JP Williams and Allison Muench Williams, born out of their love for design and 
+				collecting. It also reflects their world travels and the work they’ve done as co-founders of the Design MW consultancy 
+				in New York. A big impetus for launching the company was JP’s lifelong passion for collecting (further detailed at 
+				amassblog.com). A connoisseur of vintage typography, ephemera and classic desk tools, he has amassed legendary collections – 
+				balls of twine, envelope liners, 19th-century letterheads – many of which inspired the product offerings of Wms & Co.</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item7-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/books/type-directorsLogo.svg" alt="The Type Directors Club will be a book fair vendor." id="tdclogo"/>
+				<button id="open8"><span class="small-btn-text">Type Directors Club &#x25B6;</span></button>
+			</div><!--end of popups-content-->
+			
+			<div id="item8" class="modal">
+				<h2>Type Directors Club</h2>
+				<p>The Type Directors Club is one of the most reputable typographic organizations, with more than 70 years of history supporting 
+				excellence in typography. For more than 35 years they have held competitions with the results published in their Typography annual 
+				books. TDC will be selling discounted copies of their annuals at the Book Fair as well as accepting applications for new members.</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item8-->
+			
+			
+			<div class="popups-content">
+				<img src="assets/books/godine-logo.svg" alt="The Type Directors Club will be a book fair vendor."/>
+				<button id="open9">David R. Godine (Publisher) &#x25B6;</button>
+			</div><!--end of popups-content-->
+			
+			<div id="item9" class="modal">
+				<h2>David R. Godine</h2>
+				<p>David R. Godine, Inc. is a small, independent publishing house founded in 1970 and located in Boston, Massachusetts. Deliberately 
+				eclectic, Godine publishes work that many other publishers can’t or won’t support, books that won’t necessarily become bestsellers but 
+				still deserve publication. Also home to Black Sparrow Books, the imprint born from Black Sparrow Press, Godine keeps the original books 
+				in print while publishing new avant-garde works. Quality remains foremost: of design, paper, and printing.</p>
+			
+				<button class="modal-close">Close</button>
+			</div><!--end of item8-->
+			
+		
+		</div><!--end of popups-->
+	</main>
+	
+	<footer>
+		<ul>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="policies.html">Registration Policies</a></li>
+			<li><a href="conduct.html">Code of Conduct</a></li>
+			<li>&copy; 2018 Typographics Conference</li>
+		</ul>
+	</footer>
+	
+	<script>
+		//FIRST ITEM
+		// Get the modal
+		var itemInfo1 = document.getElementById('item1');
+		
+		// Get the button that opens the modal
+		var openButton1 = document.getElementById("open1");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[0];
+		
+		// When the user clicks on the button, open the modal
+		openButton1.onclick = function() {
+    		itemInfo1.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo1.style.display = "none";
+		};
+		
+		
+		//SECOND ITEM
+		// Get the modal
+		var itemInfo2 = document.getElementById('item2');
+		
+		// Get the button that opens the modal
+		var openButton2 = document.getElementById("open2");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[1];
+		
+		// When the user clicks on the button, open the modal
+		openButton2.onclick = function() {
+    		itemInfo2.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo2.style.display = "none";
+		};
+		
+		
+		//THIRD ITEM
+		// Get the modal
+		var itemInfo3 = document.getElementById('item3');
+		
+		// Get the button that opens the modal
+		var openButton3 = document.getElementById("open3");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[2];
+		
+		// When the user clicks on the button, open the modal
+		openButton3.onclick = function() {
+    		itemInfo3.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo3.style.display = "none";
+		};
+		
+		
+		//FOURTH ITEM
+		// Get the modal
+		var itemInfo4 = document.getElementById('item4');
+		
+		// Get the button that opens the modal
+		var openButton4 = document.getElementById("open4");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[3];
+		
+		// When the user clicks on the button, open the modal
+		openButton4.onclick = function() {
+    		itemInfo4.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo4.style.display = "none";
+		};
+		
+		
+		//FIFTH ITEM
+		// Get the modal
+		var itemInfo5 = document.getElementById('item5');
+		
+		// Get the button that opens the modal
+		var openButton5 = document.getElementById("open5");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[4];
+		
+		// When the user clicks on the button, open the modal
+		openButton5.onclick = function() {
+    		itemInfo5.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo5.style.display = "none";
+		};
+		
+		
+		//SIXTH ITEM
+		// Get the modal
+		var itemInfo6 = document.getElementById('item6');
+		
+		// Get the button that opens the modal
+		var openButton6 = document.getElementById("open6");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[5];
+		
+		// When the user clicks on the button, open the modal
+		openButton6.onclick = function() {
+    		itemInfo6.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo6.style.display = "none";
+		};
+		
+		
+		//SEVENTH ITEM
+		// Get the modal
+		var itemInfo7 = document.getElementById('item7');
+		
+		// Get the button that opens the modal
+		var openButton7 = document.getElementById("open7");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[6];
+		
+		// When the user clicks on the button, open the modal
+		openButton7.onclick = function() {
+    		itemInfo7.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo7.style.display = "none";
+		};
+		
+		
+		//EIGHTH ITEM
+		// Get the modal
+		var itemInfo8 = document.getElementById('item8');
+		
+		// Get the button that opens the modal
+		var openButton8 = document.getElementById("open8");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[7];
+		
+		// When the user clicks on the button, open the modal
+		openButton8.onclick = function() {
+    		itemInfo8.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo8.style.display = "none";
+		};
+		
+		
+		//NINTH ITEM
+		// Get the modal
+		var itemInfo9 = document.getElementById('item9');
+		
+		// Get the button that opens the modal
+		var openButton9 = document.getElementById("open9");
+		
+		// Get the element that closes the modal
+		var closeButton = document.getElementsByClassName("modal-close")[8];
+		
+		// When the user clicks on the button, open the modal
+		openButton9.onclick = function() {
+    		itemInfo9.style.display = "block";
+		};
+		
+		// When the user clicks on <span> (x), close the modal
+		closeButton.onclick = function() {
+    		itemInfo9.style.display = "none";
+		};
+		
+	</script>
+</body>
+
+</html>

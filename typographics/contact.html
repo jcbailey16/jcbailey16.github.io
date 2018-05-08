@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact | Typographics Conference 2018</title>
+	<meta name="description" content="Join us for our awesome conference about typography.">
+	<meta name="author" content="Jennifer Bailey">
+	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="menu.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+
+<body>
+	
+	<nav>
+		<a href="index.html"><img src="assets/logo-reg.svg" alt="Click Typographics logo to return to home page"/></a>
+		<ul>
+			<li><a href="about.html" id="the-event" class="active">The Event &#9662;</a>
+				<ul id="about-pages">
+					<li><a href="about.html">About</a></li>
+					<li><a href="schedule.html">Schedule</a></li>
+					<li><a href="sponsors.html">Sponsors</a></li>
+					<li><a href="contact.html" class="active">Contact</a></li>
+					<li><a href="#" id="close-about"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+				
+			<li><a href="activities.html" id="activities">Activities &#9662;</a>
+				<ul id="act-pages">
+					<li><a href="activities.html">Overview</a></li>
+					<li><a href="workshops.html">Workshops</a></li>
+					<li><a href="bookfair.html">Book Fair</a></li>
+					<li><a href="tours.html">Tours</a></li>
+					<li><a href="speakers.html">Speakers</a></li>
+					<li><a href="#" id="close-act"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+				
+			<li><a href="tickets.html" id="tickets">Tickets &#9662;</a>
+				<ul id="ticket-pages">
+					<li><a href="tickets.html">Ticket Packages</a></li>
+					<li><a href="register.html">Register</a></li>
+					<li><a href="policies.html">Policies</a></li>
+					<li><a href="conduct.html">Code of Conduct</a></li>
+					<li><a href="#" id="close-ticket"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	
+	<main>
+		<h1 class="small">Contact Us</h1>
+		
+		<form action="thankyou.html">
+			
+			<h4>Your Information</h4>
+			<br>
+			<label for="fname">First Name</label>
+				<input id="fname" type="text" name="fname">
+				
+			<label for="lname">Last Name</label>
+				<input id="lname" type="text" name="lname">
+					
+			<label for="phone">Phone Number</label>
+				<input id="phone" type="tel" name="phone">
+					
+			<label for="email">Email</label>
+				<input id="email" type="email" name="email">
+				
+			<label for="message">Message</label><br>
+				<textarea id="message" name="message">	</textarea>
+		
+			<input type="checkbox" name="signup" id="signup" style="width: 5%; margin-bottom: 0;">
+    			<label for="signup">Yes, I would like to sign-up for the Tyopgraphics mailing list.</label>
+			<br> <br>
+			
+			<button>Send Message</button>
+			<br>
+
+			<h4>Our Information</h4>
+			<p><span class="bold">Email:</span> <a href="mailto:type@cooper.edu">type@cooper.edu</a></p>
+			<p><span class="bold">Twitter:</span> <a href="https://twitter.com/TypographicsNYC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">@TypographicsNYC</a></p>
+			
+		</form>
+	
+	</main>
+	
+	<footer>
+		<ul>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="policies.html">Registration Policies</a></li>
+			<li><a href="conduct.html">Code of Conduct</a></li>
+			<li>&copy; 2018 Typographics Conference</li>
+		</ul>
+	</footer>
+</body>
+
+</html>
