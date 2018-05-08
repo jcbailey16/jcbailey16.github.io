@@ -1,0 +1,302 @@
+/**CSS for My Portfolio Website
+	Author: Jennifer Bailey
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans');
+/**
+	font-family: 'Alegreya', serif;
+	font-family: 'Alegreya Sans', sans-serif;
+**/
+
+body {margin: 0;
+	  padding: 0;
+	  width: 100%;
+	  overflow-x: hidden;
+	  background-color: #161616;}
+	  
+/**Landing Page**/
+#home-nav ul {font-size: 1.2em;
+	          list-style: none;
+	          text-align: center;
+	          margin: 0;
+	          padding: 0;}
+
+#home-nav ul li {background-color: #9600ce;
+			     border: 2px solid #9600ce;
+			     border-radius: 10px;
+			     margin: 10px auto;
+	 		     width: 45%;
+	 		     padding-top: 10px;
+	 		     padding-bottom: 10px;
+	 		     display: inline-block;
+	 		     color: #FFF;}
+
+#home-nav ul li a {text-decoration: none;
+				   text-align: center;
+				   color: #FFF;
+				   font-family: 'Alegreya Sans', sans-serif;}
+
+
+#home-nav ul li:hover {background-color: #A1D324;
+					   border: 2px solid #A1D324;}
+					   
+#home-content {margin: 0;
+			   padding: 20px;
+			   margin-bottom: 10px;}
+			   
+#home-content h1 {font-family: 'Alegreya', serif;
+				  color: #F3D4F4;
+				  text-align: center;
+				  font-size: 3em;
+				  margin-bottom: 0;}
+
+#home-content h2 {font-family: 'Alegreya', serif;
+				  color: #F3D4F4;
+				  text-align: center;
+				  font-size: 2em;
+				  margin-top: 0;}
+				  
+#home-content p {font-family: 'Alegreya Sans', sans-serif;
+				 color: #fff;
+				 font-size: 1.2em;
+				 margin: 0 auto;
+				 width: 95%;
+				 max-width: 750px;}
+				 
+				 
+/**Navigation**/
+nav {margin: 0;
+	 padding: 0;
+	 position: fixed;
+	 top: 0;
+	 left: 0;
+	 background-color: #000000;
+	 width: 100%;
+	 font-family: 'Alegreya Sans', sans-serif;
+	 z-index: 9999;
+	 padding-bottom: 15px;}
+			
+nav ul {list-style: none;
+		margin: 0;
+		padding: 22px 0 0 4px;
+		font-size: 1.05em;}
+			
+nav ul li {display: inline-block;
+		   width: 30%;
+		   text-align: center;}
+			
+nav ul li a {text-decoration: none;
+			 font-weight: bold;
+			 color: #BB65D4;}
+			
+nav ul ul {position: absolute;
+		   background-color: #333333;
+		   padding: 0;
+		   text-align: left;
+		   padding-left: 10px;}
+
+nav ul ul li {text-align: left;}
+nav ul li:nth-child(3)>ul {margin-left: -20px;}
+
+nav ul ul li {display: block;
+			  width: 7em;
+			  line-height: 2em;}
+
+.active {color: #A1D324;}
+#close-about, #close-writings, #close-design {color: #F3D4F4;}
+
+
+/**Main**/
+main {padding:20px;
+	  margin: 0 auto;
+	  width: 90%;
+	  max-width: 980px;}
+	  
+main h1 {font-family: 'Alegreya', serif;
+		 color: #F3D4F4;
+		 text-align: center;
+		 font-size: 3em;
+		 margin-top: 80px;
+		 margin-bottom: 0;}
+		 
+.intro-graph {font-family: 'Alegreya Sans', sans-serif;
+			  color: #fff;
+			  font-size: 1.2em;} 
+			  
+			  
+/**Text-only elements**/
+#text-only {display: flex;
+		    width: 95%;
+		    flex-wrap: wrap;
+		    margin: 0 auto;}
+
+.txt-content {margin-top: 30px;
+			  width: 100%;}
+
+.txt-content h2 {font-size: 2.5em;
+				 color: #F3D4F4;
+				 font-family: 'Alegreya', serif;
+				 margin-top: 10px;
+				 margin-bottom: 0;}
+
+			  
+.txt-content h3 {font-size: 2em;
+				 color: #F3D4F4;
+				 font-family: 'Alegreya', serif;
+				 margin-top: 10px;
+				 margin-bottom: 0;}
+
+.txt-content p, ul {font-family: 'Alegreya Sans', sans-serif;
+				    color: #fff;
+				    font-size: 1.2em;}		
+
+.txt-content a {text-decoration: none;
+                color: #A1D324;}
+                
+.emphasis {font-weight: bold;
+		   color: #B336AE;}  	
+
+
+/**text only elements with locked button**/		
+hr {width: 100%;
+    margin-top: 50px;
+    border: 2px solid #B336AE;}   
+    
+#text-only2 {display: flex;
+		     width: 95%;
+		     flex-wrap: wrap;
+		     margin: 0 auto;}
+
+.txt-content2 {margin-top: 30px;
+			   width: 100%;
+			   position: relative;}
+
+.txt-content2 h2 {font-size: 2.5em;
+				  color: #F3D4F4;
+				  font-family: 'Alegreya', serif;
+				  margin-top: 10px;
+				  margin-bottom: 0;}
+
+			  
+.txt-content2 h3 {font-size: 1.75em;
+				  color: #F3D4F4;
+				  font-family: 'Alegreya', serif;
+				  margin-top: 10px;
+				  margin-bottom: 0;
+				  line-height: 1.2em;}
+
+.txt-content2 p, ul {font-family: 'Alegreya Sans', sans-serif;
+				     color: #fff;
+				     font-size: 1.2em;
+				     margin-bottom: 50px;}		
+
+.txt-content2 a {text-decoration: none;
+                 color: #A1D324;}
+                 
+.read-link {padding-top: 10px;
+			text-align: right;
+			padding: 10px 10px 8px 0;
+			position: absolute;
+			bottom: 2px;
+			right: 10px;
+			font-family: 'Alegreya Sans', sans-serif;}
+
+.read-link a {color: #A1D324;
+			  text-transform: uppercase;
+			  text-decoration: none;
+			  font-weight: bold;}                 
+
+.read-link a:hover {text-decoration: underline;}
+
+
+/**images and text pages**/
+#work-display {display: flex;
+		       width: 95%;
+		       flex-wrap: wrap;
+		       margin: 0 auto;}
+
+.work-display-content {margin-top: 50px;
+			           width: 100%;}
+
+.work-display-content img {width: 95%;
+						   display: block;
+						   margin: 0 auto;}
+
+.read-link2 {margin-top: 20px;
+			 text-align: center;
+			 font-family: 'Alegreya Sans', sans-serif;
+			 font-size: 1.4em;}
+
+.read-link2 a {color: #A1D324;
+			   text-transform: uppercase;
+			   font-weight: bold;} 
+			   
+.read-link2 a:hover {color: #fff;}
+
+
+.work-display-content p {font-family: 'Alegreya Sans', sans-serif;
+				         color: #fff;
+				         font-size: 1.2em;}
+				         
+.image-title {margin-top: 20px;
+			  text-align: center;
+			  font-family: 'Alegreya Sans', sans-serif;
+			  font-size: 1.4em;
+			  color: #A1D324;
+			  text-transform: uppercase;
+			  font-weight: bold;}		         
+				         
+
+/**About Page**/
+#bio {display: flex;
+	  width: 95%;
+	  flex-wrap: wrap;
+	  margin: 0 auto;}
+
+.bio-content {width: 100%;
+			  margin-top: 30px;}
+
+.bio-content h2 {font-size: 2.25em;
+				color: #F3D4F4;
+				font-family: 'Alegreya', serif;
+				margin-top: 10px;
+				margin-bottom: 0;
+				line-height: 1.2em;}
+
+.bio-content h4 {font-size: 1.6em;
+				color: #F3D4F4;
+				font-family: 'Alegreya', serif;
+				margin-top: 10px;
+				margin-bottom: 0;}
+				
+.bio-content p, ul {font-family: 'Alegreya Sans', sans-serif;
+				    color: #fff;
+				    font-size: 1.2em;
+				    margin-bottom: 50px;}					
+
+.bio-content ul {margin-left: -20px;}
+.bio-content ul li {margin-bottom: 20px;}
+.bio-content ul li a {text-decoration: none;
+                      color: #A1D324;}
+				
+/**Footer**/
+footer {background-color: #000;
+		padding: 10px;}	
+						  
+footer ul {list-style: none;
+           margin: 0 auto;
+           width: 90%;
+           padding: 0;
+           line-height: 2em;
+           font-size: 1em;}
+
+footer ul li {display: inline-block;
+			  text-align: center;
+			  width: 30%;}
+		
+footer ul li a {text-decoration: none;
+			    font-weight: bold;
+			    color: #BB65D4;
+			    font-family: 'Alegreya Sans', sans-serif;}
+			    
+footer ul li a:hover {color: #A1D324;}
