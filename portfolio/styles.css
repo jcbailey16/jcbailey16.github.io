@@ -2,10 +2,10 @@
 	Author: Jennifer Bailey
 **/
 
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans');
+@import url('https://fonts.googleapis.com/css?family=Life+Savers:400,700|Tajawal:400,700');
 /**
-	font-family: 'Alegreya', serif;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Tajawal', sans-serif;
+    font-family: 'Life Savers', cursive;
 **/
 
 body {margin: 0;
@@ -26,37 +26,46 @@ body {margin: 0;
 			     border-radius: 10px;
 			     margin: 10px auto;
 	 		     width: 45%;
-	 		     padding-top: 10px;
-	 		     padding-bottom: 10px;
 	 		     display: inline-block;
-	 		     color: #FFF;}
+	 		     padding-top: 10px;
+				 padding-bottom: 8px;}
 
 #home-nav ul li a {text-decoration: none;
 				   text-align: center;
 				   color: #FFF;
-				   font-family: 'Alegreya Sans', sans-serif;}
+				   font-family: 'Tajawal', sans-serif;
+				   font-weight: bold;
+				   font-size: 1em;
+				   letter-spacing: 1px;
+				   padding: 10px;}
 
 
-#home-nav ul li:hover {background-color: #A1D324;
-					   border: 2px solid #A1D324;}
+#home-nav ul li:hover {background-color: #5FFAA7;
+					   border: 2px solid #5FFAA7;
+					   color: #333333;}
+
+#home-nav ul li a:hover {color: #333333;}
 					   
 #home-content {margin: 0;
 			   padding: 20px;
 			   margin-bottom: 10px;}
 			   
-#home-content h1 {font-family: 'Alegreya', serif;
-				  color: #F3D4F4;
+#home-content h1 {font-family: 'Life Savers', cursive;
+				  font-weight: bold;
+				  color: #52b5b0;
 				  text-align: center;
 				  font-size: 3em;
 				  margin-bottom: 0;}
 
-#home-content h2 {font-family: 'Alegreya', serif;
-				  color: #F3D4F4;
+#home-content h2 {font-family: 'Life Savers', cursive;
+				  font-weight: bold;
+				  color: #3B8686;
 				  text-align: center;
 				  font-size: 2em;
-				  margin-top: 0;}
+				  margin-top: 20px;
+				  margin-bottom: 20px;}
 				  
-#home-content p {font-family: 'Alegreya Sans', sans-serif;
+#home-content p {font-family: 'Tajawal', sans-serif;
 				 color: #fff;
 				 font-size: 1.2em;
 				 margin: 0 auto;
@@ -72,7 +81,7 @@ nav {margin: 0;
 	 left: 0;
 	 background-color: #000000;
 	 width: 100%;
-	 font-family: 'Alegreya Sans', sans-serif;
+	 font-family: 'Tajawal', sans-serif;
 	 z-index: 9999;
 	 padding-bottom: 15px;}
 			
@@ -86,8 +95,8 @@ nav ul li {display: inline-block;
 		   text-align: center;}
 			
 nav ul li a {text-decoration: none;
-			 font-weight: bold;
-			 color: #BB65D4;}
+			 font-weight: normal;
+			 color: #69D2E7;}
 			
 nav ul ul {position: absolute;
 		   background-color: #333333;
@@ -102,8 +111,8 @@ nav ul ul li {display: block;
 			  width: 7em;
 			  line-height: 2em;}
 
-.active {color: #A1D324;}
-#close-about, #close-writings, #close-design {color: #F3D4F4;}
+.active {color: #5FFAA7;}
+#close-about, #close-writings, #close-design {color: #bbe4ea;}
 
 
 /**Main**/
@@ -112,16 +121,18 @@ main {padding:20px;
 	  width: 90%;
 	  max-width: 980px;}
 	  
-main h1 {font-family: 'Alegreya', serif;
-		 color: #F3D4F4;
+main h1 {font-family: 'Life Savers', cursive;
+		 font-weight: bold;
+		 color: #52b5b0;
 		 text-align: center;
-		 font-size: 3em;
+		 font-size: 3.2em;
 		 margin-top: 80px;
 		 margin-bottom: 0;}
 		 
-.intro-graph {font-family: 'Alegreya Sans', sans-serif;
+.intro-graph {font-family: 'Tajawal', sans-serif;
 			  color: #fff;
-			  font-size: 1.2em;} 
+			  font-size: 1.2em;
+			  margin-top: 40px;} 
 			  
 			  
 /**Text-only elements**/
@@ -134,33 +145,40 @@ main h1 {font-family: 'Alegreya', serif;
 			  width: 100%;}
 
 .txt-content h2 {font-size: 2.5em;
-				 color: #F3D4F4;
-				 font-family: 'Alegreya', serif;
+				 color: #3B8686;
+				 font-family: 'Life Savers', cursive;
+				 font-weight: bold;;
 				 margin-top: 10px;
 				 margin-bottom: 0;}
 
 			  
 .txt-content h3 {font-size: 2em;
-				 color: #F3D4F4;
-				 font-family: 'Alegreya', serif;
+				 color: #BB65D4;
+				 font-family: 'Life Savers', cursive;
+				 font-weight: bold;
 				 margin-top: 10px;
-				 margin-bottom: 0;}
+				 margin-bottom: 30px;}
 
-.txt-content p, ul {font-family: 'Alegreya Sans', sans-serif;
+.txt-content p, ul {font-family: 'Tajawal', sans-serif;
 				    color: #fff;
 				    font-size: 1.2em;}		
 
+.txt-content ul li {line-height: 1.3em;}
+
 .txt-content a {text-decoration: none;
-                color: #A1D324;}
+                color: #5FFAA7;}
+
+.txt-content a:hover {text-decoration: underline;}
                 
 .emphasis {font-weight: bold;
-		   color: #B336AE;}  	
+		   color: #bbe4ea;}  	
 
 
 /**text only elements with locked button**/		
 hr {width: 100%;
     margin-top: 50px;
-    border: 2px solid #B336AE;}   
+    border: 1.5px solid #9600ce;
+    border-radius: 2px;}   
     
 #text-only2 {display: flex;
 		     width: 95%;
@@ -172,26 +190,26 @@ hr {width: 100%;
 			   position: relative;}
 
 .txt-content2 h2 {font-size: 2.5em;
-				  color: #F3D4F4;
-				  font-family: 'Alegreya', serif;
+				  color: #52b5b0;
+				  font-family: 'Life Savers', cursive;
 				  margin-top: 10px;
-				  margin-bottom: 0;}
+				  margin-bottom: 10px;}
 
 			  
-.txt-content2 h3 {font-size: 1.75em;
-				  color: #F3D4F4;
-				  font-family: 'Alegreya', serif;
+.txt-content2 h3 {font-size: 1.5em;
+				  color: #BB65D4;
+				  font-family: 'Life Savers', cursive;
 				  margin-top: 10px;
 				  margin-bottom: 0;
-				  line-height: 1.2em;}
+				  line-height: 1.4em;}
 
-.txt-content2 p, ul {font-family: 'Alegreya Sans', sans-serif;
+.txt-content2 p, ul {font-family: 'Tajawal', sans-serif;
 				     color: #fff;
 				     font-size: 1.2em;
 				     margin-bottom: 50px;}		
 
 .txt-content2 a {text-decoration: none;
-                 color: #A1D324;}
+                 color: #52b5b0;}
                  
 .read-link {padding-top: 10px;
 			text-align: right;
@@ -199,12 +217,13 @@ hr {width: 100%;
 			position: absolute;
 			bottom: 2px;
 			right: 10px;
-			font-family: 'Alegreya Sans', sans-serif;}
+			font-family: 'Tajawal', sans-serif;}
 
-.read-link a {color: #A1D324;
+.read-link a {color: #5FFAA7;
 			  text-transform: uppercase;
 			  text-decoration: none;
-			  font-weight: bold;}                 
+			  font-weight: normal;
+			  font-size: 1.1em;}                 
 
 .read-link a:hover {text-decoration: underline;}
 
@@ -224,27 +243,29 @@ hr {width: 100%;
 
 .read-link2 {margin-top: 20px;
 			 text-align: center;
-			 font-family: 'Alegreya Sans', sans-serif;
-			 font-size: 1.4em;}
+			 font-family: 'Tajawal', sans-serif;
+			 font-size: 1.6em;}
 
-.read-link2 a {color: #A1D324;
+.read-link2 a {color: #5FFAA7;
 			   text-transform: uppercase;
-			   font-weight: bold;} 
+			   font-weight: normal;
+			   letter-spacing: .5px;} 
 			   
-.read-link2 a:hover {color: #fff;}
+.read-link2 a:hover {color: #bbe4ea;}
 
 
-.work-display-content p {font-family: 'Alegreya Sans', sans-serif;
+.work-display-content p {font-family: 'Tajawal', sans-serif;
 				         color: #fff;
 				         font-size: 1.2em;}
 				         
 .image-title {margin-top: 20px;
 			  text-align: center;
-			  font-family: 'Alegreya Sans', sans-serif;
-			  font-size: 1.4em;
-			  color: #A1D324;
+			  font-family: 'Tajawal', sans-serif;
+			  font-size: 1.6em;
+			  color: #5FFAA7;
 			  text-transform: uppercase;
-			  font-weight: bold;}		         
+			  font-weight: normal;
+			  letter-spacing: 1px;}		         
 				         
 
 /**About Page**/
@@ -257,19 +278,25 @@ hr {width: 100%;
 			  margin-top: 30px;}
 
 .bio-content h2 {font-size: 2.25em;
-				color: #F3D4F4;
-				font-family: 'Alegreya', serif;
-				margin-top: 10px;
-				margin-bottom: 0;
-				line-height: 1.2em;}
+				 color: #BB65D4;
+				 font-family: 'Life Savers', cursive;
+				 font-weight: bold;
+				 margin-top: 10px;
+				 margin-bottom: 0;
+				 line-height: 1.2em;}
 
 .bio-content h4 {font-size: 1.6em;
-				color: #F3D4F4;
-				font-family: 'Alegreya', serif;
-				margin-top: 10px;
-				margin-bottom: 0;}
+				 color: #bbe4ea;
+				 font-family: 'Life Savers', cursive;
+				 font-weight: bold;
+				 margin-top: 10px;
+				 margin-bottom: 0;}
+
+.bio-content img {width: 99%;
+				  margin-top: 30px;
+				  margin-bottom: 20px;}
 				
-.bio-content p, ul {font-family: 'Alegreya Sans', sans-serif;
+.bio-content p, ul {font-family: 'Tajawal', sans-serif;
 				    color: #fff;
 				    font-size: 1.2em;
 				    margin-bottom: 50px;}					
@@ -277,7 +304,9 @@ hr {width: 100%;
 .bio-content ul {margin-left: -20px;}
 .bio-content ul li {margin-bottom: 20px;}
 .bio-content ul li a {text-decoration: none;
-                      color: #A1D324;}
+                      color: #5FFAA7;}
+.bio-content ul li a:hover {text-decoration: underline;}
+
 				
 /**Footer**/
 footer {background-color: #000;
@@ -285,18 +314,22 @@ footer {background-color: #000;
 						  
 footer ul {list-style: none;
            margin: 0 auto;
-           width: 90%;
+           width: 95%;
            padding: 0;
            line-height: 2em;
-           font-size: 1em;}
+           font-size: .95em;}
 
 footer ul li {display: inline-block;
 			  text-align: center;
-			  width: 30%;}
+			  width: 30%;
+			  padding-left: 5px;}
+			  
 		
 footer ul li a {text-decoration: none;
-			    font-weight: bold;
-			    color: #BB65D4;
-			    font-family: 'Alegreya Sans', sans-serif;}
+			    font-weight: normal;
+			    color: #69D2E7;
+			    font-family: 'Tajawal', sans-serif;
+			    padding-right: 0;
+			    padding-left: 0;}
 			    
-footer ul li a:hover {color: #A1D324;}
+footer ul li a:hover {color: #5FFAA7;}
