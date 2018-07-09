@@ -108,6 +108,9 @@ nav ul li {display: inline-block;
 nav ul li a {text-decoration: none;
 			 font-weight: normal;
 			 color: #69D2E7;}
+
+nav ul li a:hover {border-bottom: 3px solid #5FFAA7;
+				   padding-bottom: 3px;}
 			
 nav ul ul {position: absolute;
 		   background-color: #333333;
@@ -124,7 +127,8 @@ nav ul ul li {display: block;
 
 .active {color: #5FFAA7;}
 #close-about, #close-writings, #close-design {color: #bbe4ea;}
-
+#close-about:hover, #close-writings:hover, #close-design:hover {border-bottom: 3px solid #5FFAA7;
+				   												padding-bottom: 3px;}
 
 /**Main**/
 main {padding:20px;
@@ -177,7 +181,8 @@ main h1 {font-family: 'Life Savers', cursive;
 .txt-content ul li {line-height: 1.3em;}
 
 .txt-content a {text-decoration: none;
-                color: #5FFAA7;}
+                color: #5FFAA7;
+                font-style: italic;}
 
 .txt-content a:hover {text-decoration: underline;}
                 
@@ -220,7 +225,8 @@ hr {width: 100%;
 				     margin-bottom: 50px;}		
 
 .txt-content2 a {text-decoration: none;
-                 color: #52b5b0;}
+                 color: #52b5b0;
+                 font-style: italic;}
                  
 .read-link {padding-top: 10px;
 			text-align: right;
@@ -339,7 +345,8 @@ hr {width: 100%;
 .bio-content ul {margin-left: -20px;}
 .bio-content ul li {margin-bottom: 20px;}
 .bio-content ul li a {text-decoration: none;
-                      color: #5FFAA7;}
+                      color: #5FFAA7;
+                      font-style: italic;}
 .bio-content ul li a:hover {text-decoration: underline;}
 
 				
@@ -367,7 +374,8 @@ footer ul li a {text-decoration: none;
 			    padding-right: 0;
 			    padding-left: 0;}
 			    
-footer ul li a:hover {color: #5FFAA7;}
+footer ul li a:hover {border-bottom: 3px solid #5FFAA7;
+				      padding-bottom: 3px;}
 
 /**FIRST BREAKPOINT**/
 @media (min-width: 800px) {
