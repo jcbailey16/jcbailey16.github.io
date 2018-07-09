@@ -15,21 +15,29 @@ body {margin: 0;
 	  background-color: #161616;}
 	  
 /**Landing Page**/
+.work-display-btns {margin-top: 10px;}
+
+.work-display-btns ul,
 #home-nav ul {font-size: 1.2em;
 	          list-style: none;
 	          text-align: center;
 	          margin: 0;
 	          padding: 0;}
 
+.work-display-btns ul li,
 #home-nav ul li {background-color: #9600ce;
 			     border: 2px solid #9600ce;
 			     border-radius: 10px;
 			     margin: 10px auto;
-	 		     width: 45%;
+	 		     width: 100%;
 	 		     display: inline-block;
-	 		     padding-top: 10px;
-				 padding-bottom: 8px;}
+	 		     padding-top: 8px;
+				 padding-bottom: 5px;}
 
+.work-display-btns ul li {width: 45%;
+						  padding-top: 5px;}
+
+.work-display-btns ul li a,
 #home-nav ul li a {text-decoration: none;
 				   text-align: center;
 				   color: #FFF;
@@ -37,14 +45,17 @@ body {margin: 0;
 				   font-weight: bold;
 				   font-size: 1em;
 				   letter-spacing: 1px;
-				   padding: 10px;}
+				   padding: 5px 90px;}
 
+.work-display-btns ul li a {padding: 5px;}
 
+.work-display-btns ul li:hover,
 #home-nav ul li:hover {background-color: #5FFAA7;
-					   border: 2px solid #5FFAA7;
-					   color: #333333;}
+					   border: 2px solid #5FFAA7;}
 
-#home-nav ul li a:hover {color: #333333;}
+.work-display-btns ul li a:hover,
+#home-nav ul li a:hover {color: #333333;
+						 background-color: #5FFAA7;}
 					   
 #home-content {margin: 0;
 			   padding: 20px;
@@ -62,8 +73,8 @@ body {margin: 0;
 				  color: #3B8686;
 				  text-align: center;
 				  font-size: 2em;
-				  margin-top: 20px;
-				  margin-bottom: 20px;}
+				  margin-top: 30px;
+				  margin-bottom: 30px;}
 				  
 #home-content p {font-family: 'Tajawal', sans-serif;
 				 color: #fff;
@@ -239,7 +250,29 @@ hr {width: 100%;
 
 .work-display-content img {width: 95%;
 						   display: block;
-						   margin: 0 auto;}
+						   margin: 0 auto;
+						   border-radius: 4px;}
+
+.work-display-content img:hover {background: #fff;
+								 opacity: .7;}
+		
+#work-display2 {display: flex;
+		       width: 95%;
+		       flex-wrap: wrap;
+		       margin: 0 auto;}
+						 
+.work-display-content2 {margin-top: 50px;
+			            width: 95%;}
+
+.work-display-content2 img {width: 75%;
+						   display: block;
+						   margin: 0 auto;
+						   border-radius: 4px;}
+
+.work-display-content2 img:hover {background: #fff;
+								 opacity: .7;}
+								 
+								 
 
 .read-link2 {margin-top: 20px;
 			 text-align: center;
@@ -258,7 +291,7 @@ hr {width: 100%;
 				         color: #fff;
 				         font-size: 1.2em;}
 				         
-.image-title {margin-top: 20px;
+.image-title {margin-top: 30px;
 			  text-align: center;
 			  font-family: 'Tajawal', sans-serif;
 			  font-size: 1.6em;
@@ -267,6 +300,7 @@ hr {width: 100%;
 			  font-weight: normal;
 			  letter-spacing: 1px;}		         
 				         
+.graphics-thumb {max-width: 300px;}
 
 /**About Page**/
 #bio {display: flex;
@@ -294,7 +328,8 @@ hr {width: 100%;
 
 .bio-content img {width: 99%;
 				  margin-top: 30px;
-				  margin-bottom: 20px;}
+				  margin-bottom: 20px;
+				  border-radius: 4px;}
 				
 .bio-content p, ul {font-family: 'Tajawal', sans-serif;
 				    color: #fff;
@@ -333,3 +368,80 @@ footer ul li a {text-decoration: none;
 			    padding-left: 0;}
 			    
 footer ul li a:hover {color: #5FFAA7;}
+
+/**FIRST BREAKPOINT**/
+@media (min-width: 800px) {
+	/**landing page**/
+	#home-content h1 {font-size: 5em;
+					  line-height: 2em;} 
+	#home-content h2 {font-size: 2.5em;
+					  margin-bottom: 60px;}
+	#home-content p {font-size: 1.3em;}
+	#home-nav ul li {width: 50%;}
+	
+	
+	/**main navigation**/
+	nav ul {font-size: 1.15em;}
+	nav ul li ul {margin-left: 20px;}
+	nav ul li:nth-child(3)>ul {margin-left: 20px;}
+	nav ul ul li {width: 8em;}
+	
+	
+	/**Global**/
+	main h1 {font-size: 4em;
+			 line-height: 2em;}	 
+	.intro-graph {font-size: 1.3em;
+				  max-width: 980px;}		 
+		
+			 		     
+	/**Text only content**/
+	#text-only {width: 90%;}
+	.txt-content {margin-top: 50px;
+			  	  width: 44%;}	  	  
+	.txt-content:nth-child(even) {margin-left: 70px;}			  
+	.txt-content h3 {font-size: 2.25em;}
+
+	.txt-content p, ul {font-size: 1.3em;}
+
+	#text-only2 {width: 90%;}
+	.txt-content2 {margin-top: 50px;
+			       width: 45%;}
+	.txt-content2:nth-child(even) {margin-left: 50px;}
+	.txt-content2 h3 {font-size: 1.8em;}
+	.txt-content2 p {font-size: 1.3em;}
+	
+	
+	/**About page**/
+	#bio {width: 90%;}
+	.bio-content:first-child {width: 60%;
+			  				  margin-top: 60px;}
+	.bio-content:last-child {width: 31%;
+							 margin-left: 50px;
+							 margin-top: 60px;}
+	.bio-content h2 {font-size: 2.5em;}
+	.bio-content h4 {font-size: 1.9em;}
+	.bio-content p, ul {font-size: 1.3em;}	
+				    
+				    					 
+	/**text and image displays**/
+	#work-display {width: 90%;}
+	.work-display-content {margin-top: 70px;
+			           	   width: 46%;}	           	   
+	.work-display-content:nth-child(even) {margin-left: 40px;}
+	.image-title {font-size: 1.9em;}
+	
+	#work-display2 {width: 90%;}
+	.work-display-content2 {margin-top: 70px;
+			            	width: 45%;}
+	.work-display-content2:nth-child(even) {margin-left: 50px;}
+	.work-display-content2 img {width: 85%;}
+	
+	/**footer**/
+	footer {padding-top: 15px;
+			padding-left: 20px;}
+	footer ul {font-size: 1.15em;
+			   width: 90%;
+			   margin: 0 auto;}
+	
+
+}
