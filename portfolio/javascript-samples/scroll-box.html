@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Change Picture Size</title>
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css?family=Life+Savers:400,700|Tajawal:400,700');
+  	body {background-color: #161616;
+  		  color: #FFF;}
+  	h1 {font-family: 'Life Savers', cursive;
+		font-weight: bold;
+		color: #52b5b0;
+		text-align: center;
+		font-size: 2.2em;
+		margin-top: 30px;
+		margin-bottom: 0;}
+  	
+  	 div, p {font-family: 'Tajawal', sans-serif;
+    	          font-size: 1.3em;
+    	          width: 90%;
+    	          max-width: 980px;
+  	              margin: 0 auto;}
+  	 div {margin-top: 50px;}
+  	 p {margin-top: 20px;}
+  	 
+  	 a {color: #52b5b0;}
+  
+  	 form {width: 90%;
+  	 	   margin: 0 auto;
+  	 	   margin-top: 40px;}
+  	 	   
+  	 #text-box {border: 1px solid #fff; 
+  	 			width: 90%; 
+  	 			max-width: 300px; 
+  	 			height: 200px; 
+  	 			overflow: hidden;
+  	 			margin: 0 auto;
+  	 			margin-top: 40px;
+  	 			font-size: 1em;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script> 
+  <script>
+  	$(document).ready(function() {
+		//scroll down
+		$("#sDown").click(function(event) {
+			event.preventDefault();
+			var position = $("#text-box").scrollTop();
+			$("#text-box").scrollTop(position + 150);
+		});
+	
+		//scroll up
+		$("#sUp").click(function(event) {
+			event.preventDefault();
+			var position = $("#text-box").scrollTop();
+			$("#text-box").scrollTop(position - 150);
+		});
+	
+	});
+  </script> 
+</head>
+<body>
+	<h1>Scroll Box</h1>
+	<div><span class="bold">Instructions:</span> Click the buttons to scroll up and down in the box.</div>
+	
+	<form action="scroll.html">
+		<button id="sDown">Scroll Down</button>
+		<button id="sUp">Scroll Up</button>
+	</form>
+	
+	<div id="text-box">
+		
+		<p>Christmas Presents</p>
+
+		<p>I know, it's Nov. 6, why am I buying Christmas presents already?</p>
+	
+		<p>First, I like to be done by Thanksgiving. The earlier you shop, the more likely 
+		you are to get the things people want. Plus, shopping in November is a nightmare no matter, 
+		so it's best to get things done early. If you really need to wait for the sales, make sure 
+		you can order the items online. Fighting Black Friday crowds isn't fun for anyone.</p>
+	
+		<p>Second, we are having an early Christmas with my brother and sister-in-law when we 
+		go to visit them in Mississippi for Thanksgiving. We'll still have regular Christmas at 
+		home, but I need to have presents for when we drive down in a few weeks.</p>
+	
+		<p>Third, fall semester finals are just before Christmas. If I can get one stress factor 
+		out of the way early, then I focus all my attention on finals and final projects at the 
+		beginning of December.</p>
+	
+		<p>As of Nov. 6, I am halfway done with my shopping — most of which was done online! 
+		Just four more people to buy presents for!</p>
+		 
+	</div>
+	
+	<div>Go back to <a href="../javascript-samples.html">samples list</a>.</div>
+</body>
+</html>

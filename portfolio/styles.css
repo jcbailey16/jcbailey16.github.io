@@ -174,9 +174,16 @@ main h1 {font-family: 'Life Savers', cursive;
 				 margin-top: 10px;
 				 margin-bottom: 30px;}
 
-.txt-content p, ul {font-family: 'Tajawal', sans-serif;
-				    color: #fff;
-				    font-size: 1.2em;}		
+.txt-content p, ul, {font-family: 'Tajawal', sans-serif;
+				     color: #fff;
+				     font-size: 1.2em;}		
+.txt-content dl, 
+.txt-content dt, 
+.txt-content dd {font-family: 'Tajawal', sans-serif;
+				 color: #fff;
+				 font-size: 1.1em;}
+.txt-content dt {font-weight: bold;
+				 margin-top: 20px;}
 
 .txt-content ul li {line-height: 1.3em;}
 

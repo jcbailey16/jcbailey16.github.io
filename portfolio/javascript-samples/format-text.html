@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Christmas Presents</title>
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css?family=Life+Savers:400,700|Tajawal:400,700');
+  	body {background-color: #161616;
+  		  color: #FFF;}
+  	
+  	h1 {font-family: 'Life Savers', cursive;
+		font-weight: bold;
+		color: #52b5b0;
+		text-align: center;
+		font-size: 2.2em;
+		margin-top: 30px;
+		margin-bottom: 0;}
+  	
+  	 div, p, ul {font-family: 'Tajawal', sans-serif;
+    	          font-size: 1.3em;
+    	          width: 90%;
+    	          max-width: 980px;
+  	              margin: 0 auto;}
+  	 div {margin-top: 50px;}
+  	 p {margin-top: 20px;}
+  	 h4 {font-family: 'Tajawal', sans-serif;
+    	 font-size: 1.3em;
+         width: 90%;
+    	 max-width: 980px;
+  	     margin: 0 auto;
+  	     margin-top: 40px;}
+  	 
+  	 ul {margin-top: 40px;}
+  	 
+  	 ul li ul {margin-top: 10px;
+  	 		   margin-bottom: 10px;
+  	 		   font-size: .9em;}
+  	 a {color: #52b5b0;}
+  	 
+     .highlight {text-decoration: underline;}
+     
+     .title {font-weight: bold;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script>
+  	$(document).ready(function() {
+		//add title to display options
+		$("h4").addClass("title");
+	
+		//display title paragraph in italics
+		$("p:first").css("font-style","italic");
+		$("p:first").addClass("title");
+	
+		//toggle title text styles between bold and highlight
+		$("#changeTitle").click(function(event) {
+			event.preventDefault();
+			$("#title-txt").toggleClass("title highlight");
+			//$("#title-txt").toggleClass("highlight");
+		});
+	
+		//enlarge text incrementally
+		$("#enlarge").click(function(event) {
+			event.preventDefault();
+			$("p").css("font-size", "+=2px");
+		});
+	
+		//enlarge text incrementally
+		$("#reduce").click(function(event) {
+			event.preventDefault();
+			$("p").css("font-size", "-=2px");
+		});
+	
+		//highlight and enlarge hovered on text
+		$("p").mouseenter(function() {
+			$(this).css({"font-size": "1.5em", "background-color": "yellow", "color":"black"});
+		}); 
+	
+		$("p").mouseleave(function() {
+			$(this).css({"font-size": "1.3em", "background-color": "#161616", "color":"#FFF"});
+		});
+	});
+  </script>
+</head>
+<body>
+	<h1>Format Text Dynamically</h1>
+	<div><span class="bold">Instructions:</span> Clicking on "Change Title" will change the format of the title.
+	Clicking on "Enlarge Text Size" will increase the size of all the text. Clicking "Reduce Text Size" will decrease 
+	the size of all the text. Hover over each paragraph to see a special effect.</div>
+	
+	<h4>Display Options: &nbsp; <a href="changeTitle.hmtl" id="changeTitle">Change Title</a> &nbsp; 
+	<a href="enlargeText.hmtl" id="enlarge">Enlarge Text Size</a> &nbsp; 
+	<a href="reduceText.hmtl" id="reduce">Reduce Text Size</a></h4>
+
+	<p id="title-txt">Christmas Presents</p>
+
+	<p>I know, it's Nov. 6, why am I buying Christmas presents already?</p>
+	
+	<p>First, I like to be done by Thanksgiving. The earlier you shop, the more likely 
+	you are to get the things people want. Plus, shopping in November is a nightmare no matter, 
+	so it's best to get things done early. If you really need to wait for the sales, make sure 
+	you can order the items online. Fighting Black Friday crowds isn't fun for anyone.</p>
+	
+	<p>Second, we are having an early Christmas with my brother and sister-in-law when we 
+	go to visit them in Mississippi for Thanksgiving. We'll still have regular Christmas at 
+	home, but I need to have presents for when we drive down in a few weeks.</p>
+	
+	<p>Third, fall semester finals are just before Christmas. If I can get one stress factor 
+	out of the way early, then I focus all my attention on finals and final projects at the 
+	beginning of December.</p>
+	
+	<p>As of Nov. 6, I am halfway done with my shopping — most of which was done online! 
+	Just four more people to buy presents for!</p>
+	
+	<div>Go back to <a href="../javascript-samples.html">samples list</a>.</div> 
+</body>
+</html>
+
+
+

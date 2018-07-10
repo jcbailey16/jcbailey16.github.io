@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Expanding and collapsing lists</title>
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css?family=Life+Savers:400,700|Tajawal:400,700');
+  	body {background-color: #161616;
+  		  color: #FFF;}
+  	
+  	h1 {font-family: 'Life Savers', cursive;
+		font-weight: bold;
+		color: #52b5b0;
+		text-align: center;
+		font-size: 2.2em;
+		margin-top: 30px;
+		margin-bottom: 0;}
+  	
+  	 p, ul {font-family: 'Tajawal', sans-serif;
+    	    font-size: 1.3em;
+    	    width: 90%;
+    	    max-width: 980px;
+  	        margin: 0 auto;}
+  	 p {margin-top: 50px;}
+  	 
+  	 ul {margin-top: 40px;}
+  	 
+  	 ul li ul {margin-top: 10px;
+  	 		   margin-bottom: 10px;
+  	 		   font-size: .9em;}
+  	 a {color: #52b5b0;}
+    .bold {font-weight: bold;}
+    	   
+    .nodisplay {display: none;}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script>
+  	$(document).ready(function() {
+		//hide secondary list
+		$("li ul").addClass("nodisplay");
+	
+		//show hidden lists
+		//shows pb & j recipe
+		$("ul li:first").on("click", function(event) {
+			$("li ul:first").removeClass("nodisplay");
+		});
+	
+		//hides pb&j recipe again
+		$("ul li:first").on("dblclick", function(event) {
+			$("li ul:first").addClass("nodisplay");
+		});
+	
+		//shows wish sandwich recipe
+		$("ul li:nth-child(2)").on("click", function(event) {
+			$("li ul:eq(1)").removeClass("nodisplay");
+		});
+	
+		//hides wish sandwich recipe again
+		$("ul li:nth-child(2)").on("dblclick", function(event) {
+			$("li ul:eq(1)").addClass("nodisplay");
+		});
+	
+		//shows water bottle recipe
+		$("ul li:nth-child(3)").on("click", function(event) {
+			$("li ul:eq(2)").removeClass("nodisplay");
+		});
+	
+		//hides water bottle recipe again
+		$("ul li:nth-child(3)").on("dblclick", function(event) {
+			$("li ul:eq(2)").addClass("nodisplay");
+		});
+	
+	});
+  </script>
+</head>
+<body>
+	<h1>Expanding &amp; Collapsing Lists with jQuery</h1>
+	<p><span class="bold">Instructions:</span> Click once on each top-level list item 
+	to expand the recipe. To close the recipe list, double-click on the recipe name or the expanded recipe 
+	ingredients</p>
+	<ul>
+		<li>Peanut Butter and Jelly
+			<ul>
+				<li>Bread - your choice</li>
+				<li>Peanut Butter</li>
+				<li>Grape - your choice</li>
+				<li>Alternative - substitue sliced banana for the jelly (YUM!)</li>
+			</ul>
+		</li>
+
+		<li>Wish Sandwich
+			<ul id="list">
+				<li>Bread - your choice</li>
+				<li>Mayo or mustard</li>
+				<li>Wish there was something more!</li>
+			</ul>
+		</li>
+
+		<li>Bottled Water
+			<ul id="items">
+				<li>One plastic bottle</li>
+				<li>Fill bottle with water from the tap</li>
+				<li>Drink up!</li>
+			</ul>
+		</li>
+	</ul>
+	
+	<p>Go back to <a href="../javascript-samples.html">samples list</a>.</p> 
+</body>
+</html>
+
+
+
