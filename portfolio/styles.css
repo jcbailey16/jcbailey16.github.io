@@ -349,6 +349,10 @@ hr {width: 100%;
 				    font-size: 1.2em;
 				    margin-bottom: 50px;}					
 
+.bio-content a {text-decoration: none;
+                color: #5FFAA7;
+                font-style: italic;}
+.bio-content a:hover {text-decoration: underline;}
 .bio-content ul {margin-left: -20px;}
 .bio-content ul li {margin-bottom: 20px;}
 .bio-content ul li a {text-decoration: none;
@@ -397,8 +401,8 @@ footer ul li a:hover {border-bottom: 3px solid #5FFAA7;
 	
 	/**main navigation**/
 	nav ul {font-size: 1.15em;}
-	nav ul li ul {margin-left: 20px;}
-	nav ul li:nth-child(3)>ul {margin-left: 20px;}
+	nav ul li ul {margin-left: 100px;}
+	nav ul li:nth-child(3)>ul {margin-left: 100px;}
 	nav ul ul li {width: 8em;}
 	
 	
@@ -410,7 +414,7 @@ footer ul li a:hover {border-bottom: 3px solid #5FFAA7;
 		
 			 		     
 	/**Text only content**/
-	#text-only {width: 90%;}
+	#text-only {width: 100%;}
 	.txt-content {margin-top: 50px;
 			  	  width: 44%;}	  	  
 	.txt-content:nth-child(even) {margin-left: 70px;}			  
@@ -418,7 +422,7 @@ footer ul li a:hover {border-bottom: 3px solid #5FFAA7;
 
 	.txt-content p, ul {font-size: 1.3em;}
 
-	#text-only2 {width: 90%;}
+	#text-only2 {width: 100%;}
 	.txt-content2 {margin-top: 50px;
 			       width: 45%;}
 	.txt-content2:nth-child(even) {margin-left: 50px;}
@@ -427,11 +431,11 @@ footer ul li a:hover {border-bottom: 3px solid #5FFAA7;
 	
 	
 	/**About page**/
-	#bio {width: 90%;}
+	#bio {width: 100%;}
 	.bio-content:first-child {width: 60%;
 			  				  margin-top: 60px;}
 	.bio-content:last-child {width: 31%;
-							 margin-left: 50px;
+							 margin-left: 60px;
 							 margin-top: 60px;}
 	.bio-content h2 {font-size: 2.5em;}
 	.bio-content h4 {font-size: 1.9em;}
@@ -439,13 +443,13 @@ footer ul li a:hover {border-bottom: 3px solid #5FFAA7;
 				    
 				    					 
 	/**text and image displays**/
-	#work-display {width: 90%;}
+	#work-display {width: 100%;}
 	.work-display-content {margin-top: 70px;
 			           	   width: 46%;}	           	   
-	.work-display-content:nth-child(even) {margin-left: 40px;}
+	.work-display-content:nth-child(even) {margin-left: 60px;}
 	.image-title {font-size: 1.9em;}
 	
-	#work-display2 {width: 90%;}
+	#work-display2 {width: 100%;}
 	.work-display-content2 {margin-top: 70px;
 			            	width: 45%;}
 	.work-display-content2:nth-child(even) {margin-left: 50px;}
