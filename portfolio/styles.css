@@ -17,45 +17,40 @@ body {margin: 0;
 /**Landing Page**/
 .work-display-btns {margin-top: 10px;}
 
-.work-display-btns ul,
-#home-nav ul {font-size: 1.2em;
-	          list-style: none;
-	          text-align: center;
-	          margin: 0;
-	          padding: 0;}
+.work-display-btns ul {font-size: 1.2em;
+	                   list-style: none;
+	                   text-align: center;
+	                   margin: 0;
+	                   padding: 0;}
 
-.work-display-btns ul li,
-#home-nav ul li {background-color: #9600ce;
-			     border: 2px solid #9600ce;
-			     border-radius: 10px;
-			     margin: 10px auto;
-	 		     width: 100%;
-	 		     display: inline-block;
-	 		     padding-top: 8px;
-				 padding-bottom: 5px;}
+.work-display-btns ul li {background-color: #9600ce;
+			              border: 2px solid #9600ce;
+			              border-radius: 10px;
+			              margin: 10px auto;
+	 		              width: 100%;
+	 		              display: inline-block;
+	 		              padding-top: 8px;
+				          padding-bottom: 5px;}
 
 .work-display-btns ul li {width: 45%;
 						  padding-top: 5px;}
 
-.work-display-btns ul li a,
-#home-nav ul li a {text-decoration: none;
-				   text-align: center;
-				   color: #FFF;
-				   font-family: 'Tajawal', sans-serif;
-				   font-weight: bold;
-				   font-size: 1em;
-				   letter-spacing: 1px;
-				   padding: 5px 90px;}
+.work-display-btns ul li a {text-decoration: none;
+				            text-align: center;
+				            color: #FFF;
+				            font-family: 'Tajawal', sans-serif;
+				            font-weight: bold;
+				            font-size: 1em;
+				            letter-spacing: 1px;
+				            padding: 5px 90px;}
 
 .work-display-btns ul li a {padding: 5px;}
 
-.work-display-btns ul li:hover,
-#home-nav ul li:hover {background-color: #5FFAA7;
-					   border: 2px solid #5FFAA7;}
+.work-display-btns ul li:hover {background-color: #5FFAA7;
+					            border: 2px solid #5FFAA7;}
 
-.work-display-btns ul li a:hover,
-#home-nav ul li a:hover {color: #333333;
-						 background-color: #5FFAA7;}
+.work-display-btns ul li a:hover {color: #333333;
+						          background-color: #5FFAA7;}
 					   
 #home-content {margin: 0;
 			   padding: 20px;
@@ -82,8 +77,45 @@ body {margin: 0;
 				 margin: 0 auto;
 				 width: 95%;
 				 max-width: 750px;}
-				 
-				 
+
+#home-nav {width: 100%;
+           height: 100%;
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;}	
+           
+.home-nav-item {width: 4em;
+                height: 2em;
+                padding: 1em;
+                margin: 0.4em;
+                background-color: #9600ce;
+                color: #fff;
+                border-radius: 1em;
+                text-align: center;
+                font-family: 'Tajawal', sans-serif;
+                font-size: 1.5em;
+                font-weight: bold;}		 
+
+#hnav1::before {content: "About Me";}	
+#hnav2::before {content: "Design Work";}
+#hnav3::before {content: "My Writings";}
+
+.home-nav-item:hover {width: 8em;
+                      height: 7em;
+                      background-color: #52b5b0;}
+.home-nav-item {transition-property: width, height, background-color;
+                transition-duration: 0.5s;}
+
+.home-nav-item a {font-family: 'Tajawal', sans-serif;
+                  font-size: 1em;
+                  color: #9600ce;
+                  font-weight: normal;
+                  text-decoration: none;}  
+.home-nav-item a:hover {text-decoration: underline;
+						font-style: italic;} 
+						
+						           		 
 /**Navigation**/
 nav {margin: 0;
 	 padding: 0;

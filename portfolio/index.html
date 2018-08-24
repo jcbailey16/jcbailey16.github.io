@@ -7,6 +7,9 @@
 		<meta name="description" content="Landing page for Jennifer Bailey's portfolio.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="home-menu.js"></script>
 	</head>
 	<body>
 		<main id="home-main">
@@ -14,24 +17,34 @@
 			<div id="home-content">
 				<h1>A Portfolio</h1> 
 				<h2>By Jennifer Bailey</h2>
-				<p>Hello! You've either stumbled upon this page by accident or have been directed here 
-				by my job application. Either way, welcome! </p>
-				<br>
-				<p>I've created this website to display a collection of my work from print design to web design
-				to writing samples. I will update this site often, so consider it to be continuously 
-				"under construction" and open to critiques.</p>
 			</div>
-			
 			
 			<div id="home-nav">
-				<ul>
-					<li><a href="resume.html" >Take a Look</a></li>
-					<!--<li><a href="web.html">Web Design</a></li>
-					<li><a href="writings.html">Articles</a></li>
-					<li><a href="about.html" >About</a></li>-->
-			
-				</ul>
+				<div class="home-nav-item" id="hnav1">
+					<div id="hnav1-links">
+						<br><a href="resume.html">My Experience</a>
+						<br><a href="education.html">My Education</a><br>
+						<a href="about.html">My Story</a>
+					</div>
+				</div>
+				<div class="home-nav-item" id="hnav2">
+					<div id="hnav2-links">
+						<br><a href="web.html">Web Design</a>
+						<br><a href="print.html">Print Design</a><br>
+						<a href="graphics.html">Infographics</a><br>
+						<a href="javascript-samples.html">JavaScript</a>
+					</div>
+				</div>
+				<div class="home-nav-item" id="hnav3">
+					<div id="hnav3-links">
+						<br><a href="ravingsoftware.html">Raving Software</a>
+						<br><a href="missourian.html">Columbia Missourian</a><br>
+						<a href="https://jb16webdesign.wordpress.com" target="_blank">My Blog</a>
+					</div>
+				</div>
 			</div>
 		</main>
+		
+	
 	</body>
 </html>
