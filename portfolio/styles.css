@@ -99,7 +99,7 @@ body {margin: 0;
 
 #hnav1::before {content: "About Me";}	
 #hnav2::before {content: "Design Work";}
-#hnav3::before {content: "My Writings";}
+#hnav3::before {content: "My Writing";}
 
 .home-nav-item:hover {width: 8em;
                       height: 7em;
