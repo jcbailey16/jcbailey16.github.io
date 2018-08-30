@@ -1,0 +1,68 @@
+/**
+  Author: Jennifer Bailey
+  Version: 1.0
+  Date: August 28, 2018
+  File Name: styles.css
+**/
+
+@import url('https://fonts.googleapis.com/css?family=Lakki+Reddy');
+
+body {background-image: url("quilt-background.jpg");
+	  background-repeat: repeat-y;
+	  background-size: cover;
+	  padding: 0;}
+	  
+main {width: 80%;
+	  margin: 0 auto;
+	  padding: 30px;
+	  background-color: white;
+	  opacity: .95;
+	  box-shadow: 0 0 20px #000;}
+	  
+h1 {font-family: 'Lakki Reddy', cursive;
+	text-align: center;
+	font-size: 4em;
+	color: #32cad7;
+	opacity: 1;}
+
+
+
+	
+form {width: 80%;
+	  margin: 0 auto;
+	  padding: 25px;
+	  font-family: Helvetica, Arial, 'sans-serif';
+	  font-size: 1.15em;}
+
+input[type=checkbox] {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input[type=text] {
+    padding:5px; 
+    border:2px solid #32cad7; 
+}
+
+input[type=text]:focus {
+	outline-color: #370040;
+	border-color: #370040;
+}
+
+input[type=submit] {
+	width: 30%;
+	margin: 15px auto;
+	font-family: Helvetica, Arial, 'sans-serif';
+	font-size: 1.15em;
+	display: block;
+	padding: 10px;
+	background-color: #370040;
+	color: #32cad7; 
+	border-style: 2px;
+	border-radius: 25px;
+}
+
+input[type=submit]:hover, input[type=submit]:focus {
+	background-color: #32cad7;
+	color: #370040;
+}
