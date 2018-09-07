@@ -229,7 +229,8 @@ textarea {display: block;
 		  margin-bottom: 30px;
 		  height: 5em;}
 		  
-form button {width: 100%;
+form button, 
+.form-button {width: 100%;
 			 margin-bottom: 20px;
 			 background-color: #A1D324;
 			 border-radius: 20px;
@@ -243,7 +244,10 @@ form button {width: 100%;
 			 display: block;
 			 margin: 10px auto;}
 				 
-form button:hover {border: 3px solid #A1D324;
+form button:hover,
+form button:focus,
+.form-button:hover,
+.form-button:focus {border: 3px solid #A1D324;
 				   background-color: #333333;
 				   color: #A1D324;}
 				   

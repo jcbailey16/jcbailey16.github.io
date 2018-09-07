@@ -60,7 +60,74 @@
 		<p>Thank you for purchasing a ticket to the 2017 Typographics Conference. You should receive 
 		an email with the details of your purchase within an hour. If you do not, and it was not sent to 
 		your spam folder by mistake, please contact us at <a href="mailto:type@cooper.edu">type@cooper.edu</a>.</p>	
-		<div style="height: 50em;"></div>	
+		
+		<div style="width: 80%; margin: 0 auto; margin-top: 40px;">
+			<h2 style="margin-top: 30px;">Personal Information</h2>
+			<p><span style="font-weight: bold;">Name:</span> <span id="first"></span> <span id="last"></span> </p>
+			<p><span style="font-weight: bold;">Phone Number:</span> <span id="phone"></span></p>
+			<p><span style="font-weight: bold;">Email Address:</span> <span id="email"></span></p>
+			
+			<h2 style="margin-top: 30px;">Billing Address</h2>
+			<p><span style="font-weight: bold;">Address:</span> <span id="address1"></span> <span id="address2"></span>
+			<br> <span id="city"></span> <span id="state"></span> <span id="city"></span> <span id="zipcode"></span></p>
+			
+			<h2 style="margin-top: 30px;">Ticket Choice</h2>
+			<p><span style="font-weight: bold;">Ticket Type:</span> <span id="choice"></span></p>
+			
+			<h2 style="margin-top: 30px;">Payment Information</h2>
+			<p><span style="font-weight: bold;">Card Number:</span> <span id="cardNum"></span></p>
+			<p><span style="font-weight: bold;">Expiration Date:</span> <span id="month"></span>/<span id="year"></span></p>
+			<p><span style="font-weight: bold;">CCV:</span> <span id="ccv"></span></p>
+			
+		</div>
+		
+		<script>
+			
+			function getParameterByName(name, url) {
+    			if (!url) url = window.location.href;
+    			name = name.replace(/[\[\]]/g, '\\$&');
+    			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        			results = regex.exec(url);
+    			if (!results) return null;
+    			if (!results[2]) return '';
+    			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+			}
+		
+			//break string into values
+			var fName = getParameterByName('fname'); // Store First Name value
+			var lName = getParameterByName('lname'); // Store Last Name value
+			var phone = getParameterByName('phone'); //Store phone number value
+			var email = getParameterByName('email'); //Store Email value
+			var address1 = getParameterByName('address1'); //Store first address line
+			var address2 = getParameterByName('address2'); //Store second address line
+			var city = getParameterByName('city'); //Stores city 
+			var state = getParameterByName('state'); //Stores state
+			var zip = getParameterByName('zipcode'); //Stores zipcode
+			var ticket = getParameterByName('package'); //Stores package type
+			var card = getParameterByName('cardNum'); //Stores credit card number
+			var exMo = getParameterByName('expMonth'); //Stores month card expires
+			var exYr = getParameterByName('expYear'); //Stores year card expires
+			var ccv = getParameterByName('ccv'); //Stores date card expires
+			
+			//display variables
+			document.getElementById('first').innerHTML = fName;
+			document.getElementById('last').innerHTML = lName;
+			document.getElementById('phone').innerHTML = phone;
+			document.getElementById('email').innerHTML = email;
+			document.getElementById('address1').innerHTML = address1;
+			document.getElementById('address2').innerHTML = address2;
+			document.getElementById('city').innerHTML = city;
+			document.getElementById('state').innerHTML = state;
+			document.getElementById('zipcode').innerHTML = zip;
+			document.getElementById('choice').innerHTML = ticket;
+			document.getElementById('cardNum').innerHTML = card;
+			document.getElementById('month').innerHTML = exMo;
+			document.getElementById('year').innerHTML = exYr;
+			document.getElementById('ccv').innerHTML = ccv;
+		</script>
+		
+		
+		<div style="height: 35em;"></div>	
 	</main>
 	
 	<footer>

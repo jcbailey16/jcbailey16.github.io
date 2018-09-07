@@ -11,6 +11,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="menu.js"></script>
 	
+	<script src="modernizr.custom.65897.js"></script>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 </head>
@@ -56,36 +58,79 @@
 	<main>
 		<h1 class="small">Contact Us</h1>
 		
-		<form action="thankyou.html">
+		<form name="contact" action="thankyou.html" method="get" onsubmit="return validateForm()">
 			
 			<h4>Your Information</h4>
 			<br>
-			<label for="fname">First Name</label>
+			<label for="fname">First Name*</label>
 				<input id="fname" type="text" name="fname">
 				
-			<label for="lname">Last Name</label>
+			<label for="lname">Last Name*</label>
 				<input id="lname" type="text" name="lname">
 					
-			<label for="phone">Phone Number</label>
+			<label for="phone">Phone Number*</label>
 				<input id="phone" type="tel" name="phone">
 					
-			<label for="email">Email</label>
+			<label for="email">Email*</label>
 				<input id="email" type="email" name="email">
 				
-			<label for="message">Message</label><br>
-				<textarea id="message" name="message">	</textarea>
+			<label for="message">Message*</label><br>
+				<textarea id="message" name="message"></textarea>
 		
 			<input type="checkbox" name="signup" id="signup" style="width: 5%; margin-bottom: 0;">
     			<label for="signup">Yes, I would like to sign-up for the Tyopgraphics mailing list.</label>
 			<br> <br>
 			
-			<button>Send Message</button>
+			<input type="submit" value="Send Message" class="form-button"/>
+			
 			<br>
-
+			<p>*Required field</p>
 			<h4>Our Information</h4>
 			<p><span class="bold">Email:</span> <a href="mailto:type@cooper.edu">type@cooper.edu</a></p>
 			<p><span class="bold">Twitter:</span> <a href="https://twitter.com/TypographicsNYC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">@TypographicsNYC</a></p>
 			
+			
+			
+			<script>
+				function validateForm() {
+					//validate first name
+    				var first = document.forms["contact"]["fname"].value;
+    				if (first == "") {
+        				alert("Your first name must be filled out.");
+        				return false;
+    				}
+    				
+    				//validate last name
+    				var last = document.forms["contact"]["lname"].value;
+    				if (last == "") {
+        				alert("Your last name must be filled out");
+        				return false;
+    				}
+    				
+    				//validate phone number
+    				var number = document.forms["contact"]["phone"].value;
+    				//var numLength = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+    				if ((number == "") || (isNaN(number))){
+        				alert("Your phone number must be filled out, and must include the area code (ex:555-555-5555 or 1234567890).");
+        				return false;
+    				}
+    				
+    				//validate email address
+    				var address = document.forms["contact"]["email"].value;
+    				if (address == "") {
+        				alert("Your email address must be filled out");
+        				return false;
+    				}
+    				
+    				//validate message
+    				var msg = document.forms["contact"]["message"].value;
+    				if (msg == "") {
+        				alert("You must send us a message");
+        				return false;
+    				}
+				}
+			
+			</script>
 		</form>
 	
 	</main>

@@ -11,6 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="menu.js"></script>
 	
+	<script src="modernizr.custom.65897.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 </head>
@@ -63,7 +64,7 @@
 		
 		<p>All fields are <span class="bold">required</span> unless marked as optional.</p>
 		
-		<form action="confirmation.html">
+		<form name="order" action="confirmation.html" method="get" onsubmit="return validateForm()">
 						
 			<h4>Personal Information</h4>
 			<br>
@@ -74,7 +75,7 @@
 				<input id="lname" type="text" name="lname">
 					
 			<label for="phone">Phone Number</label>
-				<input id="phone" type="tel" name="phone">
+				<input id="phone" type="number" name="phone">
 					
 			<label for="email">Email</label>
 				<input id="email" type="email" name="email">
@@ -92,6 +93,7 @@
 				
 			<label for="state">State</label>
 				<select name="state" id="state">
+					<option value="0">Select State</option>
 					<option>Alabama</option>
 					<option>Alaska</option>
 					<option>Arizona</option>
@@ -146,26 +148,26 @@
 				</select>
 				
 			<label for="zipcode">ZIP Code</label>
-				<input id="zipcode" type="text" name="zipcode">
+				<input id="zipcode" type="number" name="zipcode">
 			
 			<h4>Ticket Options</h4>
 			<br>
 			<fieldset>
 				<legend>Pick One:</legend>
     				
-    			<input type="radio" name="package" id="professional" value="professional">
+    			<input type="radio" name="package" id="professional" value="professional - $400">
     				<label for="professional">Professional &mdash; $400</label><br>
     			
-    			<input type="radio" name="package" id="educator" value="educator">
+    			<input type="radio" name="package" id="educator" value="educator - $350">
     				<label for="educator">Educator &mdash; $350</label><br>
     				
-    			<input type="radio" name="package" id="student" value="student">
+    			<input type="radio" name="package" id="student" value="student - $250">
     				<label for="student">Student &mdash; $250</label><br>
   				
-  				<input type="radio" name="package" id="small" value="small">
+  				<input type="radio" name="package" id="small" value="small bundle - $320">
     				<label for="small">Small Bundle &mdash; $320*</label><br>
     				
-    			<input type="radio" name="package" id="large" value="large">
+    			<input type="radio" name="package" id="large" value="large bundle - $300">
     				<label for="large">Large Bundle &mdash; $300*</label><br>
 			</fieldset>
 			
@@ -173,25 +175,149 @@
 			
 			<h4>Credit Card</h4>
 			<label for="cardNum">Card Number</label>
-				<input id="cardNum" type="text" name="cardNum">
+				<input id="cardNum" type="number" name="cardNum">
 				
-			<label for="exDate">Expiration Date</label>
-				<input id="exDate" type="text" name="exDate">
+			<label for="expMo">Expiration Month</label>
+                  <select id="expMo" name="expMonth">
+                  	<option value="0">Choose Month</option>
+                     <option value="01">01</option>
+                     <option value="02">02</option>
+                     <option value="03">03</option>
+                     <option value="04">04</option>
+                     <option value="05">05</option>
+                     <option value="06">06</option>
+                     <option value="07">07</option>
+                     <option value="08">08</option>
+                     <option value="09">09</option>
+                     <option value="10">10</option>
+                     <option value="11">11</option>
+                     <option value="12">12</option>
+                  </select>
+                  
+                  <label for="expYr">Expiration Year</label>
+                  <select id="expYr" name="expYear">
+                  	 <option value="0">Choose Year</option>
+                     <option value="2018">2018</option>
+                     <option value="2019">2019</option>
+                     <option value="2020">2020</option>
+                     <option value="2021">2021</option>
+                     <option value="2021">2022</option>
+                  </select>	
+				
 				
 			<label for="ccv">CCV</label>
-				<input id="ccv" type="text" name="ccv">			
+				<input id="ccv" type="number" name="ccv">			
 			<br><br>
-			<input type="checkbox" name="policy" id="policy" style="width: 5%; margin-bottom: 0;">
+			<input type="checkbox" name="policy" id="policy" style="width: 5%; margin-bottom: 0;" required>
     			<label for="policy">I have read and agree to follow the conference's <a href="policies.html" target="_blank">policies</a></label>
 			<br> <br>
-			<input type="checkbox" name="code" id="code" style="width: 5%; margin-bottom: 0;">
+			<input type="checkbox" name="code" id="code" style="width: 5%; margin-bottom: 0;" required>
     			<label for="code">I have read and agree to follow the conference's <a href="conduct.html" target="_blank">Code of Conduct</a></label>
 			<br> <br>
-			<button>Submit Order</button>
+			<input type="submit" value="Send Message" class="form-button"/>
+						
+			<script>
+				
+				function validateForm() {
+					//validate first name
+    				var first = document.forms["order"]["fname"].value;
+    				if (first === "") {
+        				alert("Please complete the First Name field.");
+        				return false;
+    				}
+    				
+    				//validate last name
+    				var last = document.forms["order"]["lname"].value;
+    				if (last === "") {
+        				alert("Please complete the Last Name field.");
+        				return false;
+    				}
+    				
+    				//validate phone number
+    				var call = document.forms["order"]["phone"].value;
+    				if (call === "") {
+        				alert("Please complete the Phone Number field. Ex: 555-555-5555 or 1234567890");
+        				return false;
+    				}
+    				
+    				//validate email
+    				var eMail = document.forms["order"]["email"].value;
+    				if (eMail === "") {
+        				alert("Please complete the Email Address field. Ex: abc@aol.com");
+        				return false;
+    				}
+    				
+    				//validate street address
+    				var add1 = document.forms["order"]["address1"].value;
+    				if (add1 === "") {
+        				alert("Please complete the Street Address field.");
+        				return false;
+    				}
+    				
+    				//validate city 
+    				var city = document.forms["order"]["city"].value;
+    				if (city === "") {
+        				alert("Please complete the City field.");
+        				return false;
+    				}
+    				
+    				//validate state
+    				var state = document.forms["order"]["state"].value;
+    				if (state === "0") {
+        				alert("Please select your state.");
+        				return false;
+    				}
+    				
+    				//validate state
+    				var zip = document.forms["order"]["zipcode"].value;
+    				if (zip === "") {
+        				alert("Please complete the ZIP code field.");
+        				return false;
+    				}
+    				
+    				//validate ticket package
+    				var ticket = document.forms["order"]["package"].value;
+    				if (ticket === "") {
+        				alert("Please choose a ticket package.");
+        				return false;
+    				}
+    				
+    				//validate credit card number
+    				var ccNum = document.forms["order"]["cardNum"].value;
+    				if (ccNum === "") {
+        				alert("Please add your credit card number.");
+        				return false;
+    				}
+    				
+    				//validate credit card expiration month
+    				var exMo = document.forms["order"]["expMonth"].value;
+    				if (exMo === "0") {
+        				alert("Please add the month your card expires.");
+        				return false;
+    				}
+    				
+    				//validate credit card expiration year
+    				var exYr = document.forms["order"]["expYear"].value;
+    				if (exYr === "0") {
+        				alert("Please add the year your card expires.");
+        				return false;
+    				}
+    				
+    				//validate CCV
+    				var ccv = document.forms["order"]["ccv"].value;
+    				if (ccv === "") {
+        				alert("Please the security code for your credit card.");
+        				return false;
+    				}
+
+    			}	
+
+			</script>
 		</form>
 	
 	</main>
 	
+	<p style="font-size: .9em;">This is not a real form. Please to do not submit any real &amp; sensitive information.</p>
 	<footer>
 		<ul>
 			<li><a href="contact.html">Contact Us</a></li>

@@ -11,6 +11,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="menu.js"></script>
 	
+	<script src="modernizr.custom.65897.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 </head>
@@ -56,8 +57,46 @@
 	<main>
 		<h1 class="small">Thank you!</h1>
 		<p>Thank you for you message. Someone should contact you in one to two business days. If you don't hear from us, 
-		and it was not sent to your spam folder by mistake, please contact us at <a href="mailto:type@cooper.edu">type@cooper.edu</a>.</p>		
-		<div style="height: 50em;"></div>
+		and it was not sent to your spam folder by mistake, please contact us at <a href="mailto:type@cooper.edu">type@cooper.edu</a>.</p>	
+		<p>Below is a copy of the message you sent us. Please save this page for your records.</p>
+		
+		<div style="margin-top: 40px;">
+			<p><span style="font-weight: bold;">First Name:</span> <span id="first"></span> </p>
+			<p><span style="font-weight: bold;">Last Name:</span> <span id="last"><span></p>
+			<p><span style="font-weight: bold;">Phone Number:</span> <span id="phone"></span></p>
+			<p><span style="font-weight: bold;">Email Address:</span> <span id="email"></span></p>
+			<p><span style="font-weight: bold;">Your Message:</span> <span id="message"></span></p>
+		</div>
+		<script>
+			
+			function getParameterByName(name, url) {
+    			if (!url) url = window.location.href;
+    			name = name.replace(/[\[\]]/g, '\\$&');
+    			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        			results = regex.exec(url);
+    			if (!results) return null;
+    			if (!results[2]) return '';
+    			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+			}
+		
+			//break string into values
+			var fName = getParameterByName('fname'); // Store First Name value
+			var lName = getParameterByName('lname'); // Store Last Name value
+			var phone = getParameterByName('phone'); //Story phone number value
+			var email = getParameterByName('email'); //Store Email value
+			var msg = getParameterByName('message'); //Story Message value
+			
+			
+			//display variables
+			document.getElementById('first').innerHTML = fName;
+			document.getElementById('last').innerHTML = lName;
+			document.getElementById('phone').innerHTML = phone;
+			document.getElementById('email').innerHTML = email;
+			document.getElementById('message').innerHTML = msg;
+		</script>
+			
+		<div style="height: 35em;"></div>
+		<p style="font-size: .9em">This is a not a real website and no emails or information is sent via the forms.</p>
 	</main>
 	
 	<footer>
