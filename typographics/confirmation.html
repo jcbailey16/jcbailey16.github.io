@@ -56,7 +56,7 @@
 	<main>
 		
 		<h1 class="small">Confirmation</h1>
-		<p class="bold">Order Number: #46A79Z</p>
+		<p class="bold">Order Number: <span id="order"></span></p>
 		<p>Thank you for purchasing a ticket to the 2017 Typographics Conference. You should receive 
 		an email with the details of your purchase within an hour. If you do not, and it was not sent to 
 		your spam folder by mistake, please contact us at <a href="mailto:type@cooper.edu">type@cooper.edu</a>.</p>	
@@ -124,10 +124,19 @@
 			document.getElementById('month').innerHTML = exMo;
 			document.getElementById('year').innerHTML = exYr;
 			document.getElementById('ccv').innerHTML = ccv;
+			
+			
+			//generate a random order number and display it
+			function orderNum() {
+				var num = Math.floor((Math.random() * 100000) + 1);
+				document.getElementById('order').innerHTML = num;
+			}
+			window.onload = orderNum;
+			
 		</script>
 		
 		
-		<div style="height: 35em;"></div>	
+		<div style="height: 15em;"></div>	
 	</main>
 	
 	<footer>

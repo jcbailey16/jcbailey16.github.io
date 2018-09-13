@@ -69,30 +69,30 @@
 			<h4>Personal Information</h4>
 			<br>
 			<label for="fname">First Name</label>
-				<input id="fname" type="text" name="fname">
+				<input id="fname" type="text" name="fname" title="Your first name">
 				
 			<label for="lname">Last Name</label>
-				<input id="lname" type="text" name="lname">
+				<input id="lname" type="text" name="lname" title="Your last name">
 					
 			<label for="phone">Phone Number</label>
-				<input id="phone" type="number" name="phone">
+				<input id="phone" type="text" name="phone" title="Your 10-digit phone number">
 					
 			<label for="email">Email</label>
-				<input id="email" type="email" name="email">
+				<input id="email" type="text" name="email" title="Your email address">
 		
 			<h4>Billing Address</h4>
 			<br>
 			<label for="address1">Street Address</label>
-				<input id="address1" type="text" name="address1">
+				<input id="address1" type="text" name="address1" title="Your street address">
 					
 			<label for="address2">Apartment/Suite (optional)</label>
-				<input id="address2" type="text" name="address2">
+				<input id="address2" type="text" name="address2" title="An optional street address line">
 					
 			<label for="city">City</label>
-				<input id="city" type="text" name="city">
+				<input id="city" type="text" name="city" title="Your city">
 				
 			<label for="state">State</label>
-				<select name="state" id="state">
+				<select name="state" id="state" title="Your state">
 					<option value="0">Select State</option>
 					<option>Alabama</option>
 					<option>Alaska</option>
@@ -148,26 +148,26 @@
 				</select>
 				
 			<label for="zipcode">ZIP Code</label>
-				<input id="zipcode" type="number" name="zipcode">
+				<input id="zipcode" type="text" name="zipcode" title="Your zipcode">
 			
 			<h4>Ticket Options</h4>
 			<br>
 			<fieldset>
 				<legend>Pick One:</legend>
     				
-    			<input type="radio" name="package" id="professional" value="professional - $400">
+    			<input type="radio" name="package" id="professional" value="professional - $400" title="Professional Package $400">
     				<label for="professional">Professional &mdash; $400</label><br>
     			
-    			<input type="radio" name="package" id="educator" value="educator - $350">
+    			<input type="radio" name="package" id="educator" value="educator - $350" title="Educator Package $350">
     				<label for="educator">Educator &mdash; $350</label><br>
     				
-    			<input type="radio" name="package" id="student" value="student - $250">
+    			<input type="radio" name="package" id="student" value="student - $250" title="Student Package $350">
     				<label for="student">Student &mdash; $250</label><br>
   				
-  				<input type="radio" name="package" id="small" value="small bundle - $320">
+  				<input type="radio" name="package" id="small" value="small bundle - $320" title="Small Bundle Package $320">
     				<label for="small">Small Bundle &mdash; $320*</label><br>
     				
-    			<input type="radio" name="package" id="large" value="large bundle - $300">
+    			<input type="radio" name="package" id="large" value="large bundle - $300" title="Large Bundle Package $300">
     				<label for="large">Large Bundle &mdash; $300*</label><br>
 			</fieldset>
 			
@@ -175,7 +175,7 @@
 			
 			<h4>Credit Card</h4>
 			<label for="cardNum">Card Number</label>
-				<input id="cardNum" type="number" name="cardNum">
+				<input id="cardNum" type="text" name="cardNum" title="Your credit card number">
 				
 			<label for="expMo">Expiration Month</label>
                   <select id="expMo" name="expMonth">
@@ -208,59 +208,127 @@
 			<label for="ccv">CCV</label>
 				<input id="ccv" type="number" name="ccv">			
 			<br><br>
-			<input type="checkbox" name="policy" id="policy" style="width: 5%; margin-bottom: 0;" required>
+			
+			<input type="checkbox" name="policy" id="policy" style="width: 5%; margin-bottom: 0;" title="You must agree to follow the conference's policies." >
     			<label for="policy">I have read and agree to follow the conference's <a href="policies.html" target="_blank">policies</a></label>
 			<br> <br>
-			<input type="checkbox" name="code" id="code" style="width: 5%; margin-bottom: 0;" required>
+			
+			<input type="checkbox" name="code" id="code" style="width: 5%; margin-bottom: 0;" title="You must agree to follow the conference's code of conduct." >
     			<label for="code">I have read and agree to follow the conference's <a href="conduct.html" target="_blank">Code of Conduct</a></label>
 			<br> <br>
+			
 			<input type="submit" value="Send Message" class="form-button"/>
 						
 			<script>
 				
 				function validateForm() {
-					//validate first name
+					
+					//input text pattern
+					var textPattern = /^[a-zA-Z0-9]*$/;
+					var allowSpaces = /^([a-zA-Z0-9]+\s)*[a-zA-Z0-9]+$/;
+					
+					
+					//FIRST NAME
+					//check if first name submitted
     				var first = document.forms["order"]["fname"].value;
     				if (first === "") {
         				alert("Please complete the First Name field.");
         				return false;
     				}
+    				//validate first name input
+    				var firstMatch = allowSpaces.test(first);
+    				if(firstMatch === false) {
+    					alert("Please only include letters or numbers in your first name. Do not use any punctuation. A single space BETWEEN words is allowed.");
+    					return false;
+    				}
     				
-    				//validate last name
+    				//LAST NAME
+    				//check if last name submitted
     				var last = document.forms["order"]["lname"].value;
     				if (last === "") {
         				alert("Please complete the Last Name field.");
         				return false;
     				}
+    				//validate last name input
+    				var lastMatch = allowSpaces.test(last);
+    				if(lastMatch === false) {
+    					alert("Please only include letters or numbers in your last name. Do not use any punctuation. A single space BETWEEN words is allowed.");
+    					return false;
+    				}
     				
-    				//validate phone number
+    				
+    				//PHONE NUMBER
+    				//check if phone number submitted
     				var call = document.forms["order"]["phone"].value;
     				if (call === "") {
         				alert("Please complete the Phone Number field. Ex: 555-555-5555 or 1234567890");
         				return false;
     				}
+    				//check if phone number matches format
+    				var phonePattern = /^[0-9]{3}[-\s\.][0-9]{3}[-\s\.][0-9]{4}$/;
+    				var phoneMatch = phonePattern.test(call);
+    				if (phoneMatch === false) {
+    					alert("Please submit your 10-digit phone number in correct format: 555-555-5555");
+    					return false;
+    				}
     				
-    				//validate email
+    				//EMAIL ADDRESS
+    				//check if email submitted
     				var eMail = document.forms["order"]["email"].value;
     				if (eMail === "") {
         				alert("Please complete the Email Address field. Ex: abc@aol.com");
         				return false;
     				}
+    				//validate email address
+    				var ePattern = /^(([\-\w]+)\.?)+@(([\-\w]+)\.?)+\.[a-zA-Z]{2,4}$/;
+    				var eMatch = ePattern.test(eMail);
+    				if (eMatch === false) {
+    					alert("Please submit your email in the correct format. Example: jsmith16@aol.com");
+    					return false;
+    				}
     				
-    				//validate street address
+    				
+    				//STREET ADDRESS LINE 1
+    				//check first street address is submitted
     				var add1 = document.forms["order"]["address1"].value;
     				if (add1 === "") {
         				alert("Please complete the Street Address field.");
         				return false;
     				}
+    				//validate street address
+    				var add1Match = allowSpaces.test(add1);
+    				if(add1Match === false) {
+    					alert("Please only include letters or numbers in your street address. Do not use any punctuation. A single space BETWEEN words is allowed.");
+    					return false;
+    				}
     				
-    				//validate city 
+    				
+    				//STREET ADDRESS LINE 2
+    				//validate optional input for street address line 2
+    				var add2 = document.forms["order"]["address2"].value;
+    				var add2Match = allowSpaces.test(add2);
+    				if((add2 !== "") && (add2Match === false)) {
+    					alert("Please only include letters or numbers in your Apartment/Suite Number. Do not use any punctuation. A single space BETWEEN words is allowed.");
+    					return false;
+    				}
+    				
+    				
+    				//CITY NAME				
+    				//check city name submitted
     				var city = document.forms["order"]["city"].value;
     				if (city === "") {
         				alert("Please complete the City field.");
         				return false;
     				}
+    				//validate city name
+    				var cityMatch = allowSpaces.test(city);
+    				if(cityMatch === false) {
+    					alert("Please only include letters or numbers in the City name. Do not use any punctuation. A single space BETWEEN words is allowed.");
+    					return false;
+    				}
     				
+    				
+    				//STATE SELECTION
     				//validate state
     				var state = document.forms["order"]["state"].value;
     				if (state === "0") {
@@ -268,13 +336,24 @@
         				return false;
     				}
     				
-    				//validate state
+    				
+    				//ZIPCODE
+    			    //see if zipcode submitted
     				var zip = document.forms["order"]["zipcode"].value;
     				if (zip === "") {
         				alert("Please complete the ZIP code field.");
         				return false;
     				}
+    				//validate zipcode format
+    				var postalPattern =  /^[0-9][0-9][0-9][0-9][0-9]$/;
+    				var zipMatch = postalPattern.test(zip);
+    				if(zipMatch === false) {
+    					alert("Please add your 5-digit zipcode. Do not use any punctuation, spaces, or letters.");
+    					return false;
+    				}
     				
+    				
+    				//TICKET PACKAGE
     				//validate ticket package
     				var ticket = document.forms["order"]["package"].value;
     				if (ticket === "") {
@@ -282,13 +361,23 @@
         				return false;
     				}
     				
-    				//validate credit card number
+    				
+    				//CREDIT CARD NUMBER
+    				//check if credit card number submitted
     				var ccNum = document.forms["order"]["cardNum"].value;
     				if (ccNum === "") {
         				alert("Please add your credit card number.");
         				return false;
     				}
+    				//validate cc number
+    				var ccPattern =  /^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/;
+    				var ccMatch = ccPattern.test(ccNum);
+    				if(ccMatch === false) {
+    					alert("Please add your 16-digit credit number. Do not use any punctuation, spaces, or letters.");
+    					return false;
+    				}
     				
+    				//CC EXPIRATION MONTH
     				//validate credit card expiration month
     				var exMo = document.forms["order"]["expMonth"].value;
     				if (exMo === "0") {
@@ -296,6 +385,8 @@
         				return false;
     				}
     				
+    				
+    				//CC EXPIRATION YEAR    				
     				//validate credit card expiration year
     				var exYr = document.forms["order"]["expYear"].value;
     				if (exYr === "0") {
@@ -303,13 +394,37 @@
         				return false;
     				}
     				
-    				//validate CCV
+    				
+    				//CC SECURITY CODE
+    				//check ccv submitted
     				var ccv = document.forms["order"]["ccv"].value;
     				if (ccv === "") {
         				alert("Please the security code for your credit card.");
         				return false;
     				}
-
+    				//validate submitted ccv
+    				var ccvPattern = /^[0-9][0-9][0-9]$/;
+    				var ccvMatch = ccvPattern.test(ccv);
+    				if(ccvMatch === false) {
+    					alert("Please add your 3-digit security code. Do not use any punctuation, spaces, or letters.");
+    					return false;
+    				}
+    				
+    				
+    				//CONFERENCE POLICY
+    				var policy = document.getElementById('policy').checked;
+					if(policy === false) {
+						alert("Please check the box to agree to the conference's policies.");
+						return false;
+					}
+					
+					
+					//CONFERENCE POLICY
+    				var code = document.getElementById('code').checked;
+					if(code === false) {
+						alert("Please check the box to agree to the conference's code of conduct.");
+						return false;
+					}
     			}	
 
 			</script>
@@ -317,7 +432,7 @@
 	
 	</main>
 	
-	<p style="font-size: .9em;">This is not a real form. Please to do not submit any real &amp; sensitive information.</p>
+	<p style="font-size: 1em; margin: 30px auto; width: 70%;">This is not a real form. Please to do not submit any real or sensitive information.</p>
 	<footer>
 		<ul>
 			<li><a href="contact.html">Contact Us</a></li>
