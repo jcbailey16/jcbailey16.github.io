@@ -206,11 +206,11 @@
 				
 				
 			<label for="ccv">CCV</label>
-				<input id="ccv" type="number" name="ccv">			
+				<input id="ccv" type="text" name="ccv">			
 			<br><br>
 			
 			<input type="checkbox" name="policy" id="policy" style="width: 5%; margin-bottom: 0;" title="You must agree to follow the conference's policies." >
-    			<label for="policy">I have read and agree to follow the conference's <a href="policies.html" target="_blank">policies</a></label>
+    			<label for="policy" id="policyLabel">I have read and agree to follow the conference's <a href="policies.html" target="_blank">policies</a></label>
 			<br> <br>
 			
 			<input type="checkbox" name="code" id="code" style="width: 5%; margin-bottom: 0;" title="You must agree to follow the conference's code of conduct." >
@@ -233,13 +233,23 @@
     				var first = document.forms["order"]["fname"].value;
     				if (first === "") {
         				alert("Please complete the First Name field.");
+        				document.getElementById("fname").style.backgroundColor = "#FFF605";
+        				document.getElementById("fname").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("fname").style.backgroundColor = "white";
+    					document.getElementById("fname").style.fontWeight = "normal";
     				}
     				//validate first name input
     				var firstMatch = allowSpaces.test(first);
     				if(firstMatch === false) {
     					alert("Please only include letters or numbers in your first name. Do not use any punctuation. A single space BETWEEN words is allowed.");
-    					return false;
+    					document.getElementById("fname").style.backgroundColor = "#FFF605";
+        				document.getElementById("fname").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("fname").style.backgroundColor = "white";
+    					document.getElementById("fname").style.fontWeight = "normal";
     				}
     				
     				//LAST NAME
@@ -247,13 +257,23 @@
     				var last = document.forms["order"]["lname"].value;
     				if (last === "") {
         				alert("Please complete the Last Name field.");
+        				document.getElementById("lname").style.backgroundColor = "#FFF605";
+        				document.getElementById("lname").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("lname").style.backgroundColor = "white";
+    					document.getElementById("lname").style.fontWeight = "normal";
     				}
     				//validate last name input
     				var lastMatch = allowSpaces.test(last);
     				if(lastMatch === false) {
     					alert("Please only include letters or numbers in your last name. Do not use any punctuation. A single space BETWEEN words is allowed.");
-    					return false;
+    					document.getElementById("lname").style.backgroundColor = "#FFF605";
+        				document.getElementById("lname").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("lname").style.backgroundColor = "white";
+    					document.getElementById("lname").style.fontWeight = "normal";
     				}
     				
     				
@@ -262,14 +282,24 @@
     				var call = document.forms["order"]["phone"].value;
     				if (call === "") {
         				alert("Please complete the Phone Number field. Ex: 555-555-5555 or 1234567890");
+        				document.getElementById("phone").style.backgroundColor = "#FFF605";
+        				document.getElementById("phone").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("phone").style.backgroundColor = "white";
+    					document.getElementById("phone").style.fontWeight = "normal";
     				}
     				//check if phone number matches format
     				var phonePattern = /^[0-9]{3}[-\s\.][0-9]{3}[-\s\.][0-9]{4}$/;
     				var phoneMatch = phonePattern.test(call);
     				if (phoneMatch === false) {
     					alert("Please submit your 10-digit phone number in correct format: 555-555-5555");
-    					return false;
+    					document.getElementById("phone").style.backgroundColor = "#FFF605";
+        				document.getElementById("phone").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("phone").style.backgroundColor = "white";
+    					document.getElementById("phone").style.fontWeight = "normal";
     				}
     				
     				//EMAIL ADDRESS
@@ -277,14 +307,24 @@
     				var eMail = document.forms["order"]["email"].value;
     				if (eMail === "") {
         				alert("Please complete the Email Address field. Ex: abc@aol.com");
+        				document.getElementById("email").style.backgroundColor = "#FFF605";
+        				document.getElementById("email").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("email").style.backgroundColor = "white";
+    					document.getElementById("email").style.fontWeight = "normal";
     				}
     				//validate email address
     				var ePattern = /^(([\-\w]+)\.?)+@(([\-\w]+)\.?)+\.[a-zA-Z]{2,4}$/;
     				var eMatch = ePattern.test(eMail);
     				if (eMatch === false) {
     					alert("Please submit your email in the correct format. Example: jsmith16@aol.com");
-    					return false;
+    					document.getElementById("email").style.backgroundColor = "#FFF605";
+        				document.getElementById("email").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("email").style.backgroundColor = "white";
+    					document.getElementById("email").style.fontWeight = "normal";
     				}
     				
     				
@@ -293,13 +333,23 @@
     				var add1 = document.forms["order"]["address1"].value;
     				if (add1 === "") {
         				alert("Please complete the Street Address field.");
+        				document.getElementById("address1").style.backgroundColor = "#FFF605";
+        				document.getElementById("email").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("address1").style.backgroundColor = "white";
+    					document.getElementById("address1").style.fontWeight = "normal";
     				}
     				//validate street address
     				var add1Match = allowSpaces.test(add1);
     				if(add1Match === false) {
     					alert("Please only include letters or numbers in your street address. Do not use any punctuation. A single space BETWEEN words is allowed.");
-    					return false;
+    					document.getElementById("address1").style.backgroundColor = "#FFF605";
+        				document.getElementById("address1").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("address1").style.backgroundColor = "white";
+    					document.getElementById("address1").style.fontWeight = "normal";
     				}
     				
     				
@@ -309,7 +359,12 @@
     				var add2Match = allowSpaces.test(add2);
     				if((add2 !== "") && (add2Match === false)) {
     					alert("Please only include letters or numbers in your Apartment/Suite Number. Do not use any punctuation. A single space BETWEEN words is allowed.");
-    					return false;
+    					document.getElementById("address2").style.backgroundColor = "#FFF605";
+        				document.getElementById("address2").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("address2").style.backgroundColor = "white";
+    					document.getElementById("address2").style.fontWeight = "normal";
     				}
     				
     				
@@ -318,13 +373,23 @@
     				var city = document.forms["order"]["city"].value;
     				if (city === "") {
         				alert("Please complete the City field.");
+        				document.getElementById("city").style.backgroundColor = "#FFF605";
+        				document.getElementById("city").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("city").style.backgroundColor = "white";
+    					document.getElementById("city").style.fontWeight = "normal";
     				}
     				//validate city name
     				var cityMatch = allowSpaces.test(city);
     				if(cityMatch === false) {
     					alert("Please only include letters or numbers in the City name. Do not use any punctuation. A single space BETWEEN words is allowed.");
-    					return false;
+    					document.getElementById("city").style.backgroundColor = "#FFF605";
+        				document.getElementById("city").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("city").style.backgroundColor = "white";
+    					document.getElementById("city").style.fontWeight = "normal";
     				}
     				
     				
@@ -333,23 +398,35 @@
     				var state = document.forms["order"]["state"].value;
     				if (state === "0") {
         				alert("Please select your state.");
+        				document.getElementById("state").style.backgroundColor = "#FFF605";
         				return false;
+    				} else {
+    					document.getElementById("state").style.backgroundColor = "white";
     				}
-    				
     				
     				//ZIPCODE
     			    //see if zipcode submitted
     				var zip = document.forms["order"]["zipcode"].value;
     				if (zip === "") {
         				alert("Please complete the ZIP code field.");
+        				document.getElementById("zipcode").style.backgroundColor = "#FFF605";
+        				document.getElementById("zipcode").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("zipcode").style.backgroundColor = "white";
+    					document.getElementById("zipcode").style.fontWeight = "normal";
     				}
     				//validate zipcode format
     				var postalPattern =  /^[0-9][0-9][0-9][0-9][0-9]$/;
     				var zipMatch = postalPattern.test(zip);
     				if(zipMatch === false) {
     					alert("Please add your 5-digit zipcode. Do not use any punctuation, spaces, or letters.");
-    					return false;
+    					document.getElementById("zipcode").style.backgroundColor = "#FFF605";
+        				document.getElementById("zipcode").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("zipcode").style.backgroundColor = "white";
+    					document.getElementById("zipcode").style.fontWeight = "normal";
     				}
     				
     				
@@ -359,7 +436,7 @@
     				if (ticket === "") {
         				alert("Please choose a ticket package.");
         				return false;
-    				}
+    				} 
     				
     				
     				//CREDIT CARD NUMBER
@@ -367,14 +444,24 @@
     				var ccNum = document.forms["order"]["cardNum"].value;
     				if (ccNum === "") {
         				alert("Please add your credit card number.");
+        				document.getElementById("cardNum").style.backgroundColor = "#FFF605";
+        				document.getElementById("cardNum").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("cardNum").style.backgroundColor = "white";
+    					document.getElementById("cardNum").style.fontWeight = "normal";
     				}
     				//validate cc number
     				var ccPattern =  /^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/;
     				var ccMatch = ccPattern.test(ccNum);
     				if(ccMatch === false) {
     					alert("Please add your 16-digit credit number. Do not use any punctuation, spaces, or letters.");
-    					return false;
+    					document.getElementById("cardNum").style.backgroundColor = "#FFF605";
+        				document.getElementById("cardNum").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("cardNum").style.backgroundColor = "white";
+    					document.getElementById("cardNum").style.fontWeight = "normal";
     				}
     				
     				//CC EXPIRATION MONTH
@@ -382,16 +469,22 @@
     				var exMo = document.forms["order"]["expMonth"].value;
     				if (exMo === "0") {
         				alert("Please add the month your card expires.");
+        				document.getElementById("expMo").style.backgroundColor = "#FFF605";
         				return false;
+    				} else {
+    					document.getElementById("expMo").style.backgroundColor = "white";
     				}
     				
     				
     				//CC EXPIRATION YEAR    				
     				//validate credit card expiration year
-    				var exYr = document.forms["order"]["expYear"].value;
+    				var exYr = document.forms["order"]["expYr"].value;
     				if (exYr === "0") {
         				alert("Please add the year your card expires.");
+        				document.getElementById("expYr").style.backgroundColor = "#FFF605";
         				return false;
+    				} else {
+    					document.getElementById("expYr").style.backgroundColor = "white";
     				}
     				
     				
@@ -400,14 +493,24 @@
     				var ccv = document.forms["order"]["ccv"].value;
     				if (ccv === "") {
         				alert("Please the security code for your credit card.");
+        				document.getElementById("ccv").style.backgroundColor = "#FFF605";
+        				document.getElementById("ccv").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("ccv").style.backgroundColor = "white";
+    					document.getElementById("ccv").style.fontWeight = "normal";
     				}
     				//validate submitted ccv
     				var ccvPattern = /^[0-9][0-9][0-9]$/;
     				var ccvMatch = ccvPattern.test(ccv);
     				if(ccvMatch === false) {
     					alert("Please add your 3-digit security code. Do not use any punctuation, spaces, or letters.");
-    					return false;
+    					document.getElementById("ccv").style.backgroundColor = "#FFF605";
+        				document.getElementById("ccv").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("ccv").style.backgroundColor = "white";
+    					document.getElementById("ccv").style.fontWeight = "normal";
     				}
     				
     				
@@ -415,16 +518,16 @@
     				var policy = document.getElementById('policy').checked;
 					if(policy === false) {
 						alert("Please check the box to agree to the conference's policies.");
-						return false;
-					}
+        				return false;
+    				} 
 					
 					
 					//CONFERENCE POLICY
     				var code = document.getElementById('code').checked;
 					if(code === false) {
 						alert("Please check the box to agree to the conference's code of conduct.");
-						return false;
-					}
+        				return false;
+    				} 
     			}	
 
 			</script>
