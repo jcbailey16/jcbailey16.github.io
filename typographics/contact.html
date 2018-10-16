@@ -69,10 +69,10 @@
 				<input id="lname" type="text" name="lname">
 					
 			<label for="phone">Phone Number*</label>
-				<input id="phone" type="tel" name="phone">
+				<input id="phone" type="text" name="phone">
 					
 			<label for="email">Email*</label>
-				<input id="email" type="email" name="email">
+				<input id="email" type="text" name="email">
 				
 			<label for="message">Message*</label><br>
 				<textarea id="message" name="message"></textarea>
@@ -93,34 +93,112 @@
 			
 			<script>
 				function validateForm() {
+				
+					//input text pattern
+					var textPattern = /^[a-zA-Z0-9]*$/;
+					var allowSpaces = /^([a-zA-Z0-9]+\s)*[a-zA-Z0-9]+$/;
+					
+					//FIRST NAME FIELD
 					//validate first name
     				var first = document.forms["contact"]["fname"].value;
     				if (first == "") {
-        				alert("Your first name must be filled out.");
+        				alert("Please complete the First Name field.");
+        				document.getElementById("fname").style.backgroundColor = "#FFF605";
+        				document.getElementById("fname").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("fname").style.backgroundColor = "white";
+    					document.getElementById("fname").style.fontWeight = "normal";
+    				}
+    				//validate first name input
+    				var firstMatch = allowSpaces.test(first);
+    				if(firstMatch === false) {
+    					alert("Please only include letters or numbers in your first name. Do not use any punctuation. A single space BETWEEN words is allowed.");
+    					document.getElementById("fname").style.backgroundColor = "#FFF605";
+        				document.getElementById("fname").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("fname").style.backgroundColor = "white";
+    					document.getElementById("fname").style.fontWeight = "normal";
     				}
     				
+    				
+    				//LAST NAME FIELD
     				//validate last name
     				var last = document.forms["contact"]["lname"].value;
     				if (last == "") {
-        				alert("Your last name must be filled out");
+        				alert("Please complete the Last Name field.");
+        				document.getElementById("lname").style.backgroundColor = "#FFF605";
+        				document.getElementById("lname").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("lname").style.backgroundColor = "white";
+    					document.getElementById("lname").style.fontWeight = "normal";
+    				}
+    				//validate last name input
+    				var lastMatch = allowSpaces.test(last);
+    				if(lastMatch === false) {
+    					alert("Please only include letters or numbers in your last name. Do not use any punctuation. A single space BETWEEN words is allowed.");
+    					document.getElementById("lname").style.backgroundColor = "#FFF605";
+        				document.getElementById("lname").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("lname").style.backgroundColor = "white";
+    					document.getElementById("lname").style.fontWeight = "normal";
     				}
     				
+    				
+    				//PHONE NUMBER FIELD
     				//validate phone number
-    				var number = document.forms["contact"]["phone"].value;
-    				//var numLength = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
-    				if ((number == "") || (isNaN(number))){
-        				alert("Your phone number must be filled out, and must include the area code (ex:555-555-5555 or 1234567890).");
+    				//check if phone number submitted
+    				var call = document.forms["contact"]["phone"].value;
+    				if (call === "") {
+        				alert("Please complete the Phone Number field. Ex: 555-555-5555");
+        				document.getElementById("phone").style.backgroundColor = "#FFF605";
+        				document.getElementById("phone").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("phone").style.backgroundColor = "white";
+    					document.getElementById("phone").style.fontWeight = "normal";
+    				}
+    				//check if phone number matches format
+    				var phonePattern = /^[0-9]{3}[-\s\.][0-9]{3}[-\s\.][0-9]{4}$/;
+    				var phoneMatch = phonePattern.test(call);
+    				if (phoneMatch === false) {
+    					alert("Please submit your 10-digit phone number in correct format: 555-555-5555");
+    					document.getElementById("phone").style.backgroundColor = "#FFF605";
+        				document.getElementById("phone").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("phone").style.backgroundColor = "white";
+    					document.getElementById("phone").style.fontWeight = "normal";
     				}
     				
-    				//validate email address
-    				var address = document.forms["contact"]["email"].value;
-    				if (address == "") {
-        				alert("Your email address must be filled out");
+    				
+    				//EMAIL ADDRESS
+    				var eMail = document.forms["contact"]["email"].value;
+    				if (eMail === "") {
+        				alert("Please complete the Email Address field. Ex: abc@aol.com");
+        				document.getElementById("email").style.backgroundColor = "#FFF605";
+        				document.getElementById("email").style.fontWeight = "bold";
         				return false;
+    				} else {
+    					document.getElementById("email").style.backgroundColor = "white";
+    					document.getElementById("email").style.fontWeight = "normal";
     				}
+    				//validate email address
+    				var ePattern = /^(([\-\w]+)\.?)+@(([\-\w]+)\.?)+\.[a-zA-Z]{2,4}$/;
+    				var eMatch = ePattern.test(eMail);
+    				if (eMatch === false) {
+    					alert("Please submit your email in the correct format. Example: jsmith16@aol.com");
+    					document.getElementById("email").style.backgroundColor = "#FFF605";
+        				document.getElementById("email").style.fontWeight = "bold";
+        				return false;
+    				} else {
+    					document.getElementById("email").style.backgroundColor = "white";
+    					document.getElementById("email").style.fontWeight = "normal";
+    				}
+    				
     				
     				//validate message
     				var msg = document.forms["contact"]["message"].value;

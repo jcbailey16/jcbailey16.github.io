@@ -152,8 +152,9 @@
 			
 			<h4>Ticket Options</h4>
 			<br>
+			
 			<fieldset>
-				<legend>Pick One:</legend>
+				<legend id="legend">Pick One:</legend>
     				
     			<input type="radio" name="package" id="professional" value="professional - $400" title="Professional Package $400">
     				<label for="professional">Professional &mdash; $400</label><br>
@@ -170,6 +171,7 @@
     			<input type="radio" name="package" id="large" value="large bundle - $300" title="Large Bundle Package $300">
     				<label for="large">Large Bundle &mdash; $300*</label><br>
 			</fieldset>
+			
 			
 			<p>*We will contact you about the number of tickets you need.</p>
 			
@@ -214,12 +216,13 @@
 			<br> <br>
 			
 			<input type="checkbox" name="code" id="code" style="width: 5%; margin-bottom: 0;" title="You must agree to follow the conference's code of conduct." >
-    			<label for="code">I have read and agree to follow the conference's <a href="conduct.html" target="_blank">Code of Conduct</a></label>
+    			<label for="code" id="conductLabel">I have read and agree to follow the conference's <a href="conduct.html" target="_blank">Code of Conduct</a></label>
 			<br> <br>
 			
 			<input type="submit" value="Send Message" class="form-button"/>
 						
 			<script>
+			
 				
 				function validateForm() {
 					
@@ -281,7 +284,7 @@
     				//check if phone number submitted
     				var call = document.forms["order"]["phone"].value;
     				if (call === "") {
-        				alert("Please complete the Phone Number field. Ex: 555-555-5555 or 1234567890");
+        				alert("Please complete the Phone Number field. Ex: 555-555-5555");
         				document.getElementById("phone").style.backgroundColor = "#FFF605";
         				document.getElementById("phone").style.fontWeight = "bold";
         				return false;
@@ -435,8 +438,13 @@
     				var ticket = document.forms["order"]["package"].value;
     				if (ticket === "") {
         				alert("Please choose a ticket package.");
+        				document.getElementById("legend").style.color = "#FFF605";
+        				document.getElementById("legend").style.fontWeight = "bold";
         				return false;
-    				} 
+    				} else {
+    					document.getElementById("legend").style.color = "white";
+    					document.getElementById("legend").style.fontWeight = "normal";
+    				}
     				
     				
     				//CREDIT CARD NUMBER
@@ -518,16 +526,26 @@
     				var policy = document.getElementById('policy').checked;
 					if(policy === false) {
 						alert("Please check the box to agree to the conference's policies.");
+        				document.getElementById("policyLabel").style.color = "#FFF605";
+        				document.getElementById("policyLabel").style.fontWeight = "bold";
         				return false;
-    				} 
+    				} else {
+    					document.getElementById("policyLabel").style.backgroundColor = "white";
+    					document.getElementById("policyLabel").style.fontWeight = "normal";
+    				}
 					
 					
 					//CONFERENCE POLICY
     				var code = document.getElementById('code').checked;
 					if(code === false) {
 						alert("Please check the box to agree to the conference's code of conduct.");
+        				document.getElementById("conductLabel").style.color = "#FFF605";
+        				document.getElementById("conductLabel").style.fontWeight = "bold";
         				return false;
-    				} 
+    				} else {
+    					document.getElementById("conductLabel").style.backgroundColor = "white";
+    					document.getElementById("conductLabel").style.fontWeight = "normal";
+    				}
     			}	
 
 			</script>
