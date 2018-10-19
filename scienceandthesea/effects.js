@@ -16,5 +16,7 @@ $(document).ready(function() {
 	$(".more2").click(function(event) {
 		event.preventDefault();
 		$(".load-more").show();
+		$(".more2").hide();
+		$(".continue").show();
 	});
 });

@@ -6,7 +6,8 @@
 	<meta name="description" content="Example of a single article page.">
 	<meta name="author" content="Jennifer Bailey">
 	
-	<link rel="stylesheet" type="text/css" href="styles-new.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -17,11 +18,22 @@
 			<h1>Science and the Sea</h1>
 		</header>
 		
-		<nav>
+		<nav id="mobile">
+			<p><a href="index.html"><i class="glyphicon glyphicon-home"></i><br>Home</a></p>
+			<p><a href="podcasts.html"><i class="glyphicon glyphicon-music"></i><br>Podcasts</a></p>
+			<p><a href="articles.html"><i class="glyphicon glyphicon-file"></i><br>Articles</a></p>
+			<p><a href="about.html"><i class="glyphicon glyphicon-info-sign"></i><br>About</a></p>
+		</nav>
+		
+		<nav id="desktop">
 			<p><a href="index.html">Home</a></p>
 			<p><a href="podcasts.html">Podcasts</a></p>
 			<p><a href="articles.html">Articles</a></p>
 			<p><a href="about.html">About</a></p>
+			<p id="searchBar">
+				<input type="text" class="searchTerm2" placeholder="Search..."/>
+				<button type="submit" class="searchButton2" onclick="window.location.href='search.html'">Go</button>
+			</p>
 		</nav>
 		
 		
@@ -33,7 +45,7 @@
 		
 		<main>
 			<div class="single-post">
-				<h2>Sea Snakes Go Black in City</h2>
+				<h3>Sea Snakes Go Black in City</h3>
 			
 				<picture>
 					<source media="(min-width: 526px)" srcset="assets/snake_md.jpg">
@@ -63,16 +75,23 @@
 				survival.</p>
 			</div><!--single-post-->
 				
-			<div class="grid2">	
-				<div id="subscribe">
-					<h2>Don't Miss Out</h2>
-					<div class="subscribe-links">
-						<p><a href="#">Subscribe to Our Show</a></p>
-						<p><a href="#">Never Miss a Post</a></p>
-						<p><a href="https://itunes.apple.com/us/podcast/science-and-the-sea-podcast/id973506101?mt=2" target="_blank">Download from iTunes</a></p>
-					</div>
-				</div>
+			<div id="subscribe">
+				<h2>Don't Miss Out</h2>
+				<p><a href="subscribe1.html">Subscribe to Our Show</a></p>
+				<p><a href="subscribe2.html">Never Miss a Post</a></p>
+				<p><a href="https://itunes.apple.com/us/podcast/science-and-the-sea-podcast/id973506101?mt=2" target="_blank">Download from iTunes</a></p>
+			</div>
 			
+			<div class="content-block2">
+				<div id="subscribe2">
+					<h2>Don't Miss Out</h2>
+					<p><a href="subscribe1.html">Subscribe to Our Show</a></p>
+					<p><a href="subscribe2.html">Never Miss a Post</a></p>
+					<p><a href="https://itunes.apple.com/us/podcast/science-and-the-sea-podcast/id973506101?mt=2" target="_blank">Download from iTunes</a></p>
+				</div>
+			</div><!--end of content-block2-->
+			
+			<div class="content-block2">
 				<div id="viewers">
 					<h2>Who's On Our Site</h2>
 					<picture>
@@ -81,7 +100,7 @@
 					</picture>
 					<p><a href="http://www.revolvermaps.com/?target=enlarge&i=57g0wtvgqxc&color=ff8a00&m=1" target="_blank">Live Visitor Statistics</a></p>
 				</div>
-			</div><!--end of grid2-->
+			</div><!--end of content-block2-->
 		</main>
 	
 		<footer>

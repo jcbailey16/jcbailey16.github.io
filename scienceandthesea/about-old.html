@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Science and the Sea | About Us</title>
+	<title>Science and the Sea | Abouts</title>
 	<meta name="description" content="The about page for Science and the Sea podcast.">
 	<meta name="author" content="Jennifer Bailey">
 	
-	<link rel="stylesheet" type="text/css" href="styles-new.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="effects.js"></script>
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,12 +21,24 @@
 			<h1>Science and the Sea</h1>
 		</header>
 		
-		<nav>
+		<nav id="mobile">
+			<p><a href="index.html"><i class="glyphicon glyphicon-home"></i><br>Home</a></p>
+			<p><a href="podcasts.html"><i class="glyphicon glyphicon-music"></i><br>Podcasts</a></p>
+			<p><a href="articles.html"><i class="glyphicon glyphicon-file"></i><br>Articles</a></p>
+			<p><a id="on-page" href="about.html"><i class="glyphicon glyphicon-info-sign"></i><br>About</a></p>
+		</nav>
+		
+		<nav id="desktop">
 			<p><a href="index.html">Home</a></p>
 			<p><a href="podcasts.html">Podcasts</a></p>
 			<p><a href="articles.html">Articles</a></p>
-			<p><a id="on-page" href="about.html">About</a></p>
+			<p><a id="active" href="about.html">About</a></p>
+			<p id="searchBar">
+				<input type="text" class="searchTerm2" placeholder="Search..."/>
+				<button type="submit" class="searchButton2" onclick="window.location.href='search.html'">Go</button>
+			</p>
 		</nav>
+		
 		
 		<div id="search">
 			<input type="text" class="searchTerm" placeholder="Search..."/>
@@ -66,7 +80,9 @@
 				education for school children, teachers, visiting college classes, and senior groups. Marine 
 				Education Services promotes interest in marine science through educational programs designed 
 				especially for teachers, students, and the general public. </p>
-						
+			
+			<hr>
+			
 			
 			<h3>Our Awards</h3>
 				<br>
@@ -74,17 +90,20 @@
 				<p>Our Executive Producer was honored in 2009 for creation of <span class="name">Science and the Sea</span> from 
 				the Coastal Bend Bays Foundation for Conservation and Environmental Stewardship through public awareness. </p>
 			
+			<hr>
 			
 			<h3 class="clear-float">Our Staff</h3>
-			<br>
-			<p><span class="category">Executive Producer:</span> Dr. Lee Fuiman, Associate Director, University of Texas Marine Science Institute</p>
-			<p><span class="category">Producer:</span> Damond Benningfield</p>
-			<p><span class="category">Announcer:</span> Holly Braly</p>
-			<p><span class="category">Audio:</span> Shayna Brown, Chez Boom Audio</p>
-			<p><span class="category">Script Coordinator:</span> Heather Herrick, University of Texas Marine Science Institute</p>
-			<p><span class="category">Writer:</span> Damond Benningfield</p>
-			<p><span class="category">Distribution:</span> Casey Walker, StarDate Productions</p>
+				<ul>
+					<li><span class="category">Executive Producer:</span> Dr. Lee Fuiman, Associate Director, University of Texas Marine Science Institute</li>
+					<li><span class="category">Producer:</span> Damond Benningfield</li>
+					<li><span class="category">Announcer:</span> Holly Braly</li>
+					<li><span class="category">Audio:</span> Shayna Brown, Chez Boom Audio</li>
+					<li><span class="category">Script Coordinator:</span> Heather Herrick, University of Texas Marine Science Institute</li>
+					<li><span class="category">Writer:</span> Damond Benningfield</li>
+					<li><span class="category">Distribution:</span> Casey Walker, StarDate Productions</li>
+				</ul>
 			
+			<hr>
 			
 			<h3>Our Affiliates</h3>
 			<br>
@@ -92,8 +111,11 @@
 				Guam, the Philippines, and New Zealand (see complete listing below). Science and the Sea is also heard in 52 countries on 
 				9 separate channels of the American Forces Network radio on satellite.To become a radio station affiliate, contact:Casey Walker </p>
 				
-				<p><span class="category">Email:</span> <a href="mailto:casey@stardate.org">casey@stardate.org</a></p>
-				<p><span class="category">Phone:</span> <a href="tel:512-475-6760">512-475-6760</a></p>
+				<ul>
+					<li><span class="category">Email:</span> <a href="mailto:casey@stardate.org">casey@stardate.org</a></li>
+					<li><span class="category">Phone:</span> <a href="tel:512-475-6760">512-475-6760</a></li>
+				</ul>
+				<br>
 				<p>The Marine Science Institute's monthly column, Science and the SeaTM, is an informative and entertaining article that 
 				explains many interesting features of the marine environment and the creatures that live there. 
 				<span class="name">Science and the Sea</span> articles appear monthly in one of Texas' most widely read fishing magazines, 
@@ -103,16 +125,23 @@
 			
 			</div><!--end of about-section-->
 				
-			<div class="grid2">	
-				<div id="subscribe">
-					<h2>Don't Miss Out</h2>
-					<div class="subscribe-links">
-						<p><a href="#">Subscribe to Our Show</a></p>
-						<p><a href="#">Never Miss a Post</a></p>
-						<p><a href="https://itunes.apple.com/us/podcast/science-and-the-sea-podcast/id973506101?mt=2" target="_blank">Download from iTunes</a></p>
-					</div>
-				</div>
+			<div id="subscribe">
+				<h2>Don't Miss Out</h2>
+				<p><a href="subscribe1.html">Subscribe to Our Show</a></p>
+				<p><a href="subscribe2.html">Never Miss a Post</a></p>
+				<p><a href="https://itunes.apple.com/us/podcast/science-and-the-sea-podcast/id973506101?mt=2" target="_blank">Download from iTunes</a></p>
+			</div>
 			
+			<div class="content-block2">
+				<div id="subscribe2">
+					<h2>Don't Miss Out</h2>
+					<p><a href="subscribe1.html">Subscribe to Our Show</a></p>
+					<p><a href="subscribe2.html">Never Miss a Post</a></p>
+					<p><a href="https://itunes.apple.com/us/podcast/science-and-the-sea-podcast/id973506101?mt=2" target="_blank">Download from iTunes</a></p>
+				</div>
+			</div><!--end of content-block2-->
+			
+			<div class="content-block2">
 				<div id="viewers">
 					<h2>Who's On Our Site</h2>
 					<picture>
@@ -121,7 +150,7 @@
 					</picture>
 					<p><a href="http://www.revolvermaps.com/?target=enlarge&i=57g0wtvgqxc&color=ff8a00&m=1" target="_blank">Live Visitor Statistics</a></p>
 				</div>
-			</div><!--end of grid2-->
+			</div><!--end of content-block2-->
 		</main>
 	
 		<footer>
