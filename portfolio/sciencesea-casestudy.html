@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Science and the Sea Case Study | Jennifer Bailey</title>
+	<meta name="author" content="Jennifer Bailey">
+	<meta name="description" content="Learn about the production and updates to my Typographics website.">
+	
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="menu.js"></script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	
+	<nav>
+		<ul>
+			<li><a href="#" id="about">About &#9662;</a>
+				<ul id="about-pages">
+					<li><a href="resume.html">Experience</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="#" id="close-about"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+		
+			<li><a href="#" id="design" class="active">Design &#9662;</a>
+				<ul id="design-pages">
+					<li><a href="web.html">Web</a></li>
+					<li><a href="print.html">Print</a></li>
+					<li><a href="graphics.html">Infographics</a></li>
+					<li><a href="javascript-samples.html">JavaScript</a></li>
+					<li><a href="#" id="close-design"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>
+			
+			<li><a href="#" id="writings">Writing &#9662;</a>
+				<ul id="publications">
+					<li><a href="ravingsoftware.html">Raving Software</a></li>
+					<li><a href="missourian.html">Missourian</a></li>
+					<li><a href="https://jb16webdesign.wordpress.com" target="_blank">Projects</a></li>
+					<li><a href="#" id="close-writings"><span>&#x2716;</span> Close</a></li>
+				</ul>
+			</li>	
+		</ul>
+	</nav>
+		
+	<main>
+		
+		<div class="case-study">
+			<h1>Case Study:</h1>
+			<h2>Science &amp; the Sea</h2>		
+			
+			<a href="https://jcbailey16.github.io/scienceandthesea/index.html" target="_blank"><img src="assets/websites/sciencesea.jpg" alt="Science and the Sea home page"/></a>
+			
+			<h3>The Project</h3>
+			
+			<p>The Science and the Sea website was a project for my responsive design class at Anne Arundel Community College. 
+			The assignment was to redesign a website for a podcast of our choice. At the time, I didn't listen to any podcasts, 
+			so I found one that covered a topic I had some interest in: the ocean.</p>
+
+			<p>After making <a href="assets/pdfs/sats-wireframes.pdf" target="_blank">wireframes</a> for each page at a mobile, tablet, and desktop (large) screen size, I moved on to 
+			programming the website. I started programming the website at a 320px width size. Excepting wearable devices, 
+			such as watches, a 320px screen size is a common enough width size for mobile devices. Using percentages for 
+			measurements and em's for font sizes, allowed my content to grow in a pre-determined way as the screen width grew. 
+			However, adjustments still needed to be made despite the default settings. I created three breakpoints — 526px, 
+			950px, 1100px — that were determined by the content "breaking" or causing problems as the screen size grew wider.</p>
+
+			<p>Once the screen size hit 950px wide, I had to change the presentation of some of my content because images were 
+			too large and text was too wide. I gave my podcast and article previews a "content-block" class and set this to 
+			"display: inline-block." This worked but there was a lot of coding that had to go into it, and it wasn't necessarily 
+			the cleanest design either. However, it worked for what I needed it to do.</p>
+			
+			<h3>The Problems</h3> 			
+			
+			<p>As mentioned before, my code was a little messy and that was from creating problems for myself in the design. 
+			Originally, I had the Subscription block between the Podcast and Articles sections on the home page, and the Live 
+			Viewers block under the Articles section while the screen size was 949px or below. Upon the screen hitting 950px, 
+			the Subscription and Live Viewers blocks would move below all the content. I also had the navigation menu moving 
+			from a fixed position at the bottom of the page to the top for larger screen sizes. This was a lot of duplicated 
+			code that cluttered up the pages and relied on CSS and the display property to work. And it did, but this could 
+			cause problems for screen readers.</p>
+
+			<p>In addition, my elements using the class "content-block" were not always uniform or aligned properly as the 
+			screen size changed. After learning about CSS Grid, I thought it might solve some of the problems I'd noticed in 
+			my design.</p>
+			
+			<h3>Updates</h3>
+			
+			<p>I used CSS Grid instead of my "content-block" class and am much happier with the results. There's definitely 
+			more control than using "display: inline" but it's also a cleaner method, both in presentation and code.</p>
+
+			<p>I removed the duplicated code sections, as well. The Subscription and Live Viewer blocks are located at the 
+			end of the content no matter the screen size. The menu, or navigation, also only appears in a fixed position at 
+			the bottom of the page. It's not a conventional choice for large screens or desktops but I think it's clear to 
+			the user that it's the menu. The original mobile navigation menu used Bootstrap icons, but these were removed to 
+			prevent conflicts with the Bootstrap library. HTML Unicode/UTF-8 didn't have adequate substitutes so I removed 
+			them entirely. This allowed me to enlarge the link font size and add a little more space around the links, 
+			which I think makes the menu more user-friendly.</p>
+
+			<p>Most of the other fixes are minor style changes. I made sure the behavior when a link is hovered or focused on, 
+			as well as the look of a link, was more uniform throughout the website. In addition, I improved the look of a few 
+			call-to-action buttons to make them better fit the design.</p>
+			
+			<p>After seeing how powerful and useful Grid is, I think I can use it fix up a couple of my other older projects, especially 
+			those that use a gallery layout.</p>
+			
+		</div>
+		
+		<p id="return-link">View <a href="https://jcbailey16.github.io/scienceandthesea/index.html" target="_blank">Science and the Sea</a> website.
+		<br>Return to <a href="web.html">website gallery</a>.</p>
+	</main>
+	
+	<footer>
+		<ul>
+			<li><a href="https://www.linkedin.com/in/jennbailey16/" target="_blank"> My LinkedIn</a></li>
+			<li><a href="https://twitter.com/JennBailey16" target="_blank">My Twitter</a></li>
+			<li><a href="mailto:jcbailey2468@gmail.com">Email Me</a></li>
+		</ul>
+	</footer>
+</body>
+</html>
